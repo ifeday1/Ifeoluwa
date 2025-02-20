@@ -1,13 +1,18 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import Imgnav from '../assets/Imgnav.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [active, setActive] = useState('Home'); // Track active menu
+
   const toggleMenu = () => setIsOpen(!isOpen);
 
+  const menuItems = ['Works', 'About', 'Contact'];
+
   return (
-    <nav className='bg-gray-900 text-white'>
+    <nav className=' text-white'>
       <div className='container mx-auto flex justify-between items-center p-4'>
         {/* Logo */}
         <motion.h1
@@ -16,19 +21,29 @@ const Navbar = () => {
           transition={{ duration: 0.5 }}
           className='text-2xl font-bold'
         >
-          Ultimate NFT
+          Ifeoluwa Oladeni
         </motion.h1>
 
         {/* Desktop Menu */}
         <ul className='hidden md:flex space-x-6 text-lg font-medium'>
-          {['Home', 'Explore', 'Marketplace', 'Contact'].map((item, index) => (
+          {menuItems.map((item) => (
             <motion.li
-              key={index}
+              key={item}
               whileHover={{ scale: 1.1, color: '#38bdf8' }}
               transition={{ duration: 0.2 }}
-              className='hover:text-cyan-400'
+              className={`cursor-pointer relative ${
+                active === item ? 'text-cyan-500':0
+              }`}
+              onClick={() => setActive(item)}
             >
-              <a href='#'>{item}</a>
+              {item}
+              {/* Active Underline Animation */}
+              <motion.span
+                className='absolute left-0 bottom-0 h-1 bg-cyan-500 rounded'
+                initial={{ width: 0 }}
+                animate={{ width: active === item ? '100%' : 0 }}
+                transition={{ duration: 0.3 }}
+              />
             </motion.li>
           ))}
         </ul>
@@ -51,7 +66,7 @@ const Navbar = () => {
             animate={{ x: 0 }}
             exit={{ x: '100%' }}
             transition={{ type: 'spring', stiffness: 100, damping: 15 }}
-            className='fixed top-0 right-0 w-full h-screen bg-gray-800 text-white flex flex-col items-start justify-start md:hidden p-6'
+            className='fixed top-0 right-0 w-full h-screen bg-black text-white flex flex-col items-start justify-start md:hidden p-6'
           >
             {/* Close Button */}
             <button
@@ -63,7 +78,7 @@ const Navbar = () => {
 
             {/* Left-Aligned Image at the Top */}
             <motion.img
-              src='https://via.placeholder.com/200'
+              src={Imgnav}
               alt='NFT Illustration'
               className='rounded-lg w-32 h-32 mb-4'
               initial={{ opacity: 0, x: -20 }}
@@ -73,19 +88,23 @@ const Navbar = () => {
 
             {/* Left-Aligned Menu Links with Larger Text */}
             <div className='flex flex-col items-start space-y-6 text-2xl font-semibold w-full'>
-              {['Home', 'Explore', 'Marketplace', 'Contact'].map(
-                (item, index) => (
-                  <motion.a
-                    key={index}
-                    href='#'
-                    whileHover={{ scale: 1.1, color: '#38bdf8' }}
-                    transition={{ duration: 0.2 }}
-                    className='hover:text-cyan-400 w-full p-2 border-b border-gray-600'
-                  >
-                    {item}
-                  </motion.a>
-                )
-              )}
+              {menuItems.map((item) => (
+                <motion.a
+                  key={item}
+                  href='#'
+                  whileHover={{ scale: 1.1, color: '#38bdf8' }}
+                  transition={{ duration: 0.2 }}
+                  className={`cursor-pointer w-full p-2 border-b border-gray-600 ${
+                    active === item ? 'text-cyan-500' : 'hover:text-cyan-400'
+                  }`}
+                  onClick={() => {
+                    setActive(item);
+                    setIsOpen(false);
+                  }}
+                >
+                  {item}
+                </motion.a>
+              ))}
             </div>
 
             {/* Descriptive Text (Left-Aligned & Well-Spaced) */}
@@ -95,8 +114,8 @@ const Navbar = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              Discover exclusive NFTs and digital assets on our platform. Join
-              the revolution today!
+              I am dedicated to creating impactful user and brand experiences
+              through insights, research, and the latest design methodologies.
             </motion.p>
           </motion.div>
         )}
