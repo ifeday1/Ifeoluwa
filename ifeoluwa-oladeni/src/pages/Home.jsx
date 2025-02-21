@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../compontents/Navbar';
 import Ifehero from '../assets/Ifehero.png';
 import { motion } from 'framer-motion';
+import Footer from '../compontents/Footer';
 
 const Home = () => {
   return (
@@ -15,7 +16,7 @@ const Home = () => {
           transition={{ duration: 0.8 }}
           className='flex flex-col justify-center items-start space-y-4'
         >
-          <p className='md:text-7xl text-4xl font-bold text-neutral-500 uppercase'>
+          <p className='md:text-7xl text-5xl font-bold text-neutral-500 uppercase'>
             <span className=' block'>Designing</span>
             <span className='block'>the future,</span>
             <span className='text-white block'>one pixel </span>
@@ -26,7 +27,7 @@ const Home = () => {
             href='https://www.linkedin.com/in/ifeoluwa-oladeni'
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
-            className=' md:my-30 my-6 text-white rounded-lg shadow-lg font-medium transition flex items-center space-x-2'
+            className=' md:my-16 my-3 text-white rounded-lg shadow-lg font-medium transition flex items-center space-x-2'
           >
             <span>Linkedin</span>
             <svg
@@ -73,10 +74,10 @@ const Home = () => {
             businesses and delight users. Outside work, I love sports, traveling
             and Playing drums.
           </p>
-         
         </motion.div>
       </div>
       ;
+      <Footer />
     </>
   );
 };
