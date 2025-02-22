@@ -36,7 +36,10 @@ const Footer = () => {
 
           {/* Social Icons */}
           <div className='flex space-x-4 mt-4 md:mt-0'>
-            <a href='' className='text-gray-400 hover:text-white transition'>
+            <a
+              href='https://www.behance.net/oladeniifeoluwa'
+              className='text-gray-400 hover:text-white transition'
+            >
               <FaBehance size={24} />
             </a>
             <a
@@ -45,11 +48,14 @@ const Footer = () => {
             >
               <FaLinkedin size={24} />
             </a>
-            <a href='#' className='text-gray-400 hover:text-white transition'>
+            <a
+              href='https://x.com/IfeoluwaOladeni'
+              className='text-gray-400 hover:text-white transition'
+            >
               <FaXTwitter size={24} />
             </a>
             <a
-              href='mailto:yourmail@example.com'
+              href='mailto:oladeniifeoluwa123@gmail.com'
               className='text-gray-400 hover:text-white transition'
             >
               <FaEnvelope size={24} />

@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Imgnav from '../assets/Imgnav.png';
@@ -9,10 +10,14 @@ const Navbar = () => {
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
-  const menuItems = ['Works', 'About', 'Contact'];
+  const menuItems = [
+    { name: 'Works', path: '/works' },
+    { name: 'About', path: '/about' },
+    { name: 'Contact', path: '/contact' },
+  ];
 
   return (
-    <nav className=' text-white'>
+    <nav className='text-white'>
       <div className='container mx-auto flex justify-between items-center p-4'>
         {/* Logo */}
         <motion.h1
@@ -21,34 +26,37 @@ const Navbar = () => {
           transition={{ duration: 0.5 }}
           className='text-2xl font-bold'
         >
-          Ifeoluwa Oladeni
+          <Link to='/' onClick={() => setActive('Home')}>
+            Ifeoluwa Oladeni
+          </Link>
         </motion.h1>
 
         {/* Desktop Menu */}
         <ul className='hidden md:flex space-x-6 text-lg font-medium'>
           {menuItems.map((item) => (
             <motion.li
-              key={item}
+              key={item.name}
               whileHover={{ scale: 1.1, color: '#38bdf8' }}
               transition={{ duration: 0.2 }}
               className={`cursor-pointer relative ${
-                active === item ? 'text-cyan-500':0
+                active === item.name ? 'text-cyan-500' : ''
               }`}
-              onClick={() => setActive(item)}
+              onClick={() => setActive(item.name)}
             >
-              {item}
+              <Link to={item.path}>{item.name}</Link>
+
               {/* Active Underline Animation */}
               <motion.span
                 className='absolute left-0 bottom-0 h-1 bg-cyan-500 rounded'
                 initial={{ width: 0 }}
-                animate={{ width: active === item ? '100%' : 0 }}
+                animate={{ width: active === item.name ? '100%' : 0 }}
                 transition={{ duration: 0.3 }}
               />
             </motion.li>
           ))}
         </ul>
 
-        {/* Mobile Menu Button with "Menu" Text */}
+        {/* Mobile Menu Button */}
         <button
           onClick={toggleMenu}
           className='md:hidden flex items-center space-x-2'
@@ -79,35 +87,35 @@ const Navbar = () => {
             {/* Left-Aligned Image at the Top */}
             <motion.img
               src={Imgnav}
-              alt='NFT Illustration'
               className='rounded-lg w-32 h-32 mb-4'
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
             />
 
-            {/* Left-Aligned Menu Links with Larger Text */}
+            {/* Mobile Menu Links */}
             <div className='flex flex-col items-start space-y-6 text-2xl font-semibold w-full'>
               {menuItems.map((item) => (
-                <motion.a
-                  key={item}
-                  href='#'
+                <motion.div
+                  key={item.name}
                   whileHover={{ scale: 1.1, color: '#38bdf8' }}
                   transition={{ duration: 0.2 }}
                   className={`cursor-pointer w-full p-2 border-b border-gray-600 ${
-                    active === item ? 'text-cyan-500' : 'hover:text-cyan-400'
+                    active === item.name
+                      ? 'text-cyan-500'
+                      : 'hover:text-cyan-400'
                   }`}
                   onClick={() => {
-                    setActive(item);
+                    setActive(item.name);
                     setIsOpen(false);
                   }}
                 >
-                  {item}
-                </motion.a>
+                  <Link to={item.path}>{item.name}</Link>
+                </motion.div>
               ))}
             </div>
 
-            {/* Descriptive Text (Left-Aligned & Well-Spaced) */}
+            {/* Descriptive Text */}
             <motion.p
               className='text-left text-gray-300 mt-auto pb-10 text-lg'
               initial={{ opacity: 0, y: 10 }}

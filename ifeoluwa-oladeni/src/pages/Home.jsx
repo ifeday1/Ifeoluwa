@@ -1,13 +1,12 @@
 import React from 'react';
-import Navbar from '../compontents/Navbar';
 import Ifehero from '../assets/Ifehero.png';
 import { motion } from 'framer-motion';
 import Footer from '../compontents/Footer';
+import ProjectHome from '../compontents/ProjectHome';
 
 const Home = () => {
   return (
     <>
-      <Navbar />
       <div className='grid grid-cols-1 md:grid-cols-2 gap-8 p-6 md:p-12 min-h-screen items-center'>
         {/* Left Section */}
         <motion.div
@@ -76,7 +75,7 @@ const Home = () => {
           </p>
         </motion.div>
       </div>
-      ;
+      <ProjectHome />
       <Footer />
     </>
   );

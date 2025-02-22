@@ -8,10 +8,10 @@ const ProjectHome = () => {
       <section className='px-6 py-12 md:px-12  text-white'>
         {/* Header Section */}
         <div className='flex justify-between items-center mb-6'>
-          <h2 className='text-2xl font-semibold text-gray-400'>
+          <h2 className='md:text-5xl text-2xl font-semibold text-gray-400'>
             Featured Projects
           </h2>
-          <a href='/projects' className='text-white hover:underline'>
+          <a href='/works' className='text-white hover:underline'>
             View All
           </a>
         </div>
@@ -34,11 +34,11 @@ const ProjectHome = () => {
             </motion.a>
 
             {/* Project Title */}
-            <h3 className='text-lg font-semibold mt-3'>Project One</h3>
+            <h3 className='text-lg font-semibold mt-3'>FRONTIER SOLAR TECH</h3>
 
             {/* Smaller Horizontal Info Boxes */}
             <div className='flex gap-2 mt-3'>
-              {['Creative', 'Modern', 'UX'].map((text, index) => (
+              {['Branding', 'UI/UX', 'Web development'].map((text, index) => (
                 <motion.div
                   key={index}
                   whileHover={{ scale: 1.05 }}
