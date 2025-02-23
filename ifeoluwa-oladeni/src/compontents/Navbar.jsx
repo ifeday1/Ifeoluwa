@@ -17,8 +17,8 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className='text-white'>
-      <div className='container mx-auto flex justify-between items-center p-4'>
+    <nav className='text-white z-1'>
+      <div className='container mx-auto flex justify-between items-center p-4 '>
         {/* Logo */}
         <motion.h1
           initial={{ opacity: 0, y: -10 }}
@@ -32,7 +32,7 @@ const Navbar = () => {
         </motion.h1>
 
         {/* Desktop Menu */}
-        <ul className='hidden md:flex space-x-6 text-lg font-medium'>
+        <ul className='hidden md:flex space-x-6 text-lg font-medium z-1'>
           {menuItems.map((item) => (
             <motion.li
               key={item.name}
@@ -47,7 +47,7 @@ const Navbar = () => {
 
               {/* Active Underline Animation */}
               <motion.span
-                className='absolute left-0 bottom-0 h-1 bg-cyan-500 rounded'
+                className='absolute left-0 bottom-0 h-1 bg-cyan-500 rounded z-1'
                 initial={{ width: 0 }}
                 animate={{ width: active === item.name ? '100%' : 0 }}
                 transition={{ duration: 0.3 }}
@@ -74,7 +74,7 @@ const Navbar = () => {
             animate={{ x: 0 }}
             exit={{ x: '100%' }}
             transition={{ type: 'spring', stiffness: 100, damping: 15 }}
-            className='fixed top-0 right-0 w-full h-screen bg-black text-white flex flex-col items-start justify-start md:hidden p-6'
+            className='fixed top-0 right-0 w-full h-screen bg-black z-1 text-white flex flex-col items-start justify-start md:hidden p-6'
           >
             {/* Close Button */}
             <button
