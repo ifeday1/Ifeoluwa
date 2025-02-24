@@ -17,7 +17,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className='text-white z-1'>
+    <nav className='text-white z-1 '>
       <div className='container mx-auto flex justify-between items-center p-4 '>
         {/* Logo */}
         <motion.h1

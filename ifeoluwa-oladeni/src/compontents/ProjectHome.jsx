@@ -5,7 +5,7 @@ import Ifehero from '../assets/Ifehero.png';
 const ProjectHome = () => {
   return (
     <>
-      <section className='px-6 py-12 md:px-12  text-white'>
+      <section className='px-6 py-12 md:px-20  text-white'>
         {/* Header Section */}
         <div className='flex justify-between items-center mb-6'>
           <h2 className='md:text-5xl text-2xl font-semibold text-gray-400'>
