@@ -1,7 +1,6 @@
 import React from 'react';
 import Aboutife from '../assets/Aboutife.png';
 import { motion } from 'framer-motion';
-import Footer from '../compontents/Footer';
 import Profile from '../assets/Profile.png';
 import Profile1 from '../assets/Profile1.png';
 import Profile2 from '../assets/Profile2.png';
@@ -120,8 +119,6 @@ const About = () => {
           ))}
         </div>
       </div>
-
-      <Footer />
     </>
   );
 };

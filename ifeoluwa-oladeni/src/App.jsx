@@ -6,6 +6,7 @@ import Works from './pages/Works';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import ScrollToTop from './compontents/ScrollToTop';
+import Footer from './compontents/Footer';
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
         </Routes>
+        <Footer />
         <ScrollToTop />
       </Router>
     </>
