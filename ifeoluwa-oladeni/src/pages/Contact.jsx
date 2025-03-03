@@ -17,7 +17,7 @@ const Contact = () => {
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
-  const boxes = ['Box 1', 'Box 2', 'Box 3', 'Box 4'];
+  const boxes = ['Box One', 'Box Two', 'Box Three', 'Box Four'];
 
   return (
     <>
