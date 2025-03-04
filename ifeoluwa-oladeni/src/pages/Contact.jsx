@@ -120,7 +120,7 @@ const Contact = () => {
         </motion.div>
       </div>
 
-      {/* Social Media Buttons in a Straight Line */}
+      {/* Social Media Buttons */}
       <div className='mt-8 flex flex-wrap justify-center gap-4 max-w-4xl mx-auto'>
         {socialLinks.map((social, index) => (
           <motion.a
