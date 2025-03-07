@@ -76,7 +76,6 @@ const Home = () => {
         </motion.div>
       </div>
       <ProjectHome />
-      <Footer />
     </>
   );
 };
