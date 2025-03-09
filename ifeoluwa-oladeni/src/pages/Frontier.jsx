@@ -41,7 +41,7 @@ const Frontier = () => {
           {/* My Roles & Visit Site Section */}
           <div className='px-8 sm:px-16 py-8 text-left'>
             <h2 className='text-2xl font-semibold text-gray-800 mb-2'>
-              My Roles:
+              My Roles: <spa
             </h2>
             <p className='text-lg text-gray-600 mb-4'>
               User Research, Product Design
