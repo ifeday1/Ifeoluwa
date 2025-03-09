@@ -6,7 +6,7 @@ import Imgnav from '../assets/Imgnav.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [active, setActive] = useState('Home');
+  const [active, setActive] = useState('Home'); // Track active menu
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
