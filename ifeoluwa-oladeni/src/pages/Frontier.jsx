@@ -7,7 +7,7 @@ const Frontier = () => {
       <div className=' bg-white'>
         <div className='w-full min-h-screen flex flex-col'>
           {/* Content Section */}
-          <div className='px-8 sm:px-70 py-12'>
+          <div className='px-8 sm:px-75 py-12'>
             {/* Heading */}
             <h1 className='text-4xl md:text-5xl font-bold text-gray-800 mb-6 text-left'>
               FRONTIER SOLAR TECH
@@ -41,11 +41,12 @@ const Frontier = () => {
           {/* My Roles & Visit Site Section */}
           <div className='px-8 sm:px-16 py-8 text-left'>
             <h2 className='text-2xl font-semibold text-gray-800 mb-2'>
-              My Roles:
+              My Roles:{' '}
+              <span className='text-lg text-gray-600 mb-4'>
+                {' '}
+                User Research, Product Design
+              </span>
             </h2>
-            <p className='text-lg text-gray-600 mb-4'>
-              User Research, Product Design
-            </p>
 
             {/* Visit Site */}
             <a
