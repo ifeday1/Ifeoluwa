@@ -53,7 +53,7 @@ const ProjectHome = () => {
           {/* Project 2 */}
           <div className='flex flex-col items-start'>
             <motion.a
-              href='/project-2'
+              href='/works/crowdcarry'
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
               className='block overflow-hidden rounded-lg shadow-lg w-full'
@@ -66,7 +66,7 @@ const ProjectHome = () => {
             </motion.a>
 
             {/* Project Title */}
-            <h3 className='text-lg font-semibold mt-3'>Project Two</h3>
+            <h3 className='text-lg font-semibold mt-3'>CROWD CARRY</h3>
 
             {/* Smaller Horizontal Info Boxes */}
             <div className='flex gap-2 mt-3'>

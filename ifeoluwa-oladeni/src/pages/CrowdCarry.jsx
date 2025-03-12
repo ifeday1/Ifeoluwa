@@ -1,13 +1,13 @@
+import React from 'react';
 import { useState, useRef } from 'react';
 import Solarp from '../assets/solarp.jpg';
 import Solarf from '../assets/solarf.jpg';
 import F1 from '../assets/F1.jpg';
 import F2 from '../assets/F2.jpg';
 import F3 from '../assets/F3.jpg';
-
 import { motion } from 'framer-motion';
 
-const Frontier = () => {
+const CrowdCarry = () => {
   const processSteps = [
     {
       title: 'Research & Planning',
@@ -352,4 +352,4 @@ const Frontier = () => {
   );
 };
 
-export default Frontier;
+export default CrowdCarry;

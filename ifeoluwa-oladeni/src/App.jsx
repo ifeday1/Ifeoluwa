@@ -8,6 +8,7 @@ import Contact from './pages/Contact';
 import ScrollToTop from './compontents/ScrollToTop';
 import Footer from './compontents/Footer';
 import Frontier from './pages/Frontier';
+import CrowdCarry from './pages/CrowdCarry';
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
           <Route path='/' element={<Home />} />
           <Route path='/works' element={<Works />} />
           <Route path='/works/frontier' element={<Frontier />} />
+          <Route path='/works/crowdcarry' element={<CrowdCarry />} />
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
         </Routes>
