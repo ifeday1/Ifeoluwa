@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState, useRef } from 'react';
-import Solarp from '../assets/solarp.jpg';
+import Crowdcarry1 from '../assets/crowdcarry1.jpg';
 import Solarf from '../assets/solarf.jpg';
 import F1 from '../assets/F1.jpg';
 import F2 from '../assets/F2.jpg';
@@ -61,7 +61,7 @@ const CrowdCarry = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, ease: 'easeOut' }}
             >
-              FRONTIER SOLAR TECH
+              CROWD CARRY
             </motion.h1>
 
             {/* Content Text */}
@@ -71,17 +71,12 @@ const CrowdCarry = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2, ease: 'easeOut' }}
             >
-              Frontier Solar Tech is committed to revolutionizing energy
-              solutions through solar power, renewable energy, and power-saving
-              technologies. Our mission is to provide sustainable, efficient,
-              and cost-effective energy solutions that reduce reliance on fossil
-              fuels and promote a cleaner, greener future. We specialize in
-              high-performance solar systems, innovative renewable energy
-              solutions, and smart power-saving technologies designed to
-              maximize energy efficiency for homes, businesses, and industries.
-              By harnessing the power of the sun, we help our clients lower
-              energy costs, reduce carbon footprints, and achieve energy
-              independence.
+              CrowdCarry is a company dedicated to providing millions of
+              Nigerians with seamless access to rental self-charging power bank
+              stations for mobile phones across major cities. Our vision extends
+              beyond power solutions—we are committed to developing innovative
+              technologies that enhance everyday convenience and improve the
+              quality of life for the average Nigerian.
             </motion.p>
 
             {/* My Roles & Visit Site Section */}
@@ -99,12 +94,12 @@ const CrowdCarry = () => {
                   animate={{ opacity: 1 }}
                   transition={{ duration: 1.5, ease: 'easeOut' }}
                 >
-                  User Research, Product Design
+                  UI Design
                 </motion.span>
               </h2>
 
               {/* Visit Site */}
-              <motion.a
+              {/* <motion.a
                 href='https://frontiersolartechltd.com/'
                 target='_blank'
                 rel='noopener noreferrer'
@@ -113,7 +108,7 @@ const CrowdCarry = () => {
                 whileTap={{ scale: 0.95 }}
               >
                 Visit Site →
-              </motion.a>
+              </motion.a> */}
             </motion.div>
           </motion.div>
 
@@ -125,8 +120,8 @@ const CrowdCarry = () => {
             transition={{ duration: 1.2, ease: 'easeOut' }}
           >
             <img
-              src={Solarp}
-              alt='Project Preview'
+              src={Crowdcarry1}
+              alt='Crowd'
               className='w-full h-auto object-cover'
             />
           </motion.div>
@@ -143,12 +138,14 @@ const CrowdCarry = () => {
             <h3 className='text-lg text-gray-500 uppercase tracking-wide'>
               Year
             </h3>
-            <p className='text-2xl font-semibold text-gray-800 mb-6'>2022</p>
+            <p className='text-2xl font-semibold text-gray-800 mb-6'>2024</p>
 
             <h3 className='text-lg text-gray-500 uppercase tracking-wide'>
               Industry
             </h3>
-            <p className='text-2xl font-semibold text-gray-800'>Cleantech</p>
+            <p className='text-2xl font-semibold text-gray-800'>
+              Energy Solutions Industry
+            </p>
           </motion.div>
 
           {/* Second Flex - Challenge & Solution */}
@@ -167,11 +164,12 @@ const CrowdCarry = () => {
                 The Challenge
               </h2>
               <p className='text-lg text-gray-600'>
-                The growing dependence on traditional energy sources has led to
-                rising electricity costs, increased carbon emissions, and
-                environmental degradation. Many homes, businesses, and
-                industries struggle with inefficient energy consumption and a
-                lack of reliable, sustainable alternatives.
+                In today’s fast-paced world, staying connected is essential, yet
+                many Nigerians frequently face the frustration of low phone
+                battery levels with no immediate charging options available.
+                Whether commuting, working, or running errands, people often
+                find themselves stranded without power, unable to make important
+                calls, access digital payments, or stay online.
               </p>
             </motion.div>
 
@@ -184,9 +182,15 @@ const CrowdCarry = () => {
                 The Solution
               </h2>
               <p className='text-lg text-gray-600'>
-                At Frontier Solar Tech, we tackle this challenge by providing
-                innovative solar power solutions, renewable energy technologies,
-                and smart power-saving systems.
+                CrowdCarry provides self-charging power bank stations across
+                major cities, allowing users to rent power banks on the
+                go—eliminating the hassle of dead batteries. Our rental-based
+                service makes portable power more affordable and accessible
+                without the need to buy expensive power banks. To build trust
+                and ensure a seamless experience, we’ve also developed a
+                user-friendly website where customers can learn about our
+                services, locate rental stations, and easily rent a power bank
+                whenever they need it. ⚡📱
               </p>
             </motion.div>
           </motion.div>
@@ -288,64 +292,17 @@ const CrowdCarry = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            The Frontier Solar Tech website has successfully transformed how
-            users explore and invest in solar energy solutions.
+            Since launching, CrowdCarry has gained rapid traction, with our
+            website receiving 150+ visits in the first month alone. This strong
+            engagement has helped boost awareness, attract early adopters, and
+            drive business growth. With increasing demand, we’re on track to
+            making portable power more accessible and convenient for Nigerians
+            nationwide.
           </motion.p>
 
-          {/* Key Achievements */}
-          <motion.ul
-            className='list-none space-y-4'
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1.2 }}
-          >
-            <motion.li className='flex items-start gap-2'>
-              <span className='text-green-500 text-xl'>✅</span>
-              <p className='text-lg text-gray-700'>
-                Over 1,000 users actively engaging with the platform.
-              </p>
-            </motion.li>
-            <motion.li className='flex items-start gap-2'>
-              <span className='text-green-500 text-xl'>✅</span>
-              <p className='text-lg text-gray-700'>
-                Increased sales by providing a seamless browsing and purchasing
-                experience.
-              </p>
-            </motion.li>
-            <motion.li className='flex items-start gap-2'>
-              <span className='text-green-500 text-xl'>✅</span>
-              <p className='text-lg text-gray-700'>
-                Improved customer inquiries & conversions through an intuitive
-                product section.
-              </p>
-            </motion.li>
-            <motion.li className='flex items-start gap-2'>
-              <span className='text-green-500 text-xl'>✅</span>
-              <p className='text-lg text-gray-700'>
-                Enhanced brand credibility with a professional, modern, and
-                responsive design.
-              </p>
-            </motion.li>
-            <motion.li className='flex items-start gap-2'>
-              <span className='text-green-500 text-xl'>✅</span>
-              <p className='text-lg text-gray-700'>
-                Optimized performance & accessibility, ensuring a smooth
-                experience across all devices.
-              </p>
-            </motion.li>
-          </motion.ul>
+         
 
-          {/* Final Statement */}
-          <motion.p
-            className='text-lg text-gray-700 mt-6 max-w-3xl'
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1.4 }}
-          >
-            The website has not only expanded Frontier Solar Tech’s online
-            presence but has also positioned the company as a leader in the
-            renewable energy sector, driving growth and sustainability. 🌍⚡
-          </motion.p>
+
         </div>
       </div>
     </>
