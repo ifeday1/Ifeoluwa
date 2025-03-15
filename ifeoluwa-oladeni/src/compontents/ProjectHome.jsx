@@ -53,7 +53,7 @@ const ProjectHome = () => {
           {/* Project 2 */}
           <div className='flex flex-col items-start'>
             <motion.a
-              href='/works/crowdcarry'
+              href='/works/clickcart'
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
               className='block overflow-hidden rounded-lg shadow-lg w-full'

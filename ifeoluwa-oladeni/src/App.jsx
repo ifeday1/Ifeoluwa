@@ -9,6 +9,7 @@ import ScrollToTop from './compontents/ScrollToTop';
 import Footer from './compontents/Footer';
 import Frontier from './pages/Frontier';
 import CrowdCarry from './pages/CrowdCarry';
+import ClickCart from './pages/ClickCart';
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
           <Route path='/works' element={<Works />} />
           <Route path='/works/frontier' element={<Frontier />} />
           <Route path='/works/crowdcarry' element={<CrowdCarry />} />
+          <Route path='/works/clickcart' element={<ClickCart />} />
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
         </Routes>

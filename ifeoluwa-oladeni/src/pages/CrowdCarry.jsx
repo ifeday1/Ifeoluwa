@@ -5,44 +5,15 @@ import Solarf from '../assets/solarf.jpg';
 import F1 from '../assets/F1.jpg';
 import F2 from '../assets/F2.jpg';
 import F3 from '../assets/F3.jpg';
+import Chome from '../assets/Chome.jpg';
+import Cabout from '../assets/Cabout.jpg';
+import Ccontact from '../assets/Ccontact.jpg';
+import Cstart from '../assets/Cstart.jpg';
+
 import { motion } from 'framer-motion';
 
 const CrowdCarry = () => {
-  const processSteps = [
-    {
-      title: 'Research & Planning',
-      details: [
-        'Conducted market research & competitor analysis.',
-        'Identified user needs related to solar energy adoption.',
-        'Defined key features, including a product catalog & inquiry system.',
-      ],
-    },
-    {
-      title: 'Wireframing & UI Design',
-      details: [
-        'Created responsive wireframes & interactive prototypes in Figma.',
-        'Designed a modern, clean interface with an eco-friendly color scheme.',
-        'Ensured easy navigation & clear CTAs for user engagement.',
-      ],
-    },
-    {
-      title: 'Key Website Features',
-      details: [
-        'Homepage: Highlights brand mission, benefits & renewable energy solutions.',
-        'Product Section: Displays solar panels, batteries, inverters, and power-saving tech.',
-        'Includes detailed specifications & pricing information.',
-        'Allows users to add products to cart, compare, and request quotes.',
-        'Contact & Inquiry Forms: Simplifies consultations & customer support.',
-      ],
-    },
-    {
-      title: 'Testing & Optimization',
-      details: [
-        'Conducted usability testing to refine navigation & user experience.',
-        'Optimized for performance, mobile responsiveness & accessibility.',
-      ],
-    },
-  ];
+
   return (
     <>
       <div className=' bg-white'>
@@ -196,43 +167,7 @@ const CrowdCarry = () => {
           </motion.div>
         </div>
 
-        <div className='w-full'>
-          <img src={Solarf} alt='site' className='w-full object-cover' />
-        </div>
-
-        <div className='w-full px-6 sm:px-75 py-12 bg-gray-100'>
-          <motion.h2
-            className='text-4xl font-bold text-gray-800 mb-8 text-left'
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            Process
-          </motion.h2>
-
-          <div className='space-y-10'>
-            {processSteps.map((step, index) => (
-              <motion.div
-                key={index}
-                className='bg-white p-6 rounded-lg shadow-md'
-                initial={{ opacity: 0, x: -30 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8, delay: index * 0.3 }}
-              >
-                <h3 className='text-2xl font-semibold text-gray-800 mb-3'>
-                  {step.title}
-                </h3>
-                <ul className='list-disc list-inside text-gray-600 space-y-2'>
-                  {step.details.map((detail, idx) => (
-                    <li key={idx}>{detail}</li>
-                  ))}
-                </ul>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-
-        <div className='w-full bg-amber-100 py-16 px-6 sm:px-16'>
+        <div className='w-full bg-emerald-500 py-16 px-6 sm:px-16'>
           {/* Section Header */}
           {/* <motion.h2
             className='text-4xl font-bold text-white text-center mb-10'
@@ -251,27 +186,31 @@ const CrowdCarry = () => {
             transition={{ duration: 1 }}
           >
             <motion.img
-              src={F1}
+              src={Chome}
               alt='Project 1'
               className='w-full sm:w-1/3 object-cover rounded-lg shadow-lg'
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
             />
             <motion.img
-              src={F2}
+              src={Cabout}
               alt='Project 2'
               className='w-full sm:w-1/3 object-cover rounded-lg shadow-lg'
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
             />
             <motion.img
-              src={F3}
+              src={Ccontact}
               alt='Project 3'
               className='w-full sm:w-1/3 object-cover rounded-lg shadow-lg'
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
             />
           </motion.div>
+        </div>
+
+        <div className='w-full'>
+          <img src={Cstart} alt='site' className='w-full object-cover' />
         </div>
 
         <div className='w-full bg-gray-100 py-16 px-6 sm:px-75'>
@@ -299,10 +238,6 @@ const CrowdCarry = () => {
             making portable power more accessible and convenient for Nigerians
             nationwide.
           </motion.p>
-
-         
-
-
         </div>
       </div>
     </>
