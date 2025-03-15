@@ -104,7 +104,6 @@ const ClickCart = () => {
                 </div>
               </motion.div>
 
-              {/* Right Section - Phone Image (Inside White Background) */}
               <motion.div
                 className='md:w-1/2 flex justify-end relative py-6'
                 initial={{ opacity: 0, x: 50 }}
