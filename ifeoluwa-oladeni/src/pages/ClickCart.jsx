@@ -3,18 +3,63 @@ import { useState, useRef } from 'react';
 import Crowdcarry1 from '../assets/crowdcarry1.jpg';
 import Clickcartlogo from '../assets/clickcartlogo.png';
 import Clickcartlogo1 from '../assets/Clickcartlogo1.jpg';
-import Clickphone from '../assets/clickphone.png';
 import Clickphone1 from '../assets/clickphone1.jpg';
 import Click from '../assets/click.jpg';
-import Chome from '../assets/Chome.jpg';
+import Clickuser from '../assets/clickuser.png';
 import Cabout from '../assets/Cabout.jpg';
 import Ccontact from '../assets/Ccontact.jpg';
-import Cstart from '../assets/Cstart.jpg';
+import H1 from '../assets/h1.png';
+import H2 from '../assets/h2.png';
+import H3 from '../assets/h3.png';
+import H4 from '../assets/h4.png';
+import H5 from '../assets/h5.png';
+import H6 from '../assets/h6.png';
+import H7 from '../assets/h7.png';
+import H8 from '../assets/h8.png';
 
 import { motion } from 'framer-motion';
 import ColourPallete from '../compontents/ColourPallete';
 
 const ClickCart = () => {
+  // Goals Data
+  const goals = [
+    {
+      icon: '📈',
+      title: 'Increase Sales Revenue',
+      description:
+        'This can involve attracting new customers, increasing average order value, and maximizing customer lifetime value.',
+    },
+    {
+      icon: '🔄',
+      title: 'Expand Customer Base',
+      description:
+        'This involves marketing efforts to raise brand awareness, drive website traffic, and convert visitors into customers.',
+    },
+    {
+      icon: '⏳',
+      title: 'Improve Customer Experience',
+      description:
+        'Goals related to customer experience may include reducing friction in the buying process and improving website usability.',
+    },
+    {
+      icon: '✅',
+      title: 'Improve Operational Efficiency',
+      description:
+        'This may include optimizing inventory management, reducing shipping times, and automating repetitive tasks.',
+    },
+    {
+      icon: '📱',
+      title: 'Enhance Mobile Experience',
+      description:
+        'Optimizing the mobile website or app for performance, usability, and compatibility across different screen sizes.',
+    },
+    {
+      icon: '📊',
+      title: 'Achieve Sustainable Growth',
+      description:
+        'Making strategic decisions that support business growth while maintaining financial stability and customer satisfaction.',
+    },
+  ];
   return (
     <>
       <div className=' bg-white'>
@@ -248,7 +293,141 @@ const ClickCart = () => {
           </motion.div>
         </div>
 
-        
+        <div className='w-full py-16 bg-gray-900 text-white flex flex-col items-center'>
+          {/* Title */}
+          <motion.h1
+            className='text-4xl font-bold uppercase mb-8 text-center'
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            Goals of the App
+            <div className='w-12 h-1 bg-pink-500 mx-auto mt-2'></div>
+          </motion.h1>
+
+          {/* Goals Grid */}
+          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl'>
+            {goals.map((goal, index) => (
+              <motion.div
+                key={index}
+                className='bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col items-start transition-all hover:scale-105'
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.2 }}
+              >
+                {/* Icon */}
+                <div className='text-4xl mb-4'>{goal.icon}</div>
+
+                {/* Title */}
+                <h2 className='text-xl font-semibold mb-2'>{goal.title}</h2>
+
+                {/* Description */}
+                <p className='text-gray-400'>{goal.description}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+
+        {/* Full-Width Image (No Padding) */}
+        <motion.div
+          className='w-full'
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1.2, ease: 'easeOut' }}
+        >
+          <motion.h1
+            className=' md:text-4xl text-3xl font-bold uppercase md:px-30 px-7 py-10 text-left'
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            USERFLOW
+          </motion.h1>
+
+          <img
+            src={Clickuser}
+            alt='Crowd'
+            className='w-full h-auto object-cover md:px-30 px-7'
+          />
+        </motion.div>
+
+        <div className='w-full bg-slate-500 py-16 px-4 mt-10'>
+          {/* Flex Container */}
+          <motion.div
+            className='flex flex-wrap gap-4 justify-center items-center'
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+          >
+            <motion.img
+              src={H1}
+              alt='Project 1'
+              className='w-5/25 sm:w-1/5 object-cover rounded-lg shadow-lg'
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.3 }}
+            />
+            <motion.img
+              src={H2}
+              alt='Project 2'
+              className='w-5/25 sm:w-1/5 object-cover rounded-lg shadow-lg'
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.3 }}
+            />
+            <motion.img
+              src={H3}
+              alt='Project 3'
+              className='w-5/25 sm:w-1/5 object-cover rounded-lg shadow-lg'
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.3 }}
+            />
+            <motion.img
+              src={H4}
+              alt='Project 3'
+              className='w-5/25 sm:w-1/5 object-cover rounded-lg shadow-lg'
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.3 }}
+            />
+          </motion.div>
+
+          <div className='w-full bg-slate-500 py-5'>
+            {/* Flex Container */}
+            <motion.div
+              className='flex flex-wrap gap-4 justify-center items-center'
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1 }}
+            >
+              <motion.img
+                src={H5}
+                alt='Project 1'
+                className='w-5/25 sm:w-1/5 object-cover rounded-lg shadow-lg'
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.3 }}
+              />
+              <motion.img
+                src={H6}
+                alt='Project 2'
+                className='w-5/25 sm:w-1/5 object-cover rounded-lg shadow-lg'
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.3 }}
+              />
+              <motion.img
+                src={H7}
+                alt='Project 3'
+                className='w-5/25 sm:w-1/5 object-cover rounded-lg shadow-lg'
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.3 }}
+              />
+              <motion.img
+                src={H8}
+                alt='Project 3'
+                className='w-5/25 sm:w-1/5 object-cover rounded-lg shadow-lg'
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.3 }}
+              />
+            </motion.div>
+          </div>
+        </div>
       </div>
     </>
   );
