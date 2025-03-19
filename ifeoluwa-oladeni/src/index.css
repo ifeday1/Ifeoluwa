@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+@theme{
+  --color-blue: #171A3A
+}
+
 body {
   margin: 0;
  font-family: 'Clash Grotesk Variable', sans-serif;

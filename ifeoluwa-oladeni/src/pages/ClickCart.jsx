@@ -16,6 +16,8 @@ import H5 from '../assets/h5.png';
 import H6 from '../assets/h6.png';
 import H7 from '../assets/h7.png';
 import H8 from '../assets/h8.png';
+import iPhone from '../assets/iphone1.png';
+import iPhone2 from '../assets/iphone2.png';
 
 import { motion } from 'framer-motion';
 import ColourPallete from '../compontents/ColourPallete';
@@ -293,7 +295,7 @@ const ClickCart = () => {
           </motion.div>
         </div>
 
-        <div className='w-full py-16 bg-gray-900 text-white flex flex-col items-center'>
+        <div className='w-full py-16 bg-blue text-white flex flex-col items-center'>
           {/* Title */}
           <motion.h1
             className='text-4xl font-bold uppercase mb-8 text-center'
@@ -351,7 +353,7 @@ const ClickCart = () => {
           />
         </motion.div>
 
-        <div className='w-full bg-slate-500 py-16 px-4 mt-10'>
+        <div className='w-full bg-slate-400 py-16 px-4 mt-10'>
           {/* Flex Container */}
           <motion.div
             className='flex flex-wrap gap-4 justify-center items-center'
@@ -389,7 +391,7 @@ const ClickCart = () => {
             />
           </motion.div>
 
-          <div className='w-full bg-slate-500 py-5'>
+          <div className='w-full py-5'>
             {/* Flex Container */}
             <motion.div
               className='flex flex-wrap gap-4 justify-center items-center'
@@ -427,6 +429,60 @@ const ClickCart = () => {
               />
             </motion.div>
           </div>
+        </div>
+
+        <div className='w-full bg-blue py-16 px-4 sm:px-16'>
+          {/* Flex Container */}
+          <motion.div
+            className='flex flex-wrap gap-4 justify-center items-center'
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+          >
+            <motion.img
+              src={iPhone}
+              alt='Project 1'
+              className='w-[48%] sm:w-1/3 object-cover rounded-lg shadow-lg'
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.3 }}
+            />
+            <motion.img
+              src={iPhone2}
+              alt='Project 2'
+              className='w-[48%] sm:w-1/3 object-cover rounded-lg shadow-lg'
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.3 }}
+            />
+          </motion.div>
+        </div>
+
+        <div className='w-full bg-gray-100 py-16 px-6 sm:px-75'>
+          {/* Section Header */}
+          <motion.h2
+            className='text-4xl font-bold text-gray-800 text-left mb-8'
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            The Outcome
+          </motion.h2>
+
+          {/* Outcome Content */}
+          <motion.p
+            className='text-lg text-gray-700 mb-6 max-w-3xl'
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+          >
+            Seamless Onboarding and Navigation: All users successfully
+            registered, created characters, and completed the initial level
+            without encountering usability issues. The intuitive design
+            facilitated effortless movement between sections. Enhanced
+            E-Commerce Experience: The application effectively meets user needs
+            by delivering an engaging e-commerce experience characterized by
+            intuitive navigation, seamless transactions, and personalized
+            recommendations.
+          </motion.p>
         </div>
       </div>
     </>
