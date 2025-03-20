@@ -1,10 +1,5 @@
 import React from 'react';
-import { useState, useRef } from 'react';
 import Crowdcarry1 from '../assets/crowdcarry1.jpg';
-import Solarf from '../assets/solarf.jpg';
-import F1 from '../assets/F1.jpg';
-import F2 from '../assets/F2.jpg';
-import F3 from '../assets/F3.jpg';
 import Chome from '../assets/Chome.jpg';
 import Cabout from '../assets/Cabout.jpg';
 import Ccontact from '../assets/Ccontact.jpg';

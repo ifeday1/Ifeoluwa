@@ -1,35 +1,37 @@
 import React from 'react';
-import { useState, useRef } from 'react';
-import Wbc from '../assets/wbc.jpg';
-import Djc from '../assets/djc.jpg';
-import F1 from '../assets/F1.jpg';
-import F2 from '../assets/F2.jpg';
-import F3 from '../assets/F3.jpg';
-import Chome from '../assets/Chome.jpg';
-import Cabout from '../assets/Cabout.jpg';
-import Ccontact from '../assets/Ccontact.jpg';
-import Cstart from '../assets/Cstart.jpg';
 
+import Gamer1 from '../assets/gamer1.jpg';
+import Gamer2 from '../assets/gamer2.jpg';
+import Gamer3 from '../assets/gamer3.jpg';
+import Gamer4 from '../assets/gamer4.jpg';
+import Gamer5 from '../assets/gamer5.jpg';
 import { motion } from 'framer-motion';
 
-const WinnersBC = () => {
+const Gamer = () => {
   const processSteps = [
     {
       title: 'Research & Planning',
       details: [
-        "We began by defining the website's objectives, such as enhancing communication, providing information about services and events, and extending outreach efforts. This phase also involved analyzing technological requirements, user needs, and potential risks.",
+        "We began by defining the website's objectives, identifying our target audience, and analyzing competitors to understand industry standards and opportunities for differentiation. This foundational step ensured that our design strategy was aligned with user expectations and market demands.",
       ],
     },
     {
-      title: 'Wireframing ',
+      title: 'Content Strategy',
       details: [
-        "We developed a sitemap to outline the website's structure and created wireframes to visualize page layouts. This step ensured a clear plan for navigation and content placement.",
+        ' Developing a robust content plan was crucial. We focused on creating high-quality articles, reviews, and multimedia content that would engage our audience and provide value. This strategy not only enhances user experience but also supports search engine optimization (SEO) efforts, increasing the sites visibility.',
       ],
     },
     {
-      title: 'Design and Layout',
+      title: 'Visual Design',
       details: [
-        "We focused on the visual aspects, including selecting appropriate typography, imagery, and color schemes that align with the church's identity. The design aimed to create an engaging and user-friendly interface.",
+        ' Our design team crafted a visually appealing interface that resonates with the gaming community. We employed a cohesive color scheme, dynamic graphics, and intuitive layouts to create an immersive experience. The design elements were chosen to reflect the energy and excitement inherent in gaming culture.',
+      ],
+    },
+    {
+      title: 'Testing & Optimization',
+      details: [
+        'Conducted usability testing to refine navigation & user experience.',
+        'Optimized for performance, mobile responsiveness & accessibility.',
       ],
     },
   ];
@@ -46,12 +48,12 @@ const WinnersBC = () => {
           >
             {/* Heading */}
             <motion.h1
-              className='text-4xl md:text-5xl font-bold text-gray-800 mb-6 text-left uppercase'
+              className='text-4xl md:text-5xl font-bold text-gray-800 mb-6 text-left'
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, ease: 'easeOut' }}
             >
-              WInners Baptist church
+              GAMER
             </motion.h1>
 
             {/* Content Text */}
@@ -61,13 +63,13 @@ const WinnersBC = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2, ease: 'easeOut' }}
             >
-              Winners Baptist Church is dedicated to fostering spiritual growth
-              and community engagement. They offer regular worship services,
-              educational programs, community outreach initiatives, youth and
-              children's ministries, and music and media ministries. Through
-              these diverse activities, the church aims to nurture faith,
-              encourage personal development, and strengthen communal bonds
-              among its members.
+              Gamer is a premier online platform dedicated to keeping gaming
+              enthusiasts informed about the latest trends and top titles in the
+              gaming industry. The website offers up-to-date news on trending
+              games, in-depth reviews, and curated lists of top games across
+              various genres and platforms. By providing timely and relevant
+              content, Gamer ensures that its audience stays engaged and
+              well-informed about the dynamic world of gaming.
             </motion.p>
 
             {/* My Roles & Visit Site Section */}
@@ -85,21 +87,9 @@ const WinnersBC = () => {
                   animate={{ opacity: 1 }}
                   transition={{ duration: 1.5, ease: 'easeOut' }}
                 >
-                  UI/UX Design, Web Development
+                  UI/UX Design
                 </motion.span>
               </h2>
-              {/* Visit Site */}
-              <motion.a
-                href='https://winnersbaptistchurch.org/'
-                target='_blank'
-                rel='noopener noreferrer'
-                className='inline-block text-lg font-semibold text-blue-600 hover:text-blue-800 transition-all duration-300'
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                Visit Site →
-              </motion.a>{' '}
-              *
             </motion.div>
           </motion.div>
 
@@ -110,7 +100,11 @@ const WinnersBC = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 1.2, ease: 'easeOut' }}
           >
-            <img src={Wbc} alt='Crowd' className='w-full h-auto object-cover' />
+            <img
+              src={Gamer1}
+              alt='Project Preview'
+              className='w-full h-auto object-cover'
+            />
           </motion.div>
         </div>
 
@@ -125,14 +119,12 @@ const WinnersBC = () => {
             <h3 className='text-lg text-gray-500 uppercase tracking-wide'>
               Year
             </h3>
-            <p className='text-2xl font-semibold text-gray-800 mb-6'>2024</p>
+            <p className='text-2xl font-semibold text-gray-800 mb-6'>2022</p>
 
             <h3 className='text-lg text-gray-500 uppercase tracking-wide'>
               Industry
             </h3>
-            <p className='text-2xl font-semibold text-gray-800'>
-              Religious Organisation
-            </p>
+            <p className='text-2xl font-semibold text-gray-800'>Gaming</p>
           </motion.div>
 
           {/* Second Flex - Challenge & Solution */}
@@ -151,12 +143,12 @@ const WinnersBC = () => {
                 The Challenge
               </h2>
               <p className='text-lg text-gray-600'>
-                Winners Baptist Church recognizes that lacking an online
-                presence limits its ability to reach and engage with the
-                community effectively. To overcome this, the church has
-                developed a website to enhance accessibility, communication, and
-                outreach, ensuring it meets the evolving needs of its
-                congregation in the digital age.
+                In the rapidly evolving gaming industry, players often face
+                significant challenges in discovering trending and top-quality
+                games. The sheer volume of new releases can be overwhelming; for
+                instance, in 2024, over 19,000 games were launched on Steam
+                alone, making it difficult for gamers to identify titles that
+                align with their preferences.
               </p>
             </motion.div>
 
@@ -169,22 +161,21 @@ const WinnersBC = () => {
                 The Solution
               </h2>
               <p className='text-lg text-gray-600'>
-                To overcome the challenges of limited online presence, Winners
-                Baptist Church has developed a comprehensive website to enhance
-                accessibility, communication, and community engagement. This
-                digital platform serves as a central hub for information about
-                services, events, and resources, allowing both current members
-                and potential visitors to connect with the church more
-                effectively. By embracing this digital approach, the church aims
-                to strengthen its outreach and fulfill its mission in the modern
-                world.
+                To tackle the challenges of game discoverability and market
+                saturation, we employ a user-centered design approach to create
+                intuitive interfaces that facilitate seamless navigation. By
+                deeply understanding our users' needs and preferences, we design
+                platforms that guide players effortlessly through curated game
+                selections, personalized recommendations, and interactive
+                features, enhancing their overall experience and helping them
+                find games that truly resonate with their interests.
               </p>
             </motion.div>
           </motion.div>
         </div>
 
         <div className='w-full'>
-          <img src={Djc} alt='site' className='w-full object-cover' />
+          <img src={Gamer2} alt='site' className='w-full object-cover' />
         </div>
 
         <div className='w-full px-6 sm:px-75 py-12 bg-gray-100'>
@@ -219,7 +210,7 @@ const WinnersBC = () => {
           </div>
         </div>
 
-        <div className='w-full bg-emerald-500 py-16 px-6 sm:px-16'>
+        <div className='w-full bg-fuchsia-200 py-16 px-6 sm:px-16'>
           {/* Section Header */}
           {/* <motion.h2
             className='text-4xl font-bold text-white text-center mb-10'
@@ -238,31 +229,27 @@ const WinnersBC = () => {
             transition={{ duration: 1 }}
           >
             <motion.img
-              src={Chome}
+              src={Gamer3}
               alt='Project 1'
               className='w-full sm:w-1/3 object-cover rounded-lg shadow-lg'
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
             />
             <motion.img
-              src={Cabout}
+              src={Gamer4}
               alt='Project 2'
               className='w-full sm:w-1/3 object-cover rounded-lg shadow-lg'
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
             />
             <motion.img
-              src={Ccontact}
+              src={Gamer5}
               alt='Project 3'
               className='w-full sm:w-1/3 object-cover rounded-lg shadow-lg'
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
             />
           </motion.div>
-        </div>
-
-        <div className='w-full'>
-          <img src={Cstart} alt='site' className='w-full object-cover' />
         </div>
 
         <div className='w-full bg-gray-100 py-16 px-6 sm:px-75'>
@@ -283,23 +270,24 @@ const WinnersBC = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            Since launching its comprehensive website, Winners Baptist Church
-            has experienced significant growth and an enhanced online presence.
-            The digital platform has become a central hub for both existing
-            members and newcomers, offering easy access to information about
-            services, events, and community programs. This increased
-            accessibility has led to higher engagement, with more individuals
-            participating in church activities and connecting through online
-            channels. The website's user-friendly design and regularly updated
-            content have also attracted a broader audience, extending the
-            church's reach beyond its immediate locality. Overall, the church's
-            investment in its online presence has strengthened community bonds
-            and facilitated spiritual growth among its congregation.
+            The launch of the Gamer website yielded significant positive
+            outcomes, notably enhancing user engagement and expanding our
+            audience reach. By implementing a user-centered design and offering
+            curated content, we observed increased website traffic and prolonged
+            user interaction, indicating a strong alignment with our target
+            audience's preferences. Additionally, our strategic use of social
+            media and influencer partnerships further amplified our reach,
+            attracting a broader demographic of gaming enthusiasts. These
+            results underscore the effectiveness of our design and marketing
+            strategies in establishing Gamer as a trusted platform within the
+            gaming community.
           </motion.p>
+
+         
         </div>
       </div>
     </>
   );
 };
 
-export default WinnersBC;
+export default Gamer;

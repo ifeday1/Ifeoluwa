@@ -11,6 +11,8 @@ import Frontier from './pages/Frontier';
 import CrowdCarry from './pages/CrowdCarry';
 import ClickCart from './pages/ClickCart';
 import WinnersBC from './pages/WinnersBC';
+import Gamer from './pages/Gamer';
+import Incognito from './pages/Incognito';
 
 const App = () => {
   return (
@@ -24,6 +26,8 @@ const App = () => {
           <Route path='/works/crowdcarry' element={<CrowdCarry />} />
           <Route path='/works/clickcart' element={<ClickCart />} />
           <Route path='/works/winnersbc' element={<WinnersBC />} />
+          <Route path='/works/gamer' element={<Gamer />} />
+          <Route path='/works/incognito' element={<Incognito/>} />
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
         </Routes>

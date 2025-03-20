@@ -1,13 +1,11 @@
 import React from 'react';
-import { useState, useRef } from 'react';
-import Crowdcarry1 from '../assets/crowdcarry1.jpg';
+
 import Clickcartlogo from '../assets/clickcartlogo.png';
 import Clickcartlogo1 from '../assets/Clickcartlogo1.jpg';
 import Clickphone1 from '../assets/clickphone1.jpg';
 import Click from '../assets/click.jpg';
 import Clickuser from '../assets/clickuser.png';
-import Cabout from '../assets/Cabout.jpg';
-import Ccontact from '../assets/Ccontact.jpg';
+
 import H1 from '../assets/h1.png';
 import H2 from '../assets/h2.png';
 import H3 from '../assets/h3.png';
@@ -474,14 +472,17 @@ const ClickCart = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            Seamless Onboarding and Navigation: All users successfully
-            registered, created characters, and completed the initial level
-            without encountering usability issues. The intuitive design
-            facilitated effortless movement between sections. Enhanced
-            E-Commerce Experience: The application effectively meets user needs
-            by delivering an engaging e-commerce experience characterized by
-            intuitive navigation, seamless transactions, and personalized
-            recommendations.
+            The launch of the Gamer website yielded significant positive
+            outcomes, notably enhancing user engagement and expanding our
+            audience reach. By implementing a user-centered design and offering
+            curated content, we observed increased website traffic and prolonged
+            user interaction, indicating a strong alignment with our target
+            audience's preferences. Additionally, our strategic use of social
+            media and influencer partnerships further amplified our reach,
+            attracting a broader demographic of gaming enthusiasts. These
+            results underscore the effectiveness of our design and marketing
+            strategies in establishing Gamer as a trusted platform within the
+            gaming community.
           </motion.p>
         </div>
       </div>
