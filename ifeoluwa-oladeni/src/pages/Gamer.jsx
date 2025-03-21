@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Gamer1 from '../assets/gamer1.jpg';
 import Gamer2 from '../assets/gamer2.jpg';
 import Gamer3 from '../assets/gamer3.jpg';
@@ -27,13 +26,7 @@ const Gamer = () => {
         ' Our design team crafted a visually appealing interface that resonates with the gaming community. We employed a cohesive color scheme, dynamic graphics, and intuitive layouts to create an immersive experience. The design elements were chosen to reflect the energy and excitement inherent in gaming culture.',
       ],
     },
-    {
-      title: 'Testing & Optimization',
-      details: [
-        'Conducted usability testing to refine navigation & user experience.',
-        'Optimized for performance, mobile responsiveness & accessibility.',
-      ],
-    },
+ 
   ];
   return (
     <>

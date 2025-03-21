@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Clickcartlogo from '../assets/clickcartlogo.png';
 import Clickcartlogo1 from '../assets/Clickcartlogo1.jpg';
 import Clickphone1 from '../assets/clickphone1.jpg';

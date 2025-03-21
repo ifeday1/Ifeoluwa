@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-
 const Works = () => {
   return (
     <>
@@ -42,7 +41,6 @@ const Works = () => {
             </svg>
           </motion.a> */}
         </motion.div>
-
       </div>
     </>
   );

@@ -1,7 +1,6 @@
 import React from 'react';
 import Ifehero from '../assets/Ifehero.png';
 import { motion } from 'framer-motion';
-import Footer from '../compontents/Footer';
 import ProjectHome from '../compontents/ProjectHome';
 
 const Home = () => {
