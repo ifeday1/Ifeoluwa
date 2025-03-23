@@ -8,37 +8,36 @@ import Cstart from '../assets/Cstart.jpg';
 import { motion } from 'framer-motion';
 
 const Incognito = () => {
-    const processSteps = [
-      {
-        title: 'User Research',
-        details: [
-          " Understanding the target audience is fundamental. This phase involves gathering insights into users' needs, behaviors, and pain points through methods like interviews, surveys, and observations. The goal is to create a user-centric design that resonates with the intended audience.",
-        ],
-      },
-      {
-        title: 'Defining User Requirements',
-        details: [
-          '  Based on the research, designers identify specific user needs and establish clear objectives for the website. This step ensures that the design aligns with both user expectations and business goals',
-        ],
-      },
-      {
-        title: ' Wireframing',
-        details: [
-          ' Organizing content logically is crucial for intuitive navigation. Designers create wireframes—skeletal layouts that outline the placement of elements on each page. This stage focuses on structure without delving into visual design details.',
-        ],
-      },
-      {
-        title: 'Visual Design and UI Elements:  ',
-        details: [
-          ' This stage brings the wireframes to life by incorporating visual elements such as color schemes, typography, imagery, and branding guidelines. The aim is to create an aesthetically pleasing interface that enhances usability.',
-        ],
-      },
-    ];
+  const processSteps = [
+    {
+      title: 'User Research',
+      details: [
+        " Understanding the target audience is fundamental. This phase involves gathering insights into users' needs, behaviors, and pain points through methods like interviews, surveys, and observations. The goal is to create a user-centric design that resonates with the intended audience.",
+      ],
+    },
+    {
+      title: 'Defining User Requirements',
+      details: [
+        '  Based on the research, designers identify specific user needs and establish clear objectives for the website. This step ensures that the design aligns with both user expectations and business goals',
+      ],
+    },
+    {
+      title: ' Wireframing',
+      details: [
+        ' Organizing content logically is crucial for intuitive navigation. Designers create wireframes—skeletal layouts that outline the placement of elements on each page. This stage focuses on structure without delving into visual design details.',
+      ],
+    },
+    {
+      title: 'Visual Design and UI Elements:  ',
+      details: [
+        ' This stage brings the wireframes to life by incorporating visual elements such as color schemes, typography, imagery, and branding guidelines. The aim is to create an aesthetically pleasing interface that enhances usability.',
+      ],
+    },
+  ];
   return (
     <>
       <div className=' bg-white'>
         <div className='w-full min-h-screen flex flex-col'>
-          {/* Content Section */}
           <motion.div
             className='px-10 sm:px-75 py-12'
             initial={{ opacity: 0, y: 30 }}
@@ -187,52 +186,47 @@ const Incognito = () => {
           </motion.div>
         </div>
 
-         {/* Full-Width Image (No Padding) */}
-          <motion.div
-            className='w-full'
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1.2, ease: 'easeOut' }}
-          >
-            <img
-              src={Incog}
-              alt='Crowd'
-              className='w-full h-auto object-cover'
-            />
-          </motion.div>
+        {/* Full-Width Image (No Padding) */}
+        <motion.div
+          className='w-full'
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1.2, ease: 'easeOut' }}
+        >
+          <img src={Incog} alt='Crowd' className='w-full h-auto object-cover' />
+        </motion.div>
 
-          <div className='w-full px-6 sm:px-75 py-12 bg-gray-100'>
-                    <motion.h2
-                      className='text-4xl font-bold text-gray-800 mb-8 text-left'
-                      initial={{ opacity: 0, y: -20 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.8 }}
-                    >
-                      Process
-                    </motion.h2>
-          
-                    <div className='space-y-10'>
-                      {processSteps.map((step, index) => (
-                        <motion.div
-                          key={index}
-                          className='bg-white p-6 rounded-lg shadow-md'
-                          initial={{ opacity: 0, x: -30 }}
-                          animate={{ opacity: 1, x: 0 }}
-                          transition={{ duration: 0.8, delay: index * 0.3 }}
-                        >
-                          <h3 className='text-2xl font-semibold text-gray-800 mb-3'>
-                            {step.title}
-                          </h3>
-                          <ul className='list-disc list-inside text-gray-600 space-y-2'>
-                            {step.details.map((detail, idx) => (
-                              <li key={idx}>{detail}</li>
-                            ))}
-                          </ul>
-                        </motion.div>
-                      ))}
-                    </div>
-                  </div>
-  
+        <div className='w-full px-6 sm:px-75 py-12 bg-gray-100'>
+          <motion.h2
+            className='text-4xl font-bold text-gray-800 mb-8 text-left'
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            Process
+          </motion.h2>
+
+          <div className='space-y-10'>
+            {processSteps.map((step, index) => (
+              <motion.div
+                key={index}
+                className='bg-white p-6 rounded-lg shadow-md'
+                initial={{ opacity: 0, x: -30 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8, delay: index * 0.3 }}
+              >
+                <h3 className='text-2xl font-semibold text-gray-800 mb-3'>
+                  {step.title}
+                </h3>
+                <ul className='list-disc list-inside text-gray-600 space-y-2'>
+                  {step.details.map((detail, idx) => (
+                    <li key={idx}>{detail}</li>
+                  ))}
+                </ul>
+              </motion.div>
+            ))}
+          </div>
+        </div>
 
         <div className='w-full bg-emerald-500 py-16 px-6 sm:px-16'>
           {/* Section Header */}
