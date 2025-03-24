@@ -1,5 +1,6 @@
 import React from 'react';
 import Incog from '../assets/incog.jpg';
+import Mision from '../assets/mision.jpg';
 import Chome from '../assets/Chome.jpg';
 import Cabout from '../assets/Cabout.jpg';
 import Ccontact from '../assets/Ccontact.jpg';
@@ -193,7 +194,7 @@ const Incognito = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 1.2, ease: 'easeOut' }}
         >
-          <img src={Incog} alt='Crowd' className='w-full h-auto object-cover' />
+          <img src={Mision} alt='Crowd' className='w-full h-auto object-cover' />
         </motion.div>
 
         <div className='w-full px-6 sm:px-75 py-12 bg-gray-100'>
