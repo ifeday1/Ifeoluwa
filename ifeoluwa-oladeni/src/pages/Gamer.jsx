@@ -203,7 +203,7 @@ const Gamer = () => {
           </div>
         </div>
 
-        <div className='w-full bg-fuchsia-200 py-16 px-6 sm:px-16'>
+        <div className='w-full bg-fuchsia-200 pt-16 px-6 sm:px-16'>
           {/* Section Header */}
           {/* <motion.h2
             className='text-4xl font-bold text-white text-center mb-10'

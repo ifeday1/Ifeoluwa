@@ -162,7 +162,7 @@ const CrowdCarry = () => {
           </motion.div>
         </div>
 
-        <div className='w-full bg-emerald-500 py-16 px-6 sm:px-16'>
+        <div className='w-full bg-emerald-500 pt-16 px-6 sm:px-16'>
           {/* Section Header */}
           {/* <motion.h2
             className='text-4xl font-bold text-white text-center mb-10'

@@ -1,6 +1,11 @@
 import React from 'react';
 import Incog from '../assets/incog.jpg';
 import Mision from '../assets/mision.jpg';
+import IHome from '../assets/IHome.jpg';
+import IAboutus from '../assets/IAboutus.jpg';
+import Iportflio from '../assets/Iportflio.jpg';
+import Iservice from '../assets/Iservice.jpg';
+
 import Chome from '../assets/Chome.jpg';
 import Cabout from '../assets/Cabout.jpg';
 import Ccontact from '../assets/Ccontact.jpg';
@@ -194,7 +199,11 @@ const Incognito = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 1.2, ease: 'easeOut' }}
         >
-          <img src={Mision} alt='Crowd' className='w-full h-auto object-cover' />
+          <img
+            src={Mision}
+            alt='Crowd'
+            className='w-full h-auto object-cover'
+          />
         </motion.div>
 
         <div className='w-full px-6 sm:px-75 py-12 bg-gray-100'>
@@ -229,7 +238,7 @@ const Incognito = () => {
           </div>
         </div>
 
-        <div className='w-full bg-emerald-500 py-16 px-6 sm:px-16'>
+        <div className='w-full bg-purple-300 pt-16 px-6 sm:px-16'>
           {/* Section Header */}
           {/* <motion.h2
             className='text-4xl font-bold text-white text-center mb-10'
@@ -248,21 +257,21 @@ const Incognito = () => {
             transition={{ duration: 1 }}
           >
             <motion.img
-              src={Chome}
+              src={IHome}
               alt='Project 1'
               className='w-full sm:w-1/3 object-cover rounded-lg shadow-lg'
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
             />
             <motion.img
-              src={Cabout}
+              src={IAboutus}
               alt='Project 2'
               className='w-full sm:w-1/3 object-cover rounded-lg shadow-lg'
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
             />
             <motion.img
-              src={Ccontact}
+              src={Iservice}
               alt='Project 3'
               className='w-full sm:w-1/3 object-cover rounded-lg shadow-lg'
               whileHover={{ scale: 1.05 }}
@@ -271,9 +280,9 @@ const Incognito = () => {
           </motion.div>
         </div>
 
-        <div className='w-full'>
-          <img src={Cstart} alt='site' className='w-full object-cover' />
-        </div>
+        {/* <div className='w-full'>
+          <img src={Iportflio} alt='site' className='w-full object-cover' />
+        </div> */}
 
         <div className='w-full bg-gray-100 py-16 px-6 sm:px-75'>
           {/* Section Header */}
@@ -293,12 +302,17 @@ const Incognito = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            Since launching, CrowdCarry has gained rapid traction, with our
-            website receiving 150+ visits in the first month alone. This strong
-            engagement has helped boost awareness, attract early adopters, and
-            drive business growth. With increasing demand, we’re on track to
-            making portable power more accessible and convenient for Nigerians
-            nationwide.
+            Enhanced User Engagement: The intuitive and interactive design
+            elements encourage users to explore the site more thoroughly,
+            increasing the time spent on each page and reducing bounce rates.
+            This heightened engagement often leads to higher conversion rates.
+            Improved User Satisfaction: By focusing on user experience (UX)
+            principles, the website offers seamless navigation and
+            accessibility, resulting in higher user satisfaction and repeat
+            visits. Business Growth: The combination of increased user
+            engagement and satisfaction contributes to business growth, as
+            satisfied users are more likely to become loyal customers and
+            advocates for the brand.
           </motion.p>
         </div>
       </div>
