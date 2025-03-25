@@ -45,7 +45,6 @@ const Incognito = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: 'easeOut' }}
           >
-            {/* Heading */}
             <motion.h1
               className='text-4xl md:text-5xl font-bold text-gray-800 mb-6 text-left uppercase'
               initial={{ opacity: 0, x: -50 }}
