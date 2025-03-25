@@ -1,5 +1,4 @@
 import React from 'react';
-import { useState, useRef } from 'react';
 import Wbc from '../assets/wbc.jpg';
 import Djc from '../assets/djc.jpg';
 import Chome from '../assets/Chome.jpg';

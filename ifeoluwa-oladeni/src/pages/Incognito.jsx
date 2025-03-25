@@ -3,13 +3,8 @@ import Incog from '../assets/incog.jpg';
 import Mision from '../assets/mision.jpg';
 import IHome from '../assets/IHome.jpg';
 import IAboutus from '../assets/IAboutus.jpg';
-import Iportflio from '../assets/Iportflio.jpg';
+// import Iportflio from '../assets/Iportflio.jpg';
 import Iservice from '../assets/Iservice.jpg';
-
-import Chome from '../assets/Chome.jpg';
-import Cabout from '../assets/Cabout.jpg';
-import Ccontact from '../assets/Ccontact.jpg';
-import Cstart from '../assets/Cstart.jpg';
 
 import { motion } from 'framer-motion';
 

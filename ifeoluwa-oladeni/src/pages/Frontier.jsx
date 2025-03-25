@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react';
+import React from 'react';
 import Solarp from '../assets/solarp.jpg';
 import Solarf from '../assets/solarf.jpg';
 import F1 from '../assets/F1.jpg';

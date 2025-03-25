@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import Ifehero from '../assets/Ifehero.png';
 import Frontwork from '../assets/frontwork.jpg';
 
 const ProjectHome = () => {
