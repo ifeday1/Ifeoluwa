@@ -1,5 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import Frontwork from '../assets/frontwork.jpg';
+
 
 const Works = () => {
   return (

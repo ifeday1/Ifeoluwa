@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Ifehero from '../assets/Ifehero.png';
+import Frontwork from '../assets/frontwork.jpg';
 
 const ProjectHome = () => {
   return (
@@ -27,7 +28,7 @@ const ProjectHome = () => {
               className='block overflow-hidden rounded-lg shadow-lg w-full'
             >
               <img
-                src={Ifehero}
+                src={Frontwork}
                 alt='Project 1'
                 className='w-full object-cover rounded-lg'
               />
