@@ -5,6 +5,7 @@ import Crowdwork from '../assets/crowdwork.png';
 import Clickwork from '../assets/clickwork.png';
 import Incogwork from '../assets/incogwork.png';
 import Winnerswork from '../assets/winnerswork.png';
+import Gamerwork from '../assets/gamerwork.png';
 
 const Works = () => {
   return (
@@ -244,7 +245,7 @@ const Works = () => {
               className='block overflow-hidden rounded-lg shadow-lg w-full'
             >
               <img
-                src={Incogwork}
+                src={Gamerwork}
                 alt='Project 2'
                 className='w-full object-cover rounded-lg'
               />
@@ -252,7 +253,7 @@ const Works = () => {
 
             {/* Project Title */}
             <h3 className='text-lg font-semibold mt-3 uppercase text-white'>
-              Incognito Tech solutions
+              Gamer
             </h3>
 
             {/* Smaller Horizontal Info Boxes */}
