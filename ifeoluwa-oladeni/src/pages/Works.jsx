@@ -120,7 +120,7 @@ const Works = () => {
         </div>
 
         {/* Image Grid */}
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-6 pt-15'>
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-6 md:pt-15 pt-5'>
           {/* Project 1 */}
           <div className='flex flex-col items-start'>
             <motion.a
@@ -163,7 +163,7 @@ const Works = () => {
           {/* Project 2 */}
           <div className='flex flex-col items-start'>
             <motion.a
-              href='/works/crowdcarry'
+              href='/works/incognito'
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
               className='block overflow-hidden rounded-lg shadow-lg w-full'
@@ -200,31 +200,26 @@ const Works = () => {
           {/* Project 1 */}
           <div className='flex flex-col items-start'>
             <motion.a
-              href='/works/clickcart'
+              href='/works/winnersbc'
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
               className='block overflow-hidden rounded-lg shadow-lg w-full'
             >
               <img
-                src={Clickwork}
+                src={Winnerswork}
                 alt='Project 1'
                 className='w-full object-cover rounded-lg'
               />
             </motion.a>
 
             {/* Project Title */}
-            <h3 className='text-lg font-semibold mt-3 text-white'>
-              CLICK CART
+            <h3 className='text-lg font-semibold mt-3 text-white uppercase'>
+              WInners Baptist church
             </h3>
 
             {/* Smaller Horizontal Info Boxes */}
             <div className='flex gap-2 mt-3'>
-              {[
-                'Brand Identity Design',
-                'UI /UX design',
-                'UX Writing',
-                ' UX Research',
-              ].map((text, index) => (
+              {['UI /UX design', 'Web Development'].map((text, index) => (
                 <motion.div
                   key={index}
                   whileHover={{ scale: 1.05 }}
@@ -239,7 +234,7 @@ const Works = () => {
           {/* Project 2 */}
           <div className='flex flex-col items-start'>
             <motion.a
-              href='/works/crowdcarry'
+              href='/works/gamer'
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
               className='block overflow-hidden rounded-lg shadow-lg w-full'

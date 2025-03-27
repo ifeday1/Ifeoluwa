@@ -88,7 +88,7 @@ const ProjectHome = () => {
         </div>
 
         {/* Image Grid */}
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-6 pt-15'>
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-6 md:pt-15 pt-5'>
           {/* Project 1 */}
           <div className='flex flex-col items-start'>
             <motion.a
@@ -129,7 +129,7 @@ const ProjectHome = () => {
           {/* Project 2 */}
           <div className='flex flex-col items-start'>
             <motion.a
-              href='/works/crowdcarry'
+              href='/works/incognito'
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
               className='block overflow-hidden rounded-lg shadow-lg w-full'
