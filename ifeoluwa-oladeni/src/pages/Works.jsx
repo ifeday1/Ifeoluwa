@@ -212,12 +212,10 @@ const Works = () => {
               />
             </motion.a>
 
-            {/* Project Title */}
             <h3 className='text-lg font-semibold mt-3 text-white uppercase'>
               WInners Baptist church
             </h3>
 
-            {/* Smaller Horizontal Info Boxes */}
             <div className='flex gap-2 mt-3'>
               {['UI /UX design', 'Web Development'].map((text, index) => (
                 <motion.div
