@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-8 p-6 md:p-20 min-h-screen items-center'>
-        {/* Left Section */}
+        
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
