@@ -183,7 +183,7 @@ const ClickCart = () => {
 
           <div className='w-full py-8 flex justify-center items-center'>
             <div className='container mx-auto flex flex-col md:flex-row items-center justify-between px-6 relative bg-white shadow-lg rounded-xl p-10 overflow-hidden'>
-              {/* Left Section - Text & Logos */}
+              
               <motion.div
                 className='flex flex-col gap-6 md:w-1/2 z-10'
                 initial={{ opacity: 0, x: -50 }}
