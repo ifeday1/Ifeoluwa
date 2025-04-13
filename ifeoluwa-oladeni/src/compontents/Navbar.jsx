@@ -17,8 +17,8 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className='text-white z-1 '>
-      <div className='container mx-auto flex justify-between items-center p-4 '>
+    <nav className='text-white z-1  '>
+      <div className='container mx-auto flex justify-between items-center p-4 max-w-[1200px] '>
         {/* Logo */}
         <motion.h1
           initial={{ opacity: 0, y: -10 }}
