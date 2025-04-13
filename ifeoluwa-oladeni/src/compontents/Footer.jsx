@@ -7,7 +7,6 @@ const Footer = () => {
       <div className=' flex justify-center '>
         <footer className=' text-white px-6 py-8 md:px-20 max-w-[1200px] '>
           <div className='max-w-8xl mx-auto'>
-            {/* Gradient Text */}
             <h2 className='text-left md:text-7xl text-5xl font-semibold'>
               <span className='bg-gradient-to-r from-white to-gray-600 bg-clip-text text-transparent block'>
                 Let's work
