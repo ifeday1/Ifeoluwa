@@ -66,7 +66,7 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile Full-Screen Menu */}
+    
       <AnimatePresence>
         {isOpen && (
           <motion.div
