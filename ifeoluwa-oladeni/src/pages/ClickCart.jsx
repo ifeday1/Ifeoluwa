@@ -80,7 +80,7 @@ const ClickCart = () => {
               CLICK CART
             </motion.h1>
 
-            {/* Content Text */}
+            
             <motion.p
               className='text-lg text-gray-600 mb-8 text-left max-w-2xl'
               initial={{ opacity: 0, y: 30 }}
