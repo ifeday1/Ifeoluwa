@@ -134,7 +134,7 @@ const ClickCart = () => {
               <p className='text-2xl font-semibold text-gray-800'>Ecommerce</p>
             </motion.div>
 
-            {/* Second Flex - Challenge & Solution */}
+        
             <motion.div
               className='flex flex-col gap-8 py-6 sm:py-0 w-full sm:w-2/3'
               initial={{ opacity: 0, y: 30 }}
