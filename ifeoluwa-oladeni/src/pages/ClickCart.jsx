@@ -190,7 +190,7 @@ const ClickCart = () => {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8 }}
               >
-                {/* Large Title */}
+            
                 <h1 className='text-3xl md:text-4xl font-bold text-gray-800'>
                   Brand Identity
                 </h1>
