@@ -4,8 +4,8 @@ import { motion } from 'framer-motion';
 const Footer = () => {
   return (
     <>
-      <div className='grid justify-center'>
-        <footer className=' text-white px-6 py-8 md:px-20 max-w-[1200px] '>
+      <div className=''>
+        <footer className=' text-white px-6 py-8 md:px-20 ] '>
           <div className='max-w-8xl mx-auto'>
             {/* Gradient Text */}
             <h2 className='text-left md:text-7xl text-5xl font-semibold'>
