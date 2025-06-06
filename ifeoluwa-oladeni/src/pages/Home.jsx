@@ -14,11 +14,11 @@ const Home = () => {
             transition={{ duration: 0.8 }}
             className='flex flex-col justify-center items-start space-y-4'
           >
-            <p className='md:text-7xl text-5xl font-bold text-neutral-500 uppercase'>
-              <span className=' block'>Designing</span>
-              <span className='block'>the future,</span>
-              <span className='text-white block'>one pixel </span>
-              <span className='text-white block'>at a time ✨</span>
+            <p className='md:text-7xl text-4xl font-bold text-neutral-500 uppercase'>
+              <span className=' block'>Creating trusted </span>
+              <span className='block'>products and,</span>
+              <span className='text-white block'> unforgettable</span>
+              <span className='text-white block'>user experiences. ✨</span>
             </p>
 
             <motion.a
@@ -60,17 +60,12 @@ const Home = () => {
               />
             </div>
             <p className='text-lg text-white'>
-              Hi, I’m Ifeoluwa Oladeni—a passionate UX/UI and Product Designer
-              with a mission to transform ideas into intuitive, user-centric
-              solutions. I’m dedicated to crafting exceptional digital
-              experiences that truly resonate and make a lasting impact. With a
-              relentless curiosity, I dive deep into understanding users’ needs,
-              blending creativity and strategy to design products that leave
-              them saying, “Wow! 🤯” Over the past three years, I’ve honed my
-              skills by constantly evolving, learning, and pushing the
-              boundaries of design to deliver innovative and meaningful
-              solutions that empower businesses and delight users. Outside work,
-              I love sports, traveling and Playing drums.
+              Hi, I’m Ifeoluwa Oladeni, a UX/UI and Product Designer focused on
+              turning ideas into simple, user-friendly digital experiences. For
+              the past three years, I’ve been creating designs that connect with
+              users and help businesses grow. I’m always curious, always
+              learning, and love blending creativity with strategy. Outside of
+              work, I enjoy sports, traveling and playing the drums.
             </p>
           </motion.div>
         </div>

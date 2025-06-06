@@ -56,12 +56,12 @@ const Frontier = () => {
           >
             {/* Heading */}
             <motion.h1
-              className='text-4xl md:text-5xl font-bold text-gray-800 mb-6 text-left'
+              className='text-4xl md:text-5xl font-semibold text-gray-800 mb-6 text-left capitalize'
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, ease: 'easeOut' }}
             >
-              FRONTIER SOLAR TECH
+              Frontier Solar Tech
             </motion.h1>
 
             {/* Content Text */}
@@ -91,7 +91,7 @@ const Frontier = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.4, ease: 'easeOut' }}
             >
-              <h2 className='text-2xl font-semibold text-gray-800 mb-2'>
+              <h2 className='text-xl font-medium text-gray-800 mb-2'>
                 My Roles:{' '}
                 <motion.span
                   className='text-lg text-gray-600'
@@ -167,11 +167,14 @@ const Frontier = () => {
                 The Challenge
               </h2>
               <p className='text-lg text-gray-600'>
-                The growing dependence on traditional energy sources has led to
-                rising electricity costs, increased carbon emissions, and
-                environmental degradation. Many homes, businesses, and
-                industries struggle with inefficient energy consumption and a
-                lack of reliable, sustainable alternatives.
+                As the world’s dependence on traditional energy sources
+                continues to grow, so do the consequences — rising electricity
+                bills, harmful carbon emissions, and increasing environmental
+                strain. Homes, businesses, and industries alike are feeling the
+                pressure. Many struggle with inefficient energy use, unreliable
+                power supply, and limited access to sustainable alternatives.
+                The need for change is urgent, but the path forward isn’t always
+                clear.
               </p>
             </motion.div>
 
@@ -184,9 +187,14 @@ const Frontier = () => {
                 The Solution
               </h2>
               <p className='text-lg text-gray-600'>
-                At Frontier Solar Tech, we tackle this challenge by providing
-                innovative solar power solutions, renewable energy technologies,
-                and smart power-saving systems.
+              I tackled this challenge by designing a
+                user-friendly platform that makes clean energy easy to
+                understand and use. Through clear layouts, simple navigation,
+                and engaging visuals, I helped users explore solar solutions,
+                track energy savings, and make confident decisions. By focusing
+                on a seamless user experience, I turned complex technology into
+                an accessible tool — helping more people take control of their
+                energy, save money, and choose a greener future.
               </p>
             </motion.div>
           </motion.div>
