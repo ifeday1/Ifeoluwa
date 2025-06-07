@@ -4,6 +4,15 @@ import Solarf from '../assets/solarf.jpg';
 import F1 from '../assets/F1.jpg';
 import F2 from '../assets/F2.jpg';
 import F3 from '../assets/F3.jpg';
+import Fea from '../assets/fea.svg';
+import Fea1 from '../assets/fea1.svg';
+// import Fea2 from '../assets/fea2.svg';
+import Fea3 from '../assets/fea3.svg';
+import Fea4 from '../assets/fea4.svg';
+import Fea5 from '../assets/fea5.svg';
+import Sea from '../assets/sea.svg';
+import Sea1 from '../assets/sea1.svg';
+import Sea2 from '../assets/sea2.svg';
 
 import { motion } from 'framer-motion';
 
@@ -41,6 +50,57 @@ const Frontier = () => {
         'Conducted usability testing to refine navigation & user experience.',
         'Optimized for performance, mobile responsiveness & accessibility.',
       ],
+    },
+  ];
+
+  const challenges = [
+    {
+      title: 'Home owners',
+      color: 'bg-green-300 text-green-900',
+      text: 'Many users were interested in solar energy but admitted they didn’t fully understand how it worked, what it would cost, or how to get started. Technical terms like “kilowatt-hour,” “grid-tied,” and “energy offset” were confusing and discouraged further exploration.',
+      stat: '7 out of 15 Home owners face this Challenge',
+    },
+    {
+      title: 'Home owners',
+      color: 'bg-green-300 text-green-900',
+      text: 'Users wanted the ability to compare different types of solar solutions — rooftop, portable, hybrid, etc. They were particularly drawn to features that could help them choose based on their specific needs (e.g., home size, budget, location).',
+      stat: '11 out of 15 Home owners face this Challenge',
+    },
+    {
+      title: 'Home owners',
+      color: 'bg-green-300 text-green-900',
+      text: 'Users were unsure about what steps to take after choosing a system — from installation to maintenance. They preferred having a guided, step-by-step experience.',
+      stat: '9 out of 15 Home owners face this Challenge',
+    },
+    {
+      title: 'Business owners',
+      color: 'bg-blue-300 text-blue-900',
+      text: 'Business owners were concerned about the initial investment and whether it would pay off over time.',
+      stat: '7 out of 15 Business owners face this Challenge',
+    },
+    {
+      title: 'Business owners',
+      color: 'bg-blue-300 text-blue-900',
+      text: 'They needed proof that solutions were reliable and backed by credible certifications or success stories.',
+      stat: '11 out of 15 Business owners face this Challenge',
+    },
+    {
+      title: 'Facility managers',
+      color: 'bg-pink-400 text-purple-900',
+      text: 'They needed assurance that systems would perform consistently and integrate smoothly with existing infrastructure.',
+      stat: '7 out of 15 Facility managers face this Challenge',
+    },
+    {
+      title: 'Facility managers',
+      color: 'bg-pink-400 text-purple-900',
+      text: 'Many felt there was insufficient information about ongoing maintenance and support after installation.',
+      stat: '6 out of 15 Facility managers face this Challenge',
+    },
+    {
+      title: 'Facility managers',
+      color: 'bg-pink-400 text-purple-900',
+      text: 'Managing future expansion or upgrades was a challenge without clear guidance.',
+      stat: '9 out of 15 Facility managers face this Challenge',
     },
   ];
   return (
@@ -187,53 +247,195 @@ const Frontier = () => {
                 The Solution
               </h2>
               <p className='text-lg text-gray-600'>
-              I tackled this challenge by designing a
-                user-friendly platform that makes clean energy easy to
-                understand and use. Through clear layouts, simple navigation,
-                and engaging visuals, I helped users explore solar solutions,
-                track energy savings, and make confident decisions. By focusing
-                on a seamless user experience, I turned complex technology into
-                an accessible tool — helping more people take control of their
-                energy, save money, and choose a greener future.
+                I tackled this challenge by designing a user-friendly platform
+                that makes clean energy easy to understand and use. Through
+                clear layouts, simple navigation, and engaging visuals, I helped
+                users explore solar solutions, track energy savings, and make
+                confident decisions. By focusing on a seamless user experience,
+                I turned complex technology into an accessible tool — helping
+                more people take control of their energy, save money, and choose
+                a greener future.
               </p>
             </motion.div>
           </motion.div>
         </div>
 
-        <div className='w-full'>
-          <img src={Solarf} alt='site' className='w-full object-cover' />
-        </div>
-
-        <div className='w-full px-6 sm:px-75 py-12 bg-gray-100'>
-          <motion.h2
-            className='text-4xl font-bold text-gray-800 mb-8 text-left'
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            Process
-          </motion.h2>
-
-          <div className='space-y-10'>
-            {processSteps.map((step, index) => (
-              <motion.div
+        <section className='bg-[#FFFCF2] py-12 px-4 md:px-10'>
+          <h2 className='text-2xl md:text-4xl pl-0 md:pl-10 font-semibold mb-12'>
+            Challenges faced by home owners, <br />
+            business owners and facility managers
+          </h2>
+          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto'>
+            {challenges.map((item, index) => (
+              <div
                 key={index}
-                className='bg-white p-6 rounded-lg shadow-md'
-                initial={{ opacity: 0, x: -30 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8, delay: index * 0.3 }}
+                className='bg-white border border-gray-200 rounded-lg p-6 shadow-md'
               >
-                <h3 className='text-2xl font-semibold text-gray-800 mb-3'>
-                  {step.title}
-                </h3>
-                <ul className='list-disc list-inside text-gray-600 space-y-2'>
-                  {step.details.map((detail, idx) => (
-                    <li key={idx}>{detail}</li>
-                  ))}
-                </ul>
-              </motion.div>
+                <span
+                  className={`inline-block px-3 py-1 rounded font-semibold text-sm mb-4 ${item.color}`}
+                >
+                  {item.title}
+                </span>
+                <p className='text-black text-base mb-4'>{item.text}</p>
+                <p className='text-rose-500 text-sm font-medium'>{item.stat}</p>
+              </div>
             ))}
           </div>
+        </section>
+
+        <section className='bg-white px-4 py-12 max-w-4xl mx-auto text-[#111]'>
+          {/* Intro Paragraph */}
+          <p className='text-base md:text-lg mb-6'>
+            After analyzing the user interviews, I realized that building a
+            solar website wasn't just about showcasing products — it had to
+            solve four key challenges: making solar information easy to
+            understand, building user trust, simplifying cost estimation, and
+            guiding users based on their needs (homeowners, businesses, or
+            facility managers).
+          </p>
+          <p className='text-base md:text-lg mb-12'>
+            While these needs could have made the experience complex, I
+            simplified them through clear content structure, personalized user
+            flows, and trust-building elements — all while keeping the technical
+            accuracy and user confidence intact.
+          </p>
+
+          {/* Heading */}
+          <h2 className='text-2xl md:text-3xl font-semibold mb-8'>
+            Different users and their goals
+          </h2>
+
+          {/* Homeowners */}
+          <div className='mb-6'>
+            <h3 className='text-xl font-medium mb-2'>🏠 Homeowners</h3>
+            <p className='text-base leading-relaxed'>
+              Homeowners want to cut electricity costs, reduce their carbon
+              footprint, and power their homes with ease. But the technical
+              details of solar can be overwhelming. Frontier Solar Tech
+              simplifies the journey — helping them explore, understand, and
+              choose the right solar solution without confusion.
+            </p>
+          </div>
+
+          {/* Business Owners */}
+          <div className='mb-6'>
+            <h3 className='text-xl font-medium mb-2'>🏢 Business Owners</h3>
+            <p className='text-base leading-relaxed'>
+              Business owners are looking for reliable, cost-effective energy
+              systems that boost their bottom line and show environmental
+              responsibility. They want quick access to information, solid ROI,
+              and a trusted provider. Frontier Solar Tech delivers that with
+              clear solutions and tools tailored to business needs.
+            </p>
+          </div>
+
+          {/* Facility Managers */}
+          <div>
+            <h3 className='text-xl font-medium mb-2'>🛠 Facility Managers</h3>
+            <p className='text-base leading-relaxed'>
+              Facility managers oversee energy efficiency on a larger scale.
+              They want systems that are dependable, easy to maintain, and
+              scalable. Frontier Solar Tech supports them with detailed specs,
+              seamless integration options, and expert guidance every step of
+              the way.
+            </p>
+          </div>
+        </section>
+
+        <div className='bg-[#FFFCF2] min-h-screen px-4 py-8 space-y-12'>
+          {/* Features section image */}
+          <section className='max-w-6xl mx-auto'>
+            <img
+              src={Fea}
+              alt='Feature highlights'
+              className='w-full rounded-xl shadow-md'
+            />
+          </section>
+
+          {/* Testimonials section image */}
+          <section className='max-w-6xl mx-auto'>
+            <img
+              src={Fea1}
+              alt='Testimonials'
+              className='w-full rounded-xl shadow-md'
+            />
+          </section>
+
+          {/* Product card and hero split image */}
+
+          <section className='max-w-6xl mx-auto'>
+            <img
+              src={Fea3}
+              alt='Hero section text'
+              className='w-full h-full object-cover rounded-xl shadow-md'
+            />
+          </section>
+
+          {/* Articles section image */}
+          <section className='max-w-6xl mx-auto'>
+            <img
+              src={Fea4}
+              alt='Articles, tips and reviews'
+              className='w-full rounded-xl shadow-md'
+            />
+          </section>
+
+          {/* Multiple solar options image */}
+          <section className='max-w-6xl mx-auto'>
+            <img
+              src={Fea5}
+              alt='Multiple ways to go solar'
+              className='w-full rounded-xl shadow-md'
+            />
+          </section>
+        </div>
+
+        <section className='bg-white px-4 py-12 max-w-4xl mx-auto text-[#111]'>
+          <h2 className='text-2xl md:text-4xl pl-0 md:pl-0 font-semibold mb-12'>
+            Making item search easy for users.
+          </h2>
+          {/* Intro Paragraph */}
+          <p className='text-base md:text-lg mb-6'>
+            One thing was clear from the start — users didn’t want to spend
+            forever looking for what they needed. Whether they were a homeowner
+            exploring solar panels or a business owner searching for scalable
+            solutions, the process of finding the right product had to be quick,
+            clear, and frustration-free. So, I focused on simplifying the search
+            experience. I grouped items into familiar categories, added filters
+            based on real user needs (like energy capacity, budget, or property
+            type), and made sure the most relevant options surfaced first. The
+            goal was simple: help users find the right solution in just a few
+            clicks — no guesswork, no overwhelm.
+          </p>
+        </section>
+
+        <div className='flex flex-col lg:flex-row gap-4 p-4 bg-[#E6FAEB]'>
+          {/* Left Side Image (Main Mobile Shop View) */}
+          <div className='flex-1'>
+            <img
+              src={Sea}
+              alt='Mobile shop view'
+              className='w-full h-auto rounded-lg shadow-md'
+            />
+          </div>
+
+          {/* Right Side: Two stacked images */}
+          <div className='flex-1 flex flex-col gap-4'>
+            <img
+              src={Sea1}
+              alt='Shop grid top view'
+              className='w-full h-auto rounded-lg shadow-md'
+            />
+            <img
+              src={Sea2}
+              alt='Shop grid bottom view'
+              className='w-full h-auto rounded-lg shadow-md'
+            />
+          </div>
+        </div>
+
+        <div className='w-full'>
+          <img src={Solarf} alt='site' className='w-full object-cover' />
         </div>
 
         <div className='w-full bg-amber-100 py-16 px-6 sm:px-16'>
@@ -308,9 +510,10 @@ const Frontier = () => {
             transition={{ duration: 1.2 }}
           >
             <motion.li className='flex items-start gap-2'>
-              <span className='text-green-500 text-xl'>✅</span>
+              <span className='text-green-500 text-xl'></span>
               <p className='text-lg text-gray-700'>
-                Over 1,000 users actively engaging with the platform.
+                🔍 47% increase in users finding and exploring the right solar
+                product through improved filtering and categorization
               </p>
             </motion.li>
             <motion.li className='flex items-start gap-2'>
@@ -323,22 +526,23 @@ const Frontier = () => {
             <motion.li className='flex items-start gap-2'>
               <span className='text-green-500 text-xl'>✅</span>
               <p className='text-lg text-gray-700'>
-                Improved customer inquiries & conversions through an intuitive
-                product section.
+                Higher user confidence, measured through feedback forms that
+                showed a 40% increase in users reporting the website was “easy
+                to understand” and “helpful in making a decision”
               </p>
             </motion.li>
             <motion.li className='flex items-start gap-2'>
-              <span className='text-green-500 text-xl'>✅</span>
+              <span className='text-green-500 text-xl'></span>
               <p className='text-lg text-gray-700'>
-                Enhanced brand credibility with a professional, modern, and
-                responsive design.
+                📊 3x more engagement on informational pages like “How It Works”
+                and “Compare Solar Types”
               </p>
             </motion.li>
             <motion.li className='flex items-start gap-2'>
-              <span className='text-green-500 text-xl'>✅</span>
+              <span className='text-green-500 text-xl'></span>
               <p className='text-lg text-gray-700'>
-                Optimized performance & accessibility, ensuring a smooth
-                experience across all devices.
+                📞 25% rise in quote requests within the first month — driven by
+                stronger trust signals and a guided user journey
               </p>
             </motion.li>
           </motion.ul>
