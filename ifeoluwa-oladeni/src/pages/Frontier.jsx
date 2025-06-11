@@ -410,7 +410,6 @@ const Frontier = () => {
         </section>
 
         <div className='flex flex-col lg:flex-row gap-4 p-4 bg-[#E6FAEB]'>
-          {/* Left Side Image (Main Mobile Shop View) */}
           <div className='flex-1'>
             <img
               src={Sea}
@@ -419,7 +418,6 @@ const Frontier = () => {
             />
           </div>
 
-          {/* Right Side: Two stacked images */}
           <div className='flex-1 flex flex-col gap-4'>
             <img
               src={Sea1}
