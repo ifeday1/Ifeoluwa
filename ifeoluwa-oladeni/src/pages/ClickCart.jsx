@@ -16,6 +16,15 @@ import H8 from '../assets/h8.png';
 import iPhone from '../assets/iphone1.png';
 import iPhone2 from '../assets/iphone2.png';
 
+import C1 from '../assets/C1.png';
+import C2 from '../assets/C2.png';
+import C3 from '../assets/C3.png';
+import C4 from '../assets/C4.png';
+import C5 from '../assets/C5.png';
+import C6 from '../assets/C6.png';
+import C7 from '../assets/C7.png';
+import C8 from '../assets/C8.png';
+
 import { motion } from 'framer-motion';
 import ColourPallete from '../compontents/ColourPallete';
 
@@ -484,28 +493,28 @@ const ClickCart = () => {
             transition={{ duration: 1 }}
           >
             <motion.img
-              src={H1}
+              src={C1}
               alt='Project 1'
               className='w-5/25 sm:w-1/5 object-cover rounded-lg shadow-lg'
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
             />
             <motion.img
-              src={H2}
+              src={C2}
               alt='Project 2'
               className='w-5/25 sm:w-1/5 object-cover rounded-lg shadow-lg'
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
             />
             <motion.img
-              src={H3}
+              src={C3}
               alt='Project 3'
               className='w-5/25 sm:w-1/5 object-cover rounded-lg shadow-lg'
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
             />
             <motion.img
-              src={H4}
+              src={C4}
               alt='Project 3'
               className='w-5/25 sm:w-1/5 object-cover rounded-lg shadow-lg'
               whileHover={{ scale: 1.05 }}
@@ -522,28 +531,28 @@ const ClickCart = () => {
               transition={{ duration: 1 }}
             >
               <motion.img
-                src={H5}
+                src={C5}
                 alt='Project 1'
                 className='w-5/25 sm:w-1/5 object-cover rounded-lg shadow-lg'
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.3 }}
               />
               <motion.img
-                src={H6}
+                src={C6}
                 alt='Project 2'
                 className='w-5/25 sm:w-1/5 object-cover rounded-lg shadow-lg'
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.3 }}
               />
               <motion.img
-                src={H7}
+                src={C7}
                 alt='Project 3'
                 className='w-5/25 sm:w-1/5 object-cover rounded-lg shadow-lg'
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.3 }}
               />
               <motion.img
-                src={H8}
+                src={C8}
                 alt='Project 3'
                 className='w-5/25 sm:w-1/5 object-cover rounded-lg shadow-lg'
                 whileHover={{ scale: 1.05 }}
@@ -596,17 +605,36 @@ const ClickCart = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            The launch of the Gamer website yielded significant positive
-            outcomes, notably enhancing user engagement and expanding our
-            audience reach. By implementing a user-centered design and offering
-            curated content, we observed increased website traffic and prolonged
-            user interaction, indicating a strong alignment with our target
-            audience's preferences. Additionally, our strategic use of social
-            media and influencer partnerships further amplified our reach,
-            attracting a broader demographic of gaming enthusiasts. These
-            results underscore the effectiveness of our design and marketing
-            strategies in establishing Gamer as a trusted platform within the
-            gaming community.
+            Click Cart transformed the shopping experience for customers by
+            making it faster, easier, and more enjoyable. From the moment users
+            landed on the platform, they could find what they needed, add it to
+            their cart, and check out in minutes — without confusion or delays.
+            Customers appreciated the intuitive interface, the ability to sign
+            up quickly using Google or Facebook, and the fast-loading,
+            mobile-friendly design that made shopping on the go feel effortless.
+            By focusing on simplicity and trust, Click Cart helped reduce
+            drop-offs and boosted user confidence at every step. <br></br>
+            🚀 Real Results:
+            <motion.li className='flex items-start gap-2'>
+              <span className='text-green-500 text-xl'>✅</span>
+              <p className='text-lg text-gray-700'>
+                Checkout time reduced by nearly 50%, creating a smoother path to
+                purchase
+              </p>
+            </motion.li>
+            <motion.li className='flex items-start gap-2'>
+              <span className='text-green-500 text-xl'>✅</span>
+              <p className='text-lg text-gray-700'>
+                28% increase in completed orders in the first month post-launch
+              </p>
+            </motion.li>
+            <motion.li className='flex items-start gap-2'>
+              <span className='text-green-500 text-xl'>✅</span>
+              <p className='text-lg text-gray-700'>
+                Customer satisfaction score: 4.6/5, with common praise for ease
+                of use and speed
+              </p>
+            </motion.li>
           </motion.p>
         </div>
       </div>
