@@ -7,6 +7,8 @@ import Cstart from '../assets/Cstart.jpg';
 import Demo from '../assets/demo.png';
 import Demo1 from '../assets/demo1.png';
 import Demo2 from '../assets/demo2.png';
+import Star from '../assets/star.svg';
+
 
 
 
@@ -174,9 +176,31 @@ const CrowdCarry = () => {
             </motion.div>
           </motion.div>
         </div>
-        <div className='w-full'>
-          <img src={Cstart} alt='site' className='w-full object-cover' />
-        </div>
+        <section className='bg-[#C0F7F0] px-6 py-20 md:py-32 relative overflow-hidden'>
+          <div className='max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center'>
+            <div className='text-left w-full md:w-1/2'>
+              <p className='text-sm font-medium text-black mb-3'>
+                HOW IT WORKS
+              </p>
+              <h2 className='text-4xl sm:text-5xl md:text-6xl font-bold text-orange-500 leading-tight'>
+                Relax.
+                <br />
+                We've got you
+                <br />
+                covered.
+              </h2>
+            </div>
+
+            <div className='hidden md:block w-32 h-32 absolute right-10 top-1/2 transform -translate-y-1/2'>
+              <img
+                src={Star}
+                alt='star decoration'
+                className='w-full h-full object-contain'
+              />
+            </div>
+          </div>
+        </section>
+        
         <div className='max-w-3xl mx-auto px-4 py-8 text-gray-800 leading-relaxed'>
           <h1 className='text-2xl md:text-3xl font-semibold mb-4'>
             Designing for Convenience: The UX Process Behind CrowdCarry
@@ -278,7 +302,6 @@ const CrowdCarry = () => {
             tones that matched the electric, on-the-go vibe of the brand.
           </p>
         </div>
-
         <section className='px-4 py-10 bg-amber-100 text-center'>
           <h2 className='text-2xl md:text-3xl font-bold text-orange-600 mb-8 max-w-3xl mx-auto'>
             Demonstrating How our power bank works with Stakeholders and users
@@ -299,7 +322,6 @@ const CrowdCarry = () => {
             ))}
           </div>
         </section>
-
         <div className='w-full bg-emerald-500 pt-16 px-6 sm:px-16'>
           <h1 className='text-2xl md:text-3xl text-white justify-center text-center font-semibold mb-4'>
             A Glimpse into the Interface
@@ -344,7 +366,9 @@ const CrowdCarry = () => {
             />
           </motion.div>
         </div>
-
+        <div className='w-full'>
+          <img src={Cstart} alt='site' className='w-full object-cover' />
+        </div>
         <div className='w-full bg-gray-100 py-16 px-6 sm:px-75'>
           {/* Section Header */}
           <motion.h2

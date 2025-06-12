@@ -80,18 +80,29 @@ const ClickCart = () => {
               CLICK CART
             </motion.h1>
 
-            
             <motion.p
               className='text-lg text-gray-600 mb-8 text-left max-w-2xl'
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2, ease: 'easeOut' }}
             >
-              Click Cart is an innovative e-commerce platform designed to
-              provide businesses with a seamless digital storefront and enhance
-              the customer checkout experience. Leveraging modern web
-              development technologies, Click Cart enables users to browse and
-              purchase products online with ease.
+              In today’s fast-paced digital world, businesses need more than
+              just an online presence — they need a platform that delivers
+              speed, simplicity, and trust. That’s where Click Cart comes in.
+              <br></br>
+              Click Cart is a smart, modern e-commerce platform built to help
+              businesses thrive in the digital space. It offers an easy way for
+              sellers to create clean, professional storefronts while giving
+              customers a smooth, stress-free shopping experience. Whether
+              you're running a small boutique or a large-scale business, Click
+              Cart makes it simple to showcase products, manage inventory, and
+              handle orders — all in one place. For shoppers, the platform is
+              designed to feel fast and intuitive, with quick navigation, secure
+              checkout, and mobile-friendly design. More than just a place to
+              buy and sell, Click Cart is built to make online transactions feel
+              effortless — turning browsing into buying with just a few clicks.
+              It’s all about convenience, clarity, and connection between brands
+              and their customers.
             </motion.p>
 
             {/* My Roles & Visit Site Section */}
@@ -134,7 +145,6 @@ const ClickCart = () => {
               <p className='text-2xl font-semibold text-gray-800'>Ecommerce</p>
             </motion.div>
 
-        
             <motion.div
               className='flex flex-col gap-8 py-6 sm:py-0 w-full sm:w-2/3'
               initial={{ opacity: 0, y: 30 }}
@@ -183,14 +193,12 @@ const ClickCart = () => {
 
           <div className='w-full py-8 flex justify-center items-center'>
             <div className='container mx-auto flex flex-col md:flex-row items-center justify-between px-6 relative bg-white shadow-lg rounded-xl p-10 overflow-hidden'>
-              
               <motion.div
                 className='flex flex-col gap-6 md:w-1/2 z-10'
                 initial={{ opacity: 0, x: -50 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8 }}
               >
-            
                 <h1 className='text-3xl md:text-4xl font-bold text-gray-800'>
                   Brand Identity
                 </h1>
@@ -349,6 +357,123 @@ const ClickCart = () => {
             className='w-full h-auto object-cover md:px-30 px-7'
           />
         </motion.div>
+
+        <section className='bg-white px-4 py-12 max-w-4xl mx-auto text-[#111]'>
+          <h2 className='text-2xl md:text-4xl pl-0 md:pl-0 font-semibold mb-12'>
+            Simple, Secure Onboarding
+          </h2>
+          {/* Intro Paragraph */}
+          <p className='text-base md:text-lg mb-6'>
+            With e-commerce platforms like Click Cart, trust is everything —
+            especially when handling transactions and personal data. That’s why
+            we designed an onboarding process that’s both quick and highly
+            secure. In just a few easy steps, users can sign up, verify their
+            accounts, and start shopping or selling with confidence. To make
+            onboarding even easier, we integrated Google and Facebook sign-in
+            options, allowing users to get started instantly without the hassle
+            of filling out long forms. This not only speeds up the process but
+            also adds an extra layer of credibility and convenience.
+          </p>
+        </section>
+
+        <div className='w-full bg-slate-400 py-16 px-4 mt-10'>
+          {/* Flex Container */}
+          <motion.div
+            className='flex flex-wrap gap-4 justify-center items-center'
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+          >
+            <motion.img
+              src={H1}
+              alt='Project 1'
+              className='w-5/25 sm:w-1/5 object-cover rounded-lg shadow-lg'
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.3 }}
+            />
+            <motion.img
+              src={H2}
+              alt='Project 2'
+              className='w-5/25 sm:w-1/5 object-cover rounded-lg shadow-lg'
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.3 }}
+            />
+            <motion.img
+              src={H3}
+              alt='Project 3'
+              className='w-5/25 sm:w-1/5 object-cover rounded-lg shadow-lg'
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.3 }}
+            />
+            <motion.img
+              src={H4}
+              alt='Project 3'
+              className='w-5/25 sm:w-1/5 object-cover rounded-lg shadow-lg'
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.3 }}
+            />
+          </motion.div>
+
+          <div className='w-full py-5'>
+            {/* Flex Container */}
+            <motion.div
+              className='flex flex-wrap gap-4 justify-center items-center'
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1 }}
+            >
+              <motion.img
+                src={H5}
+                alt='Project 1'
+                className='w-5/25 sm:w-1/5 object-cover rounded-lg shadow-lg'
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.3 }}
+              />
+              <motion.img
+                src={H6}
+                alt='Project 2'
+                className='w-5/25 sm:w-1/5 object-cover rounded-lg shadow-lg'
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.3 }}
+              />
+              <motion.img
+                src={H7}
+                alt='Project 3'
+                className='w-5/25 sm:w-1/5 object-cover rounded-lg shadow-lg'
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.3 }}
+              />
+              <motion.img
+                src={H8}
+                alt='Project 3'
+                className='w-5/25 sm:w-1/5 object-cover rounded-lg shadow-lg'
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.3 }}
+              />
+            </motion.div>
+          </div>
+        </div>
+
+        <section className='bg-white px-4 py-12 max-w-4xl mx-auto text-[#111]'>
+          <h2 className='text-2xl md:text-4xl pl-0 md:pl-0 font-semibold mb-12'>
+            Seamless Flow from Cart to Checkout
+          </h2>
+          {/* Intro Paragraph */}
+          <p className='text-base md:text-lg mb-6'>
+            For Click Cart, I knew the cart and checkout flow had to be fast,
+            intuitive, and free of friction. One of the biggest drop-off points
+            in e-commerce is a clunky checkout, so I focused on making the
+            process as smooth and user-friendly as possible. Users can quickly
+            add items to their cart and make adjustments without breaking their
+            shopping flow. When it's time to check out, the interface stays
+            clean and focused — no distractions, just clear steps. I also made
+            sure to integrate flexible payment options, like cards, wallets, and
+            even pay-on-delivery, to match different user preferences. With
+            features like smart validation and autofill, most people can check
+            out in under a minute. The goal was simple: help users buy what they
+            love without hesitation.
+          </p>
+        </section>
 
         <div className='w-full bg-slate-400 py-16 px-4 mt-10'>
           {/* Flex Container */}
