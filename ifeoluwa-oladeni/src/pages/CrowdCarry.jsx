@@ -301,6 +301,9 @@ const CrowdCarry = () => {
         </section>
 
         <div className='w-full bg-emerald-500 pt-16 px-6 sm:px-16'>
+          <h1 className='text-2xl md:text-3xl text-white justify-center text-center font-semibold mb-4'>
+            A Glimpse into the Interface
+          </h1>
           {/* Section Header */}
           {/* <motion.h2
             className='text-4xl font-bold text-white text-center mb-10'
@@ -364,14 +367,37 @@ const CrowdCarry = () => {
             interacted with the brand — turning a promising idea into a
             seamless, accessible experience people could rely on. By combining
             user insight with strategic design, we achieved real-world results
-            that mattered. 🚀 Key Outcomes: 33% increase in successful rentals
-            within the first two weeks of launch 41% faster user journey from
-            landing to renting, thanks to simplified flows and instant access to
-            station maps Over 5,000 users engaged with the platform in the first
-            month, with an average session time of 2.4 minutes, showing strong
-            interest and retention 25% drop in user inquiries, indicating
-            clearer communication and improved self-service through the site
-            
+            that mattered. <br></br>
+            🚀 Key Outcomes:
+            <motion.li className='flex items-start gap-2'>
+              <span className='text-green-500 text-xl'>✅</span>
+              <p className='text-lg text-gray-700'>
+                33% increase in successful rentals within the first two weeks of
+                launch
+              </p>
+            </motion.li>
+            <motion.li className='flex items-start gap-2'>
+              <span className='text-green-500 text-xl'>✅</span>
+              <p className='text-lg text-gray-700'>
+                41% faster user journey from landing to renting, thanks to
+                simplified flows and instant access to station maps
+              </p>
+            </motion.li>
+            <motion.li className='flex items-start gap-2'>
+              <span className='text-green-500 text-xl'>✅</span>
+              <p className='text-lg text-gray-700'>
+                Over 5,000 users engaged with the platform in the first month,
+                with an average session time of 2.4 minutes, showing strong
+                interest and retention
+              </p>
+            </motion.li>
+            <motion.li className='flex items-start gap-2'>
+              <span className='text-green-500 text-xl'>✅</span>
+              <p className='text-lg text-gray-700'>
+                25% drop in user inquiries, indicating clearer communication and
+                improved self-service through the site
+              </p>
+            </motion.li>
           </motion.p>
         </div>
       </div>
