@@ -1,7 +1,14 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Acc from '../assets/acc.svg';
+import Acc1 from '../assets/acc1.svg';
 import Logoa from '../assets/logoa.svg';
+import Bia from '../assets/bia.svg';
+import S1 from '../assets/S1.png';
+import S2 from '../assets/S2.png';
+import S3 from '../assets/S3.png';  
+import S4 from '../assets/s4.png';
+import S5 from '../assets/s5.png';
 
 const Ignite = () => {
   return (
@@ -172,6 +179,111 @@ const Ignite = () => {
             className='w-[180px] sm:w-[220px] md:w-[300px] lg:w-[350px] object-contain'
           />
         </div>
+
+        <section className='bg-white px-4 py-12 max-w-4xl mx-auto text-[#111]'>
+          {/* Heading */}
+          <h2 className='text-2xl md:text-3xl font-semibold mb-8'>
+            Bringing IgnitePro to Life
+          </h2>
+          {/* Intro Paragraph */}
+
+          <p className='text-base md:text-lg mb-6'>
+            Designing the IgnitePro Community website meant creating a digital
+            space that truly connects with students, graduates, and young
+            professionals. I followed a human-centered UX process to ensure
+            every design decision aligned with real user needs and goals. To
+            better understand the users, I conducted one-on-one conversations
+            with 10 people who fell within IgnitePro’s target audience. This
+            included: 5 students (both undergraduates and final-year students) 3
+            recent graduates (within 1–2 years of graduation) 2 early-career
+            professionals (employed or freelancing)
+          </p>
+        </section>
+
+        <div className='relative  w-screen h-auto mx-auto '>
+          <img
+            src={Acc1}
+            alt='Hero Background'
+            className='w-full h-auto object-cover'
+          />
+        </div>
+
+        <section className='bg-white px-4 py-12 max-w-4xl mx-auto text-[#111]'>
+          {/* Heading */}
+          <h2 className='text-2xl md:text-3xl font-semibold mb-8'>
+            Designing a Website That Builds Trust and Drives Action
+          </h2>
+          {/* Intro Paragraph */}
+
+          <p className='text-base md:text-lg mb-6'>
+            To make the IgnitePro Community platform stand out, the goal was to
+            build a website that felt real, trustworthy, and inspiring. Instead
+            of using stock images, I showcased authentic photos from past events
+            to reflect the energy of the community. Multiple contact options
+            were also added to make it easy for users to connect. Working with a
+            content strategist, we gave the site a clear and relatable voice —
+            one that feels reliable, welcoming, and empowering. After several
+            rounds of ideation and testing, we arrived at a clean, focused
+            design with strong messaging and CTAs that encourage users to
+            explore and register for programs. The site was built with React,
+            allowing the IgnitePro team to easily manage events and content.
+          </p>
+        </section>
+
+        <section className='relative bg-[#f0eaff] pt-5 md:pt-28'>
+          <div className='relative max-w-7xl w-full h-auto mx-auto px-4 sm:px-6 lg:px-8'>
+            <img
+              src={Bia}
+              alt='Hero Background'
+              className='w-full h-auto object-cover'
+            />
+
+            {/* Optional Overlay */}
+            {/* <div className='absolute inset-0 bg-black bg-opacity-50'></div> */}
+          </div>
+        </section>
+
+        <section className='w-full py-12 bg-white'>
+          <div className='max-full mx-auto flex flex-col md:flex-row items-center gap-6'>
+            {/* Image One */}
+            <img
+              src={S1}
+              alt='First'
+              className='w-full md:w-1/2  shadow-md object-cover'
+            />
+
+            {/* Image Two */}
+            <img
+              src={S2}
+              alt='Second'
+              className='w-full md:w-1/2 shadow-md object-cover'
+            />
+          </div>
+        </section>
+
+        <section className='bg-[#EFE2FF] relative overflow-hidden py-10'>
+          <div className='scale-110'>
+            <img src={S3} alt='Second' className='w-full object-cover' />
+          </div>
+        </section>
+
+        <section className='w-full p bg-white'>
+          <div className='max-full mx-auto flex flex-col md:flex-row items-center gap-4'>
+            {/* Image One */}
+            <img
+              src={S4}
+              alt='First'
+              className='w-full md:w-1/2  shadow-md object-cover'
+            />
+
+            {/* Image Two */}
+            <img
+              src={S5}
+              alt='Second'
+              className='w-full md:w-1/2 shadow-md object-cover'
+            />
+          </div>
+        </section>
       </div>
     </>
   );

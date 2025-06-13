@@ -4,7 +4,6 @@ import Clickcartlogo1 from '../assets/Clickcartlogo1.jpg';
 import Clickphone1 from '../assets/clickphone1.jpg';
 import Click from '../assets/click.jpg';
 import Clickuser from '../assets/clickuser.png';
-import Bia from '../assets/bia.svg';
 
 import H1 from '../assets/h1.png';
 import H2 from '../assets/h2.png';
@@ -582,18 +581,7 @@ const ClickCart = () => {
           </motion.div>
         </div>
 
-        <section className='relative bg-[#f0eaff] pt-5 md:pt-28'>
-          <div className='relative max-w-7xl w-full h-auto mx-auto px-4 sm:px-6 lg:px-8'>
-            <img
-              src={Bia}
-              alt='Hero Background'
-              className='w-full h-auto object-cover'
-            />
-
-            {/* Optional Overlay */}
-            {/* <div className='absolute inset-0 bg-black bg-opacity-50'></div> */}
-          </div>
-        </section>
+     
 
         <div className='w-full bg-gray-100 py-16 px-6 sm:px-75'>
           {/* Section Header */}
