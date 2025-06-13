@@ -4,6 +4,7 @@ import Clickcartlogo1 from '../assets/Clickcartlogo1.jpg';
 import Clickphone1 from '../assets/clickphone1.jpg';
 import Click from '../assets/click.jpg';
 import Clickuser from '../assets/clickuser.png';
+import Bia from '../assets/bia.svg';
 
 import H1 from '../assets/h1.png';
 import H2 from '../assets/h2.png';
@@ -81,12 +82,12 @@ const ClickCart = () => {
           >
             {/* Heading */}
             <motion.h1
-              className='text-4xl md:text-5xl font-bold text-gray-800 mb-6 text-left'
+              className='text-4xl md:text-5xl font-semibold text-gray-800 mb-6 text-left'
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, ease: 'easeOut' }}
             >
-              CLICK CART
+              Click Cart
             </motion.h1>
 
             <motion.p
@@ -99,19 +100,13 @@ const ClickCart = () => {
               just an online presence — they need a platform that delivers
               speed, simplicity, and trust. That’s where Click Cart comes in.
               <br></br>
-              Click Cart is a smart, modern e-commerce platform built to help
-              businesses thrive in the digital space. It offers an easy way for
-              sellers to create clean, professional storefronts while giving
-              customers a smooth, stress-free shopping experience. Whether
-              you're running a small boutique or a large-scale business, Click
-              Cart makes it simple to showcase products, manage inventory, and
-              handle orders — all in one place. For shoppers, the platform is
-              designed to feel fast and intuitive, with quick navigation, secure
-              checkout, and mobile-friendly design. More than just a place to
-              buy and sell, Click Cart is built to make online transactions feel
-              effortless — turning browsing into buying with just a few clicks.
-              It’s all about convenience, clarity, and connection between brands
-              and their customers.
+              Click Cart is a modern e-commerce platform that helps businesses
+              create clean, professional storefronts and manage sales with ease.
+              It offers a smooth, mobile-friendly shopping experience for
+              customers, with fast navigation and secure checkout. More than
+              just a marketplace, Click Cart makes online transactions
+              effortless — connecting brands with customers through clarity,
+              convenience, and smart design.
             </motion.p>
 
             {/* My Roles & Visit Site Section */}
@@ -121,7 +116,7 @@ const ClickCart = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.4, ease: 'easeOut' }}
             >
-              <h2 className='text-2xl font-semibold text-gray-800 '>
+              <h2 className='text-2xl font-medium text-gray-800 '>
                 My Roles:{' '}
                 <motion.span
                   className='text-lg text-gray-600'
@@ -352,12 +347,12 @@ const ClickCart = () => {
           transition={{ duration: 1.2, ease: 'easeOut' }}
         >
           <motion.h1
-            className=' md:text-4xl text-3xl font-bold uppercase md:px-30 px-7 py-10 text-left'
+            className=' md:text-4xl text-3xl font-bold  md:px-30 px-7 py-10 text-left'
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            USERFLOW
+            User flow
           </motion.h1>
 
           <img
@@ -586,6 +581,19 @@ const ClickCart = () => {
             />
           </motion.div>
         </div>
+
+        <section className='relative bg-[#f0eaff] pt-5 md:pt-28'>
+          <div className='relative max-w-7xl w-full h-auto mx-auto px-4 sm:px-6 lg:px-8'>
+            <img
+              src={Bia}
+              alt='Hero Background'
+              className='w-full h-auto object-cover'
+            />
+
+            {/* Optional Overlay */}
+            {/* <div className='absolute inset-0 bg-black bg-opacity-50'></div> */}
+          </div>
+        </section>
 
         <div className='w-full bg-gray-100 py-16 px-6 sm:px-75'>
           {/* Section Header */}

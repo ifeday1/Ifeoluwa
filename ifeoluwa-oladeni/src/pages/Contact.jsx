@@ -1,5 +1,4 @@
-import React from 'react';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaRegCopy, FaArrowDown } from 'react-icons/fa';
 import { FaBehance, FaDribbble, FaLinkedin, FaInstagram } from 'react-icons/fa';
@@ -44,7 +43,6 @@ const Contact = () => {
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
-  const boxes = ['Box One', 'Box Two', 'Box Three', 'Box Four'];
 
   return (
     <>
@@ -53,7 +51,7 @@ const Contact = () => {
           className='relative w-full max-w-7xl p-16 md:p-24 text-center rounded-3xl shadow-2xl flex flex-col justify-between min-h-[70vh]'
           style={{
             background:
-              'radial-gradient(circle, rgba(99,102,241,0.4) 0%, rgba(56,189,248,0.2) 50%, rgba(17,24,39,1) 100%)',
+              'radial-gradient(circle, rgba(30,30,30,0.6) 0%, rgba(20,20,20,0.9) 100%)',
           }}
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
