@@ -6,9 +6,14 @@ import Logoa from '../assets/logoa.svg';
 import Bia from '../assets/bia.svg';
 import S1 from '../assets/S1.png';
 import S2 from '../assets/S2.png';
-import S3 from '../assets/S3.png';  
+import S3 from '../assets/S3.png';
 import S4 from '../assets/s4.png';
 import S5 from '../assets/s5.png';
+// import Pitch from '../assets/pitch.png';
+import Test from '../assets/test.png';
+import Pitch1 from '../assets/pitch1.png';
+// import Event from '../assets/event.png';
+import Event1 from '../assets/event1.png';
 
 const Ignite = () => {
   return (
@@ -38,20 +43,19 @@ const Ignite = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2, ease: 'easeOut' }}
             >
-              IgnitePro Community is a youth-focused NGO committed to empowering
+              IgnitePro Community is a youth-focused NGO dedicated to empowering
               students, graduates, and young professionals to succeed in life
-              and career. More than just an organization, it's a platform where
-              young people can explore their passions, unlock their potential,
-              and build a future they’re proud of. Through structured programs,
-              hands-on workshops, and mentorship opportunities, IgnitePro helps
-              its members develop essential skills — from leadership and
-              communication to career readiness and personal growth. The
-              community creates a space for learning, connection, and
-              transformation, giving young individuals the tools and confidence
-              to thrive in a fast-changing world. By focusing on both personal
-              and professional development, IgnitePro Community plays a vital
-              role in shaping the next generation of leaders — equipping them
-              not just to survive, but to stand out and succeed.
+              and career. It’s more than an organization — it’s a platform where
+              young people explore their passions, unlock potential, and build a
+              future they’re proud of. Through structured programs, hands-on
+              workshops, and mentorship, IgnitePro helps members develop
+              essential skills like leadership, communication, and career
+              readiness. The community fosters growth and connection, giving
+              young individuals the tools and confidence to thrive in a
+              fast-changing world. By focusing on both personal and professional
+              development, IgnitePro plays a key role in shaping the next
+              generation of leaders — equipping them to stand out and make
+              lasting impact.
             </motion.p>
 
             {/* My Roles & Visit Site Section */}
@@ -111,8 +115,20 @@ const Ignite = () => {
               <h3 className='text-lg text-gray-500 uppercase tracking-wide'>
                 Industry
               </h3>
-              <p className='text-2xl font-semibold text-gray-800'>
+              <p className='text-2xl font-semibold text-gray-800 mb-6'>
                 Human Capital Development
+              </p>
+
+              <h3 className='text-lg text-gray-500 uppercase tracking-wide'>
+                Contributors
+              </h3>
+              <p className='text-base font-medium text-gray-800'>
+                Oghosa Igbinomwanhia—{' '}
+                <span className='text-gray-600'>Copywriter</span>
+              </p>
+              <p className='text-base font-medium text-gray-800'>
+                Sola Akinola —{' '}
+                <span className='text-gray-600'>Project Manager</span>
               </p>
             </motion.div>
 
@@ -243,7 +259,7 @@ const Ignite = () => {
           </div>
         </section>
 
-        <section className='w-full py-12 bg-white'>
+        <section className='w-full  bg-white'>
           <div className='max-full mx-auto flex flex-col md:flex-row items-center gap-6'>
             {/* Image One */}
             <img
@@ -261,14 +277,18 @@ const Ignite = () => {
           </div>
         </section>
 
-        <section className='bg-[#EFE2FF] relative overflow-hidden py-10'>
-          <div className='scale-110'>
-            <img src={S3} alt='Second' className='w-full object-cover' />
+        <section className='bg-[#EFE2FF] relative overflow-hidden'>
+          <div className='w-full'>
+            <img
+              src={S3}
+              alt='Second'
+              className='w-full h-auto object-cover scale-110'
+            />
           </div>
         </section>
 
-        <section className='w-full p bg-white'>
-          <div className='max-full mx-auto flex flex-col md:flex-row items-center gap-4'>
+        <section className='w-full  bg-white'>
+          <div className='max-full w-full mx-auto flex flex-col md:flex-row items-center gap-4'>
             {/* Image One */}
             <img
               src={S4}
@@ -284,6 +304,66 @@ const Ignite = () => {
             />
           </div>
         </section>
+
+        <section className='w-full bg-white pt-12'>
+          <div className='w-full max-w-full mx-auto relative px-0 md:px-0'>
+            {/* Top two images */}
+            <div className='flex flex-col md:flex-row gap-4'>
+              {/* Left image with rotation on md+ */}
+              <img
+                src={Event1}
+                alt='Event'
+                className='w-full md:w-1/2 h-auto object-cover transform md:-rotate-4 rounded-md'
+              />
+
+              {/* Right image with opposite rotation on md+ */}
+              <img
+                src={Pitch1}
+                alt='Pitch'
+                className='w-full md:w-1/2 h-auto object-cover transform md:rotate-4 rounded-md'
+              />
+            </div>
+
+            {/* Bottom full-width image */}
+            <div className='relative z-10 '>
+              <img
+                src={Test}
+                alt='Test'
+                className='w-full h-auto object-cover shadow-lg rounded-lg'
+              />
+            </div>
+          </div>
+        </section>
+
+        <div className='w-full bg-gray-100 py-16 px-6 sm:px-75'>
+          {/* Section Header */}
+          <motion.h2
+            className='text-4xl font-bold text-gray-800 text-left mb-8'
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            The Outcome
+          </motion.h2>
+
+          {/* Outcome Content */}
+          <motion.p
+            className='text-lg text-gray-700 mb-6 max-w-3xl'
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+          >
+            The launch of the IgnitePro Community website resulted in over 2,000
+            visits within the first few weeks, as it became the central hub for
+            registering for the conference and viewing minister profiles and the
+            full program agenda. Users were able to find the information they
+            needed quickly, register without stress, and get answers to common
+            questions—all in one place. Clear content structure, mobile
+            responsiveness, and a smooth registration flow resolved previous
+            issues around visibility, accessibility, and trust, ultimately
+            improving overall engagement and participation.
+          </motion.p>
+        </div>
       </div>
     </>
   );

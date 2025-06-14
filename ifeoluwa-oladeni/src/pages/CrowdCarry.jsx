@@ -369,6 +369,8 @@ const CrowdCarry = () => {
         <div className='w-full'>
           <img src={Cstart} alt='site' className='w-full object-cover' />
         </div>
+
+        
         <div className='w-full bg-gray-100 py-16 px-6 sm:px-75'>
           {/* Section Header */}
           <motion.h2

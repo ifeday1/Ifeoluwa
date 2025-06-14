@@ -142,10 +142,19 @@ const ClickCart = () => {
               </h3>
               <p className='text-2xl font-semibold text-gray-800 mb-6'>2024</p>
 
-              <h3 className='text-lg text-gray-500 uppercase tracking-wide'>
+              <h3 className='text-lg text-gray-500 uppercase tracking-wide mb'>
                 Industry
               </h3>
-              <p className='text-2xl font-semibold text-gray-800'>Ecommerce</p>
+              <p className='text-2xl font-semibold text-gray-800 mb-6'>Ecommerce</p>
+
+              <h3 className='text-lg text-gray-500 uppercase tracking-wide'>
+                Contributors
+              </h3>
+              <p className='text-base font-medium text-gray-800'>
+             Tola Adedeji—{' '}
+                <span className='text-gray-600'>Software Developer</span>
+              </p>
+           
             </motion.div>
 
             <motion.div
@@ -580,8 +589,6 @@ const ClickCart = () => {
             />
           </motion.div>
         </div>
-
-     
 
         <div className='w-full bg-gray-100 py-16 px-6 sm:px-75'>
           {/* Section Header */}

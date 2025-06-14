@@ -5,36 +5,12 @@ import IHome from '../assets/IHome.jpg';
 import IAboutus from '../assets/IAboutus.jpg';
 // import Iportflio from '../assets/Iportflio.jpg';
 import Iservice from '../assets/Iservice.jpg';
+import Ilogo from '../assets/ilogo.svg';
+import Dis from '../assets/dis.svg';
 
 import { motion } from 'framer-motion';
 
 const Incognito = () => {
-  const processSteps = [
-    {
-      title: 'User Research',
-      details: [
-        " Understanding the target audience is fundamental. This phase involves gathering insights into users' needs, behaviors, and pain points through methods like interviews, surveys, and observations. The goal is to create a user-centric design that resonates with the intended audience.",
-      ],
-    },
-    {
-      title: 'Defining User Requirements',
-      details: [
-        '  Based on the research, designers identify specific user needs and establish clear objectives for the website. This step ensures that the design aligns with both user expectations and business goals',
-      ],
-    },
-    {
-      title: ' Wireframing',
-      details: [
-        ' Organizing content logically is crucial for intuitive navigation. Designers create wireframes—skeletal layouts that outline the placement of elements on each page. This stage focuses on structure without delving into visual design details.',
-      ],
-    },
-    {
-      title: 'Visual Design and UI Elements:  ',
-      details: [
-        ' This stage brings the wireframes to life by incorporating visual elements such as color schemes, typography, imagery, and branding guidelines. The aim is to create an aesthetically pleasing interface that enhances usability.',
-      ],
-    },
-  ];
   return (
     <>
       <div className=' bg-white'>
@@ -46,7 +22,7 @@ const Incognito = () => {
             transition={{ duration: 0.8, ease: 'easeOut' }}
           >
             <motion.h1
-              className='text-4xl md:text-5xl font-bold text-gray-800 mb-6 text-left uppercase'
+              className='text-4xl md:text-5xl font-semibold text-gray-800 mb-6 text-left '
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, ease: 'easeOut' }}
@@ -61,12 +37,18 @@ const Incognito = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2, ease: 'easeOut' }}
             >
-              At Incognito Technologies, we’re digital alchemists. We transform
-              businesses with cutting-edge software, sleek designs, and
-              data-driven strategies. From startups to enterprises, we craft
-              digital solutions that turn challenges into opportunities. Our
-              passion? Empowering your success in the digital age. Join us on
-              the journey to redefine your digital frontier.   
+              In a world where digital presence shapes success, Incognito
+              Technologies stands as the quiet force behind impactful business
+              transformations. They don’t just build software — they create
+              digital experiences that solve real problems and unlock new
+              opportunities. From startups launching their first product to
+              enterprises streamlining operations, Incognito blends sleek
+              design, smart strategy, and powerful tech into solutions that
+              drive growth. Their expertise spans intuitive interfaces, robust
+              backend systems, and data-driven tools — all crafted to bring
+              clarity and results. At the core, Incognito is more than a service
+              provider; they’re a trusted partner helping businesses navigate
+              the digital age with confidence and purpose.
             </motion.p>
 
             {/* My Roles & Visit Site Section */}
@@ -76,7 +58,7 @@ const Incognito = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.4, ease: 'easeOut' }}
             >
-              <h2 className='text-2xl font-semibold text-gray-800 mb-2'>
+              <h2 className='text-2xl font-medium text-gray-800 mb-2'>
                 My Roles:{' '}
                 <motion.span
                   className='text-lg text-gray-600'
@@ -112,8 +94,8 @@ const Incognito = () => {
             transition={{ duration: 1.2, ease: 'easeOut' }}
           >
             <img
-              src={Incog}
-              alt='Crowd'
+              src={Ilogo}
+              alt='logo'
               className='w-full h-auto object-cover'
             />
           </motion.div>
@@ -135,7 +117,20 @@ const Incognito = () => {
             <h3 className='text-lg text-gray-500 uppercase tracking-wide'>
               Industry
             </h3>
-            <p className='text-2xl font-semibold text-gray-800'>Technology</p>
+            <p className='text-2xl font-semibold text-gray-800 mb-6'>
+              Technology
+            </p>
+            <h3 className='text-lg text-gray-500 uppercase tracking-wide'>
+              Contributors
+            </h3>
+            <p className='text-base font-medium text-gray-800'>
+              James Oboraruvwe—{' '}
+              <span className='text-gray-600'>Software Developer</span>
+            </p>
+            <p className='text-base font-medium text-gray-800'>
+              Ebubechukwu Uwadia —{' '}
+              <span className='text-gray-600'>Project Manager</span>
+            </p>
           </motion.div>
 
           {/* Second Flex - Challenge & Solution */}
@@ -200,37 +195,179 @@ const Incognito = () => {
           />
         </motion.div>
 
-        <div className='w-full px-6 sm:px-75 py-12 bg-gray-100'>
-          <motion.h2
-            className='text-4xl font-bold text-gray-800 mb-8 text-left'
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            Process
-          </motion.h2>
+        <section className='bg-white px-4 py-12 max-w-4xl mx-auto text-[#111]'>
+          {/* Heading */}
+          <h2 className='text-2xl md:text-3xl font-semibold mb-8'>
+            Turning complex ideas into intuitive digital experiences
+          </h2>
+          {/* Intro Paragraph */}
 
-          <div className='space-y-10'>
-            {processSteps.map((step, index) => (
-              <motion.div
-                key={index}
-                className='bg-white p-6 rounded-lg shadow-md'
-                initial={{ opacity: 0, x: -30 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8, delay: index * 0.3 }}
-              >
-                <h3 className='text-2xl font-semibold text-gray-800 mb-3'>
-                  {step.title}
-                </h3>
-                <ul className='list-disc list-inside text-gray-600 space-y-2'>
-                  {step.details.map((detail, idx) => (
-                    <li key={idx}>{detail}</li>
-                  ))}
-                </ul>
-              </motion.div>
-            ))}
-          </div>
+          <p className='text-base md:text-lg mb-6'>
+            When tasked with creating the website for Incognito Technologies,
+            the goal was clear: build a digital front door that reflects the
+            company’s expertise while engaging potential clients with clarity
+            and confidence. The challenge wasn’t just about aesthetics — it was
+            about crafting a user experience that communicates trust, tells a
+            compelling story, and makes action easy.
+          </p>
+        </section>
+
+        <div>
+          <motion.div>
+            <img
+              src={Incog}
+              alt='Crowd'
+              className='w-full h-auto object-cover'
+            />
+          </motion.div>
         </div>
+
+        <section className='w-full bg-white py-16 px-4 md:px-12 text-gray-800'>
+          {/* Section: Understanding the Brand */}
+          <div className='max-w-6xl mx-auto space-y-8'>
+            <div>
+              <h2 className='text-2xl md:text-3xl font-semibold mb-4'>
+                Understanding the Brand and the User
+              </h2>
+              <p className='text-base md:text-lg mb-4'>
+                Every successful UX project starts with listening — and that’s
+                exactly how we approached the redesign of Incognito
+                Technologies’ website. The goal was to create something more
+                than a digital brochure. The website had to speak for the brand,
+                build trust instantly, and convert curious visitors into real
+                business leads.
+              </p>
+              <p className='text-base md:text-lg'>
+                To do that, I first had to understand two sides of the story:
+              </p>
+
+              {/* Side-by-side buttons */}
+              <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4'>
+                <div className='bg-[#EAE2F8] py-3 px-4 rounded-md text-center'>
+                  What Incognito stands for,
+                </div>
+                <div className='bg-[#D9F2EC] py-3 px-4 rounded-md text-center'>
+                  Who their ideal users are and what they need.
+                </div>
+              </div>
+            </div>
+
+            {/* Internal Discovery */}
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-6 items-start'>
+              <div>
+                <h3 className='text-xl font-semibold mb-3'>
+                  🔍 Internal Discovery
+                </h3>
+                <p className='mb-3'>
+                  I began with a series of discovery workshops and stakeholder
+                  interviews. I asked open-ended questions to uncover their
+                  story:
+                </p>
+                <ul className='list-disc list-inside space-y-1 mb-4'>
+                  <li>What’s the unique value Incognito brings to clients?</li>
+                  <li>What does a successful client journey look like?</li>
+                  <li>
+                    What kind of impression do they want visitors to leave with?
+                  </li>
+                </ul>
+                <p>
+                  From these sessions, it became clear that Incognito wasn’t
+                  just a tech vendor — they positioned themselves as strategic
+                  partners, using creativity and code to solve business
+                  challenges. They were bold but not boastful, professional but
+                  not rigid. This guided not only tone and layout but the entire
+                  UX tone and hierarchy.
+                </p>
+              </div>
+
+              {/* Image */}
+              <div className='rounded-lg overflow-hidden'>
+                <img
+                  src={Dis}
+                  alt='Discovery'
+                  className='w-full h-auto object-cover rounded-lg shadow'
+                />
+              </div>
+            </div>
+
+            {/* Voice of the User */}
+            <div className='space-y-4'>
+              <h3 className='text-xl font-semibold'>
+                Listening to the Voice of the User
+              </h3>
+              <p>
+                To build a website that truly speaks to Incognito Technologies’
+                audience, I started by talking directly with five professionals
+                who closely match their ideal client profile:
+              </p>
+              <ul className='list-disc list-inside space-y-1 mb-4'>
+                <li>2 startup founders navigating the early growth phase</li>
+                <li>2 mid-level managers in fast-paced tech startups</li>
+                <li>1 product lead from a larger enterprise organization</li>
+              </ul>
+              <p>
+                These conversations uncovered not just needs, but specific
+                emotional drivers and pain points.
+              </p>
+            </div>
+
+            {/* User Quotes */}
+            <div className='mt-8'>
+              <h3 className='text-xl font-semibold mb-6'>
+                What they said — and what it meant
+              </h3>
+              <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
+                {/* Card 1 */}
+                <div className='bg-[#EAE2F8] p-5 rounded-md shadow-sm'>
+                  <p className='font-medium text-[#3D348B] mb-2'>
+                    "Show me proof you’ve done this before."
+                  </p>
+                  <p className='text-sm'>
+                    This insight revealed a strong need for credibility and
+                    validation. Users didn’t just want to know what Incognito
+                    Technologies does — they wanted to see clear examples of
+                    results and past work. Case studies, testimonials and real
+                    client logos were essential to building trust.
+                  </p>
+                </div>
+
+                {/* Card 2 */}
+                <div className='bg-[#FFF7D6] p-5 rounded-md shadow-sm'>
+                  <p className='font-medium text-[#BC6C25] mb-2'>
+                    "Don’t make me work to figure out what you do."
+                  </p>
+                  <p className='text-sm'>
+                    Clarity was key. The homepage had to immediately communicate
+                    who Incognito is, what they offer and how they’re different
+                    — without jargon. Users preferred simplified language, clean
+                    layouts, and a focus on benefits rather than technicalities.
+                  </p>
+                </div>
+
+                {/* Card 3 */}
+                <div className='bg-[#D9F2EC] p-5 rounded-md shadow-sm'>
+                  <p className='font-medium text-[#2A9D8F] mb-2'>
+                    "Let me get in touch without filling 12 fields."
+                  </p>
+                  <p className='text-sm'>
+                    For busy professionals, time is everything. A long or
+                    complicated contact process was a major turnoff. Users
+                    wanted quick ways to engage — through a short contact form,
+                    integrated live chat, or even direct WhatsApp and email
+                    links.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Summary */}
+            <p className='mt-8 text-base md:text-lg'>
+              These responses helped shape the foundation of the website’s UX —
+              focusing on speed, trust, and clarity to reduce friction and make
+              the experience feel effortless for potential clients.
+            </p>
+          </div>
+        </section>
 
         <div className='w-full bg-purple-300 pt-16 px-6 sm:px-16'>
           {/* Section Header */}
