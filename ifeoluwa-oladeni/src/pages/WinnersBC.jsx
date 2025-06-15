@@ -42,12 +42,12 @@ const WinnersBC = () => {
           >
             {/* Heading */}
             <motion.h1
-              className='text-4xl md:text-5xl font-bold text-gray-800 mb-6 text-left uppercase'
+              className='text-4xl md:text-5xl font-semibold text-gray-800 mb-6 text-left '
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, ease: 'easeOut' }}
             >
-              WInners Baptist church
+              WInners Baptist Church
             </motion.h1>
 
             {/* Content Text */}
@@ -57,13 +57,19 @@ const WinnersBC = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2, ease: 'easeOut' }}
             >
-              Winners Baptist Church is dedicated to fostering spiritual growth
-              and community engagement. They offer regular worship services,
-              educational programs, community outreach initiatives, youth and
-              children's ministries, and music and media ministries. Through
-              these diverse activities, the church aims to nurture faith,
-              encourage personal development, and strengthen communal bonds
-              among its members.
+              Winners Baptist Church is more than a place of worship it's a
+              thriving spiritual home where lives are nurtured, faith is
+              deepened, and communities are built. Week after week, its doors
+              open not just for worship, but for meaningful connection. Through
+              heartfelt services, vibrant youth and children’s ministries, and
+              uplifting music and media teams, the church creates spaces for
+              every age and stage to grow spiritually. From teaching biblical
+              truths in practical ways to reaching out with love through
+              community programs and outreach efforts, Winners Baptist Church is
+              committed to shaping individuals who make a difference — both in
+              their walk with God and in the world around them. It's a place
+              where faith comes alive, friendships are formed, and purpose is
+              discovered.
             </motion.p>
 
             {/* My Roles & Visit Site Section */}
@@ -73,7 +79,7 @@ const WinnersBC = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.4, ease: 'easeOut' }}
             >
-              <h2 className='text-2xl font-semibold text-gray-800 mb-2'>
+              <h2 className='text-2xl font-medium text-gray-800 mb-2'>
                 My Roles:{' '}
                 <motion.span
                   className='text-lg text-gray-600'
@@ -126,8 +132,19 @@ const WinnersBC = () => {
             <h3 className='text-lg text-gray-500 uppercase tracking-wide'>
               Industry
             </h3>
-            <p className='text-2xl font-semibold text-gray-800'>
+            <p className='text-2xl font-semibold text-gray-800 mb-6'>
               Religious Organisation
+            </p>
+            <h3 className='text-lg text-gray-500 uppercase tracking-wide'>
+              Contributors
+            </h3>
+            <p className='text-base font-medium text-gray-800'>
+             Moyinoluwa Sodeinde—{' '}
+              <span className='text-gray-600'>Copywriter</span>
+            </p>
+            <p className='text-base font-medium text-gray-800'>
+            David Oladunni —{' '}
+              <span className='text-gray-600'>Project Manager</span>
             </p>
           </motion.div>
 

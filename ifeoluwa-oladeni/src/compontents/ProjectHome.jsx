@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Frontwork from '../assets/frontwork.png';
-import Crowdwork from '../assets/crowdwork.png';
 import Clickwork from '../assets/clickwork.png';
 import Incogwork from '../assets/incogwork.png';
 import Bia from '../assets//bia.png';
@@ -81,7 +80,7 @@ const ProjectHome = () => {
 
               {/* Smaller Horizontal Info Boxes */}
               <div className='flex gap-2 mt-3'>
-                {['UI/UX Design Web Development'].map((text, index) => (
+                {['UI/UX Design', 'Web Development'].map((text, index) => (
                   <motion.div
                     key={index}
                     whileHover={{ scale: 1.05 }}

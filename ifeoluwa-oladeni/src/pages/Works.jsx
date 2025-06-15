@@ -5,7 +5,10 @@ import Crowdwork from '../assets/crowdwork.png';
 import Clickwork from '../assets/clickwork.png';
 import Incogwork from '../assets/incogwork.png';
 import Winnerswork from '../assets/winnerswork.png';
-import Gamerwork from '../assets/gamerwork.png';
+// import Gamerwork from '../assets/gamerwork.png';
+import Bia from '../assets//bia.png';
+
+
 
 const Works = () => {
   return (
@@ -88,13 +91,13 @@ const Works = () => {
             {/* Project 2 */}
             <div className='flex flex-col items-start'>
               <motion.a
-                href='/works/crowdcarry'
+                href='/works/ignitepro'
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.3 }}
                 className='block overflow-hidden rounded-lg shadow-lg w-full'
               >
                 <img
-                  src={Crowdwork}
+                  src={Bia}
                   alt='Project 2'
                   className='w-full object-cover rounded-lg'
                 />
@@ -102,12 +105,12 @@ const Works = () => {
 
               {/* Project Title */}
               <h3 className='text-lg font-semibold mt-3 text-white'>
-                CROWD CARRY
+                IGNITEPRO COMMUNITY
               </h3>
 
               {/* Smaller Horizontal Info Boxes */}
               <div className='flex gap-2 mt-3'>
-                {['UI Design'].map((text, index) => (
+                {['UI/UX Design', 'Web Development'].map((text, index) => (
                   <motion.div
                     key={index}
                     whileHover={{ scale: 1.05 }}
@@ -233,26 +236,26 @@ const Works = () => {
             {/* Project 2 */}
             <div className='flex flex-col items-start'>
               <motion.a
-                href='/works/gamer'
+                href='/works/crowdcarry'
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.3 }}
                 className='block overflow-hidden rounded-lg shadow-lg w-full'
               >
                 <img
-                  src={Gamerwork}
+                  src={Crowdwork}
                   alt='Project 2'
                   className='w-full object-cover rounded-lg'
                 />
               </motion.a>
 
               {/* Project Title */}
-              <h3 className='text-lg font-semibold mt-3 uppercase text-white'>
-                Gamer
+              <h3 className='text-lg font-semibold mt-3 text-white'>
+                CROWD CARRY
               </h3>
 
               {/* Smaller Horizontal Info Boxes */}
               <div className='flex gap-2 mt-3'>
-                {['UI/UX Design'].map((text, index) => (
+                {['UI Design'].map((text, index) => (
                   <motion.div
                     key={index}
                     whileHover={{ scale: 1.05 }}
