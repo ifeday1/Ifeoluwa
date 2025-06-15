@@ -1,10 +1,12 @@
 import React from 'react';
 import Wbc from '../assets/wbc.jpg';
 import Djc from '../assets/djc.jpg';
-import Chome from '../assets/Chome.jpg';
-import Cabout from '../assets/Cabout.jpg';
-import Ccontact from '../assets/Ccontact.jpg';
 import Cstart from '../assets/Cstart.jpg';
+import Win from '../assets/win.png';
+import Win1 from '../assets/win1.png';
+import Win2 from '../assets/win2.png';
+import Face from '../assets/Face.png';
+import You from '../assets/you.png';
 
 import { motion } from 'framer-motion';
 
@@ -139,11 +141,11 @@ const WinnersBC = () => {
               Contributors
             </h3>
             <p className='text-base font-medium text-gray-800'>
-             Moyinoluwa Sodeinde—{' '}
+              Moyinoluwa Sodeinde—{' '}
               <span className='text-gray-600'>Copywriter</span>
             </p>
             <p className='text-base font-medium text-gray-800'>
-            David Oladunni —{' '}
+              David Oladunni —{' '}
               <span className='text-gray-600'>Project Manager</span>
             </p>
           </motion.div>
@@ -200,83 +202,191 @@ const WinnersBC = () => {
           <img src={Djc} alt='site' className='w-full object-cover' />
         </div>
 
-        <div className='w-full px-6 sm:px-75 py-12 bg-gray-100'>
-          <motion.h2
-            className='text-4xl font-bold text-gray-800 mb-8 text-left'
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            Process
-          </motion.h2>
+        <section className='w-full bg-white py-16 px-4 md:px-12 text-gray-800'>
+          {/* Section: Understanding the Brand */}
+          <div className='max-w-6xl mx-auto space-y-8'>
+            <div>
+              <h2 className='text-2xl md:text-3xl font-semibold mb-4'>
+                Designing a Website that Connects Faith and Community
+              </h2>
+              <p className='text-base md:text-lg mb-4'>
+                Before a single wireframe was drawn or color palette chosen, we
+                needed clarity on one thing: What do members and visitors truly
+                need from a church website? Winners Baptist Church is not just a
+                building where people gather on Sundays — it’s a living,
+                breathing community where faith is nurtured, lives are
+                supported, and relationships are built. The website had to
+                reflect this reality. We didn’t just want to make a pretty site;
+                we wanted to build something functional, welcoming, and deeply
+                intentional — a place that offered spiritual resources, answered
+                real questions, and encouraged connection throughout the week.
+                For new visitors, it had to feel approachable and informative.
+                For members, it needed to be a reliable space to find everything
+                they needed — from sermon replays to event updates. This goal
+                became our compass: Build a digital home for the church family —
+                not just a flyer for the church.
+              </p>
+            </div>
 
-          <div className='space-y-10'>
-            {processSteps.map((step, index) => (
-              <motion.div
-                key={index}
-                className='bg-white p-6 rounded-lg shadow-md'
-                initial={{ opacity: 0, x: -30 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8, delay: index * 0.3 }}
-              >
-                <h3 className='text-2xl font-semibold text-gray-800 mb-3'>
-                  {step.title}
-                </h3>
-                <ul className='list-disc list-inside text-gray-600 space-y-2'>
-                  {step.details.map((detail, idx) => (
-                    <li key={idx}>{detail}</li>
-                  ))}
-                </ul>
-              </motion.div>
-            ))}
+            <section className='w-full bg-[#FFFDEE] py-16 px-4 md:px-12'>
+              <div className='max-w-6xl mx-auto'>
+                <h2 className='text-2xl md:text-3xl font-semibold text-gray-900 mb-12'>
+                  Listening to the users
+                </h2>
+
+                <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
+                  {/* Card 1 - Visitors */}
+                  <div className='bg-white p-6 rounded-md shadow-sm'>
+                    <div className='inline-block bg-[#94F59E] text-black text-sm font-medium px-3 py-1 rounded-sm mb-4'>
+                      For Visitors
+                    </div>
+                    <p className='text-gray-800 text-base'>
+                      The most important thing was clarity. They wanted quick
+                      answers:
+                    </p>
+                    <ul className='list-disc list-inside mt-2 text-gray-700 space-y-1'>
+                      <li>What time is service?</li>
+                      <li>Where is the church located?</li>
+                    </ul>
+                    <p className='mt-2 text-gray-800'>
+                      They also wanted to feel confident they’d be welcomed — so
+                      warm, inclusive language and inviting visuals mattered.
+                    </p>
+                  </div>
+
+                  {/* Card 2 - Long-Time Members */}
+                  <div className='bg-white p-6 rounded-md shadow-sm'>
+                    <div className='inline-block bg-[#94F59E] text-black text-sm font-medium px-3 py-1 rounded-sm mb-4'>
+                      For Long-Time Members
+                    </div>
+                    <p className='text-gray-800 text-base'>
+                      Many expressed frustration about missing church events or
+                      not knowing where to find resources. They wanted:
+                    </p>
+                    <ul className='list-disc list-inside mt-2 text-gray-700 space-y-1'>
+                      <li>Easy access to sermon replays.</li>
+                      <li>
+                        A central place to see upcoming programs and ministry
+                        activities.
+                      </li>
+                      <li>
+                        Notifications or reminders about important events.
+                      </li>
+                    </ul>
+                  </div>
+
+                  {/* Card 3 - Youth */}
+                  <div className='bg-white p-6 rounded-md shadow-sm'>
+                    <div className='inline-block bg-[#94F59E] text-black text-sm font-medium px-3 py-1 rounded-sm mb-4'>
+                      For the Youth
+                    </div>
+                    <p className='text-gray-800 text-base'>
+                      The youth wanted to see themselves reflected on the
+                      platform. They asked for a space that:
+                    </p>
+                    <ul className='list-disc list-inside mt-2 text-gray-700 space-y-1'>
+                      <li>Showcased youth-led initiatives and programs.</li>
+                      <li>Encouraged their peers to get involved.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            {/* Summary */}
+            <p className='mt-8 text-base md:text-lg'>
+              These conversations shaped every part of the UX process — from the
+              sitemap to copywriting tone, image selection to backend structure.
+              Ultimately, it reminded us that the church website wasn’t about
+              pages and pixels — it was about people.
+            </p>
           </div>
-        </div>
+        </section>
 
-        <div className='w-full bg-emerald-500 pt-16 px-6 sm:px-16'>
-          {/* Section Header */}
-          {/* <motion.h2
-            className='text-4xl font-bold text-white text-center mb-10'
-            initial={{ opacity: 0, y: -30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            Our Work
-          </motion.h2> */}
+        <section className='bg-[#EFE2FF] relative overflow-hidden'>
+          <div className='w-full'>
+            <img
+              src={Win}
+              alt='Second'
+              className='w-full h-auto object-cover scale-110'
+            />
+          </div>
+        </section>
 
-          {/* Flex Images */}
-          <motion.div
-            className='flex flex-col sm:flex-row gap-6 justify-center items-center'
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-          >
-            <motion.img
-              src={Chome}
-              alt='Project 1'
-              className='w-full sm:w-1/3 object-cover rounded-lg shadow-lg'
-              whileHover={{ scale: 1.05 }}
-              transition={{ duration: 0.3 }}
+        <section className='w-full bg-white py-12 px-4'>
+          <div className='flex flex-col md:flex-row gap-6 max-w-6xl mx-auto'>
+            {/* First Image */}
+            <img
+              src={Win1}
+              alt='Win1'
+              className='w-full md:w-1/2 h-auto object-cover rounded-lg shadow-md'
             />
-            <motion.img
-              src={Cabout}
-              alt='Project 2'
-              className='w-full sm:w-1/3 object-cover rounded-lg shadow-lg'
-              whileHover={{ scale: 1.05 }}
-              transition={{ duration: 0.3 }}
-            />
-            <motion.img
-              src={Ccontact}
-              alt='Project 3'
-              className='w-full sm:w-1/3 object-cover rounded-lg shadow-lg'
-              whileHover={{ scale: 1.05 }}
-              transition={{ duration: 0.3 }}
-            />
-          </motion.div>
-        </div>
 
-        <div className='w-full'>
-          <img src={Cstart} alt='site' className='w-full object-cover' />
-        </div>
+            {/* Second Image */}
+            <img
+              src={Win2}
+              alt='Win2'
+              className='w-full md:w-1/2 h-auto object-cover rounded-lg shadow-md'
+            />
+          </div>
+        </section>
+
+        <section className='bg-[#F2F8FC] py-16 px-4'>
+          <div className='max-w-6xl mx-auto text-center'>
+            {/* Heading */}
+            <h2 className='text-3xl md:text-4xl font-bold text-[#003087] mb-2'>
+              Worship with us
+            </h2>
+            <p className='text-gray-600 mb-10'>
+              Can’t make it to church? <br className='md:hidden' /> Join us
+              online
+            </p>
+
+            {/* Cards */}
+            <div className='flex flex-col md:flex-row justify-center gap-6'>
+              {/* YouTube Card */}
+              <div className='bg-white rounded-xl shadow-md overflow-hidden w-full md:w-1/2'>
+                <img
+                  src={You}
+                  alt='Worship via YouTube'
+                  className='w-full h-72 object-cover'
+                />
+                <div className='p-6'>
+                  <p className='text-gray-800 text-lg mb-4'>
+                    Join our worship service via <strong>YouTube</strong>
+                  </p>
+                  <a
+                    href='#'
+                    className='text-[#003087] font-bold hover:underline'
+                  >
+                    Click here to join &gt;
+                  </a>
+                </div>
+              </div>
+
+              {/* Facebook Live Card */}
+              <div className='bg-white rounded-xl shadow-md overflow-hidden w-full md:w-1/2'>
+                <img
+                  src={Face}
+                  alt='Worship via Facebook Live'
+                  className='w-full h-72 object-cover'
+                />
+                <div className='p-6'>
+                  <p className='text-gray-800 text-lg mb-4'>
+                    Join our worship service via <br />
+                    <strong>Facebook Live (Video and audio)</strong>
+                  </p>
+                  <a
+                    href='#'
+                    className='text-[#003087] font-bold hover:underline'
+                  >
+                    Click here to join &gt;
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <div className='w-full bg-gray-100 py-16 px-6 sm:px-75'>
           {/* Section Header */}
