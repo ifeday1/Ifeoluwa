@@ -74,7 +74,6 @@ const WinnersBC = () => {
               discovered.
             </motion.p>
 
-            {/* My Roles & Visit Site Section */}
             <motion.div
               className='text-left'
               initial={{ opacity: 0, y: 20 }}
