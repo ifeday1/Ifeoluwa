@@ -91,7 +91,7 @@ const WinnersBC = () => {
                   UI/UX Design, Web Development
                 </motion.span>
               </h2>
-              {/* Visit Site */}
+              
               <motion.a
                 href='https://winnersbaptistchurch.org/'
                 target='_blank'
