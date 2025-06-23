@@ -1,7 +1,13 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaRegCopy, FaArrowDown } from 'react-icons/fa';
-import { FaBehance, FaDribbble, FaLinkedin, FaInstagram } from 'react-icons/fa';
+import {
+  FaBehance,
+  FaDribbble,
+  FaLinkedin,
+  FaInstagram,
+  FaMedium,
+} from 'react-icons/fa';
 
 const Contact = () => {
   const [copied, setCopied] = useState(false);
@@ -35,6 +41,13 @@ const Contact = () => {
       url: 'https://www.instagram.com/i_sticks1',
       bg: 'bg-gradient-to-r from-pink-500 to-yellow-500',
       hover: 'hover:opacity-80',
+    },
+    {
+      name: 'Medium',
+      icon: <FaMedium />,
+      url: 'https://medium.com/@oladeniifeoluwa123',
+      bg: 'bg-black',
+      hover: 'hover:bg-gray-800',
     },
   ];
 
