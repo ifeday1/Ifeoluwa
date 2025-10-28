@@ -30,7 +30,6 @@ const Footer = () => {
             {/* Divider line */}
             <hr className='my-4 border-gray-700' />
 
-            {/* Footer bottom section */}
             <div className=''>
               <div className='flex flex-col md:flex-row justify-between items-start md:items-center'>
                 <p className='text-gray-500'>
