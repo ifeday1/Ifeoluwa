@@ -9,9 +9,7 @@ const Footer = () => {
           <div className='max-w-8xl mx-auto'>
             {/* Gradient Text */}
             <h2 className='text-left md:text-7xl text-5xl font-semibold'>
-              <span className='bg-gradient-to-r from-white to-gray-600 bg-clip-text text-transparent block'>
-                Let's work
-              </span>
+              <span className='bg-gradient-to-r from-white to-gray-600 bg-clip-text text-transparent block'></span>
               <span className='bg-gradient-to-r from-white to-gray-600 bg-clip-text text-transparent block'>
                 together today!
               </span>
