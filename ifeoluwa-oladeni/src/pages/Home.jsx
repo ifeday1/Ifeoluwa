@@ -109,11 +109,31 @@ const testimonials = [
 ];
 
 const socials = [
-  { name: 'Behance', icon: <FaBehance />, url: 'https://www.behance.net/oladeniifeoluwa' },
-  { name: 'Dribbble', icon: <FaDribbble />, url: 'https://dribbble.com/ifeday' },
-  { name: 'LinkedIn', icon: <FaLinkedin />, url: 'https://www.linkedin.com/in/ifeoluwa-oladeni/' },
-  { name: 'Instagram', icon: <FaInstagram />, url: 'https://www.instagram.com/i_sticks1' },
-  { name: 'Medium', icon: <FaMedium />, url: 'https://medium.com/@oladeniifeoluwa123' },
+  {
+    name: 'Behance',
+    icon: <FaBehance />,
+    url: 'https://www.behance.net/oladeniifeoluwa',
+  },
+  {
+    name: 'Dribbble',
+    icon: <FaDribbble />,
+    url: 'https://dribbble.com/ifeday',
+  },
+  {
+    name: 'LinkedIn',
+    icon: <FaLinkedin />,
+    url: 'https://www.linkedin.com/in/ifeoluwa-oladeni/',
+  },
+  {
+    name: 'Instagram',
+    icon: <FaInstagram />,
+    url: 'https://www.instagram.com/i_sticks1',
+  },
+  {
+    name: 'Medium',
+    icon: <FaMedium />,
+    url: 'https://medium.com/@oladeniifeoluwa123',
+  },
 ];
 
 const Home = () => {
@@ -134,15 +154,16 @@ const Home = () => {
               </span>
               <Reveal className='mt-4'>
                 <h1 className='font-display text-[38px] sm:text-5xl lg:text-[72px] font-semibold leading-[1.02] tracking-tight'>
-                  Mostly a <span className='text-coral'>UI/UX designer.</span> Also
-                  the brand, the build, and the ship.
+                  Great products are <span className='text-coral'>rare.</span> I
+                  build the ones people{' '}
+                  <span className='text-coral'>keep</span>
                 </h1>
               </Reveal>
               <p className='mt-7 max-w-[480px] text-[17px] leading-[1.7] text-muted'>
-                I&rsquo;m Ifeoluwa. Product and UI/UX design is where I spend most of
-                my time but I also shape brand identity from scratch, and I
-                write the front-end code myself when a project needs to ship,
-                not just look finished.
+                I&rsquo;m Ifeoluwa. Product and UI/UX design is where I spend
+                most of my time but I also shape brand identity from scratch,
+                and I write the front-end code myself when a project needs to
+                ship, not just look finished.
               </p>
 
               <div className='flex gap-2.5 flex-wrap mt-6'>
@@ -233,16 +254,19 @@ const Home = () => {
                   still shows up in how I think about type and spacing.
                 </p>
                 <div className='flex gap-2.5 flex-wrap mt-6'>
-                  {['UI / UX Design', 'Front-end Dev', 'Brand Identity', 'UX Research'].map(
-                    (tag) => (
-                      <span
-                        key={tag}
-                        className='font-mono text-[11px] tracking-wider uppercase text-muted border border-white/16 rounded-full px-4 py-2'
-                      >
-                        {tag}
-                      </span>
-                    )
-                  )}
+                  {[
+                    'UI / UX Design',
+                    'Front-end Dev',
+                    'Brand Identity',
+                    'UX Research',
+                  ].map((tag) => (
+                    <span
+                      key={tag}
+                      className='font-mono text-[11px] tracking-wider uppercase text-muted border border-white/16 rounded-full px-4 py-2'
+                    >
+                      {tag}
+                    </span>
+                  ))}
                 </div>
               </div>
             </div>
