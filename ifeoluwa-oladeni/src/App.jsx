@@ -15,11 +15,15 @@ import Gamer from './pages/Gamer';
 import Incognito from './pages/Incognito';
 import Scroll from './compontents/Scroll';
 import Ignite from './pages/Ignite';
+import Cursor from './compontents/Cursor';
+import Grain from './compontents/Grain';
 
 const App = () => {
   return (
     <>
       <Router>
+        <Cursor />
+        <Grain />
         <Scroll />
         <Navbar />
         <Routes>

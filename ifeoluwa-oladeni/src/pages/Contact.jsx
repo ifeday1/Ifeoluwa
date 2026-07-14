@@ -1,155 +1,78 @@
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
-import { FaRegCopy, FaArrowDown } from 'react-icons/fa';
 import {
   FaBehance,
   FaDribbble,
   FaLinkedin,
   FaInstagram,
   FaMedium,
-} from 'react-icons/fa';
+} from 'react-icons/fa6';
+import Reveal from '../compontents/Reveal';
+import CopyEmailButton from '../compontents/CopyEmailButton';
+
+const email = 'oladeniifeoluwa123@gmail.com';
+
+const socials = [
+  { name: 'Behance', icon: <FaBehance />, url: 'https://www.behance.net/oladeniifeoluwa' },
+  { name: 'Dribbble', icon: <FaDribbble />, url: 'https://dribbble.com/ifeday' },
+  { name: 'LinkedIn', icon: <FaLinkedin />, url: 'https://www.linkedin.com/in/ifeoluwa-oladeni/' },
+  { name: 'Instagram', icon: <FaInstagram />, url: 'https://www.instagram.com/i_sticks1' },
+  { name: 'Medium', icon: <FaMedium />, url: 'https://medium.com/@oladeniifeoluwa123' },
+];
 
 const Contact = () => {
-  const [copied, setCopied] = useState(false);
-  const email = 'oladeniifeoluwa123@gmail.com';
-
-  const socialLinks = [
-    {
-      name: 'Behance',
-      icon: <FaBehance />,
-      url: 'https://www.behance.net/oladeniifeoluwa',
-      bg: 'bg-blue-600',
-      hover: 'hover:bg-blue-700',
-    },
-    {
-      name: 'Dribbble',
-      icon: <FaDribbble />,
-      url: 'https://dribbble.com/ifeday',
-      bg: 'bg-pink-600',
-      hover: 'hover:bg-pink-700',
-    },
-    {
-      name: 'LinkedIn',
-      icon: <FaLinkedin />,
-      url: 'https://www.linkedin.com/in/ifeoluwa-oladeni/',
-      bg: 'bg-blue-800',
-      hover: 'hover:bg-blue-900',
-    },
-    {
-      name: 'Instagram',
-      icon: <FaInstagram />,
-      url: 'https://www.instagram.com/i_sticks1',
-      bg: 'bg-gradient-to-r from-pink-500 to-yellow-500',
-      hover: 'hover:opacity-80',
-    },
-    {
-      name: 'Medium',
-      icon: <FaMedium />,
-      url: 'https://medium.com/@oladeniifeoluwa123',
-      bg: 'bg-black',
-      hover: 'hover:bg-gray-800',
-    },
-  ];
-
-  const handleCopy = () => {
-    navigator.clipboard.writeText(email);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
-  };
-
   return (
-    <>
-      <div className='flex items-center justify-center min-h-screen px-6 py-16'>
-        <motion.div
-          className='relative w-full max-w-7xl p-16 md:p-24 text-center rounded-3xl shadow-2xl flex flex-col justify-between min-h-[70vh]'
-          style={{
-            background:
-              'radial-gradient(circle, rgba(30,30,30,0.6) 0%, rgba(20,20,20,0.9) 100%)',
-          }}
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5 }}
-          whileHover={{ scale: 1.02 }}
-        >
-          <div>
-            <motion.h2
-              className='text-4xl md:text-6xl font-bold text-white'
-              initial={{ y: -20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-            >
-              Let’s Collaborate 🤝
-            </motion.h2>
-            <motion.p
-              className='mt-4 text-gray-300 text-lg md:text-xl'
-              initial={{ y: -20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.4 }}
-            >
-              Write me an email and I will respond as soon as possible
-            </motion.p>
+    <main className='flex-1 flex items-center py-12 min-h-[calc(100vh-84px-90px)]'>
+      <div className='max-w-[1200px] w-full mx-auto px-6 md:px-10'>
+        <Reveal className='max-w-[640px] mx-auto text-center'>
+          <div className='relative overflow-hidden rounded-4xl border border-white/8 px-6 sm:px-12 py-14 sm:py-[70px] bg-[linear-gradient(120deg,#201A16,#15171D_60%)]'>
+            <div className='absolute w-[280px] h-[280px] rounded-full -top-[90px] -left-[70px] bg-[radial-gradient(circle,rgba(255,106,61,0.3),transparent_70%)]' />
 
-            <motion.div
-              className='flex flex-col sm:flex-row items-center justify-between bg-gray-800 p-6 md:p-8 rounded-lg mt-12 shadow-lg max-w-2xl mx-auto border border-gray-600 w-full'
-              initial={{ y: 20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.6 }}
-            >
-              <span className='text-gray-300 font-medium text-lg md:text-xl break-all'>
-                {email}
+            <div className='relative'>
+              <div className='inline-flex items-center gap-2 border border-white/16 rounded-full px-3.5 py-2 font-mono text-[11px] text-muted mb-6.5'>
+                <span className='status-dot' />
+                <span>Available for new projects</span>
+              </div>
+
+              <span className='font-mono text-[11px] tracking-[0.16em] uppercase text-coral block mb-5'>
+                Get in touch
               </span>
-              <motion.button
-                onClick={handleCopy}
-                className='flex items-center gap-2 px-5 py-3 text-lg md:text-xl font-semibold bg-blue-600 text-white rounded-lg shadow-md hover:bg-blue-700 transition-all mt-4 sm:mt-0'
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-              >
-                <FaRegCopy /> {copied ? 'Copied!' : 'Copy'}
-              </motion.button>
-            </motion.div>
+              <h1 className='font-display text-[clamp(34px,5.5vw,52px)] font-semibold'>
+                Let&rsquo;s collaborate.
+              </h1>
+              <p className='mt-5 text-muted text-base leading-[1.7]'>
+                Write me an email and I&rsquo;ll respond as soon as possible —
+                usually within a day.
+              </p>
+
+              <div className='mt-11 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 sm:gap-0 border border-white/16 rounded-3xl sm:rounded-full p-5 sm:pl-6.5 sm:pr-2 sm:py-2 bg-ink/50'>
+                <span className='font-mono text-[13px] break-all'>{email}</span>
+                <CopyEmailButton email={email} className='sm:shrink-0' />
+              </div>
+
+              <div className='flex items-center gap-4 my-11 text-muted-2 text-[13px] font-mono'>
+                <span className='flex-1 h-px bg-white/8' />
+                or find me here
+                <span className='flex-1 h-px bg-white/8' />
+              </div>
+
+              <div className='flex gap-3 flex-wrap justify-center'>
+                {socials.map((social) => (
+                  <a
+                    key={social.name}
+                    href={social.url}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className='inline-flex items-center gap-2 text-[13px] text-muted border border-white/16 rounded-full px-5.5 py-3 transition-colors duration-200 hover:text-coral-soft hover:border-coral'
+                  >
+                    {social.icon}
+                    {social.name}
+                  </a>
+                ))}
+              </div>
+            </div>
           </div>
-
-          <div className='mt-auto'>
-            <motion.p
-              className='mt-12 text-gray-300 text-lg md:text-xl'
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.8 }}
-            >
-              Or contact me on social media
-            </motion.p>
-
-            <motion.div
-              className='mt-4 flex justify-center'
-              initial={{ opacity: 0, y: -10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 1 }}
-            >
-              <FaArrowDown className='text-white text-4xl animate-bounce' />
-            </motion.div>
-          </div>
-        </motion.div>
+        </Reveal>
       </div>
-
-      {/* Social Media Buttons */}
-      <div className='mt-8 flex flex-wrap justify-center gap-4 max-w-4xl mx-auto'>
-        {socialLinks.map((social, index) => (
-          <motion.a
-            key={index}
-            href={social.url}
-            target='_blank'
-            rel='noopener noreferrer'
-            className={`flex items-center gap-3 px-5 py-3 text-lg md:text-xl font-semibold text-white rounded-lg shadow-md transition-all ${social.bg} ${social.hover}`}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 1 + index * 0.2 }}
-            whileHover={{ scale: 1.05 }}
-          >
-            {social.icon} {social.name}
-          </motion.a>
-        ))}
-      </div>
-    </>
+    </main>
   );
 };
 

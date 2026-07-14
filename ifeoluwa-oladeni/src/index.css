@@ -1,20 +1,78 @@
 @import "tailwindcss";
 
 @theme{
-  --color-blue: #171A3A
+  --color-ink: #0B0C10;
+  --color-surface: #15171D;
+  --color-card: #1B1E26;
+  --color-card-line: #282C36;
+  --color-ivory: #F4F3F0;
+  --color-muted: #8C909C;
+  --color-muted-2: #5C606B;
+  --color-coral: #FF6A3D;
+  --color-coral-soft: #FFB199;
+  --color-amber: #FFB238;
+
+  --font-display: 'Clash Display', sans-serif;
+  --font-sans: 'Inter', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
 }
 
 body {
   margin: 0;
- font-family: 'Clash Grotesk Variable', sans-serif;
+  font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
- background-color: #080707;
- /* padding: 0 3rem; */
+  background-color: #0B0C10;
+  color: #F4F3F0;
+  overflow-x: hidden;
 }
 
-@media screen and (max-width:940px) {
-    body {
-/* padding: 0px 16px; */
-    }
+::selection{ background: #FF6A3D; color: #1A0E06; }
+::-webkit-scrollbar{ width: 10px; }
+::-webkit-scrollbar-track{ background: #0B0C10; }
+::-webkit-scrollbar-thumb{ background: #282C36; border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover{ background: #FF6A3D; }
+
+.grain{
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 998;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+@media(hover:hover){
+  body, a, button { cursor: none; }
+  .cursor-dot, .cursor-ring{
+    position: fixed; top: 0; left: 0; pointer-events: none; z-index: 9999;
+    border-radius: 50%; transform: translate(-50%,-50%); will-change: transform;
   }
+  .cursor-dot{ width: 6px; height: 6px; background: #FF6A3D; }
+  .cursor-ring{
+    width: 34px; height: 34px; border: 1px solid rgba(244,243,240,0.16);
+    transition: width .25s ease, height .25s ease, border-color .25s ease, background .25s ease;
+  }
+  .cursor-ring.hovered{ width: 58px; height: 58px; border-color: #FF6A3D; background: rgba(255,106,61,0.08); }
+}
+@media (prefers-reduced-motion: reduce){
+  .cursor-dot, .cursor-ring{ display: none !important; }
+  body, a, button{ cursor: auto !important; }
+}
+
+.status-dot{ width: 7px; height: 7px; border-radius: 50%; background: #4ADE80; position: relative; flex-shrink: 0; }
+.status-dot::after{
+  content: ""; position: absolute; inset: -4px; border-radius: 50%;
+  border: 1px solid #4ADE80; animation: pulse 2s infinite;
+}
+@keyframes pulse{ 0%{ transform: scale(0.8); opacity: 1; } 100%{ transform: scale(1.8); opacity: 0; } }
+@media (prefers-reduced-motion: reduce){ .status-dot::after{ animation: none; } }
+
+.marquee-track{
+  display: flex; gap: 28px; align-items: center; white-space: nowrap;
+  width: max-content; animation: marqueeScroll 26s linear infinite;
+}
+@keyframes marqueeScroll{ from{ transform: translateX(0); } to{ transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce){ .marquee-track{ animation: none; } }
+
+:focus-visible{ outline: 2px solid #FF6A3D; outline-offset: 3px; }
