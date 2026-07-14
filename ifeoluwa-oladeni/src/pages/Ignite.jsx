@@ -1,11 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Acc from '../assets/acc.svg';
-import Acc1 from '../assets/acc1.svg';
+import Acc1 from '../assets/Acc1.svg';
 import Logoa from '../assets/logoa.svg';
 import Bia from '../assets/bia.svg';
-import S1 from '../assets/S1.png';
-import S2 from '../assets/S2.png';
+import S1 from '../assets/s1.png';
+import S2 from '../assets/s2.png';
 import S3 from '../assets/S3.png';
 import S4 from '../assets/s4.png';
 import S5 from '../assets/s5.png';

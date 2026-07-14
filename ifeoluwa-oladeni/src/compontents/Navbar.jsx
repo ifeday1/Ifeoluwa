@@ -41,7 +41,7 @@ const Navbar = () => {
           onClick={() => setIsOpen(false)}
           className={`font-display text-xl font-semibold ${textColorClass}`}
         >
-          Ifeoluwa<span className='text-coral'>.</span>
+          Ifeoluwa Oladeni<span className='text-coral'>.</span>
         </Link>
 
         {/* Desktop menu */}

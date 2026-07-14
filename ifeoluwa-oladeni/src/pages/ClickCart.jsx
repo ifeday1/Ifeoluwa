@@ -1,6 +1,6 @@
 import React from 'react';
 import Clickcartlogo from '../assets/clickcartlogo.png';
-import Clickcartlogo1 from '../assets/Clickcartlogo1.jpg';
+import Clickcartlogo1 from '../assets/clickcartlogo1.jpg';
 import Clickphone1 from '../assets/clickphone1.jpg';
 import Click from '../assets/click.jpg';
 import Clickuser from '../assets/clickuser.png';
@@ -13,8 +13,8 @@ import H5 from '../assets/h5.png';
 import H6 from '../assets/h6.png';
 import H7 from '../assets/h7.png';
 import H8 from '../assets/h8.png';
-import iPhone from '../assets/iphone1.png';
-import iPhone2 from '../assets/iphone2.png';
+import iPhone from '../assets/iPhone1.png';
+import iPhone2 from '../assets/iPhone2.png';
 
 import C1 from '../assets/C1.png';
 import C2 from '../assets/C2.png';

@@ -140,7 +140,7 @@ const Home = () => {
               </Reveal>
               <p className='mt-7 max-w-[480px] text-[17px] leading-[1.7] text-muted'>
                 I&rsquo;m Ifeoluwa. Product and UI/UX design is where I spend most of
-                my time — but I also shape brand identity from scratch, and I
+                my time but I also shape brand identity from scratch, and I
                 write the front-end code myself when a project needs to ship,
                 not just look finished.
               </p>

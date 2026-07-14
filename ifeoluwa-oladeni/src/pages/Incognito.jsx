@@ -4,7 +4,7 @@ import Mision from '../assets/mision.jpg';
 import IHome from '../assets/IHome.jpg';
 import IAboutus from '../assets/IAboutus.jpg';
 // import Iportflio from '../assets/Iportflio.jpg';
-import Iservice from '../assets/Iservice.jpg';
+import Iservice from '../assets/IService.jpg';
 import Ilogo from '../assets/ilogo.svg';
 import Dis from '../assets/dis.svg';
 
