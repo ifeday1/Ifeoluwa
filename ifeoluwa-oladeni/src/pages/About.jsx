@@ -60,7 +60,7 @@ const About = () => {
                 className='w-full h-full object-cover'
               />
             </div>
-            <div className='absolute -bottom-7 -right-7 w-[44%] rounded-2xl overflow-hidden border-4 border-ink aspect-square shadow-[0_20px_40px_-12px_rgba(0,0,0,0.6)]'>
+            <div className='absolute -bottom-4 -right-3 sm:-bottom-7 sm:-right-7 w-[42%] sm:w-[44%] rounded-2xl overflow-hidden border-4 border-ink aspect-square shadow-[0_20px_40px_-12px_rgba(0,0,0,0.6)]'>
               <img
                 src={Profile}
                 alt='Ifeoluwa working'

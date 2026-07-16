@@ -212,8 +212,8 @@ const Home = () => {
               </div>
             </div>
 
-            <div className='relative'>
-              <div className='absolute w-[280px] h-[280px] rounded-full -top-16 -right-20 blur-md -z-10 bg-[radial-gradient(circle,rgba(255,106,61,0.35),transparent_70%)]' />
+            <div className='relative overflow-hidden'>
+              <div className='absolute w-[200px] h-[200px] sm:w-[280px] sm:h-[280px] rounded-full -top-16 -right-10 blur-md -z-10 bg-[radial-gradient(circle,rgba(255,106,61,0.35),transparent_70%)]' />
               <div className='rounded-3xl overflow-hidden border border-card-line aspect-4/5'>
                 <img
                   src={Ifehero}
