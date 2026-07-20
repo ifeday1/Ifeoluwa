@@ -35,6 +35,7 @@ const interests = [
   { icon: '⚽', label: 'Football' },
   { icon: '🏓', label: 'Table Tennis' },
   { icon: '✈️', label: 'Travel' },
+  { icon: '📸', label: 'Modeling' },
 ];
 
 const About = () => {
@@ -129,7 +130,7 @@ const About = () => {
             </Reveal>
           ))}
 
-          <div className='grid grid-cols-2 sm:grid-cols-4 gap-4 pt-11 pb-15'>
+          <div className='grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 pt-11 pb-15'>
             {interests.map((interest, index) => (
               <Reveal key={interest.label} delay={index * 0.06}>
                 <div className='h-full text-center bg-card border border-card-line rounded-2xl px-4.5 py-5.5 transition-all duration-300 hover:-translate-y-1 hover:border-coral'>
