@@ -6,8 +6,8 @@ import {
   FaInstagram,
   FaMedium,
 } from 'react-icons/fa6';
-import Ifehero from '../assets/Ifehero.png';
-import Aboutife from '../assets/Aboutife.png';
+import Ifehero from '../assets/Ife (40).jpg';
+import Aboutife from '../assets/IFE.png';
 import Frontwork from '../assets/frontwork.png';
 import Bia from '../assets/bia.png';
 import Clickwork from '../assets/clickwork.png';
@@ -33,26 +33,26 @@ const stats = [
   { target: 12, suffix: '+', label: 'Happy clients' },
 ];
 
-const processSteps = [
+const services = [
   {
-    num: '01 — Discover',
-    title: 'Understand the problem',
-    text: 'Talk to users and stakeholders before opening Figma. Most bad design starts from skipping this.',
+    num: '01',
+    title: 'UI/UX Design',
+    text: 'Interfaces shaped around how people actually use a product, not just how it looks in a deck.',
   },
   {
-    num: '02 — Design',
-    title: 'Shape the interface',
-    text: 'Wireframes, then high-fidelity — tested against the actual constraints of the product, not just aesthetics.',
+    num: '02',
+    title: 'Brand Identity',
+    text: 'Logo, type, and color systems built to hold up across a whole product, not just a homepage.',
   },
   {
-    num: '03 — Build',
-    title: 'Write the front end',
-    text: 'I build what I design myself, so the shipped product matches the file — pixel for pixel.',
+    num: '03',
+    title: 'Frontend Development',
+    text: 'I build what I design myself in React, so nothing gets lost between the file and the browser.',
   },
   {
-    num: '04 — Ship',
-    title: 'Launch and iterate',
-    text: "Ship, watch how it's actually used, and refine. Design doesn't stop at launch.",
+    num: '04',
+    title: 'Web Development',
+    text: 'Full sites, shipped and maintained — not just static mockups handed off to someone else.',
   },
 ];
 
@@ -274,27 +274,27 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Process */}
+      {/* Services */}
       <section className='pb-24'>
         <div className='max-w-[1200px] mx-auto px-6 md:px-10'>
           <Reveal>
             <span className='font-mono text-[11px] tracking-[0.16em] uppercase text-coral block mb-3.5'>
-              How I Work
+              What I Do
             </span>
             <h2 className='font-display text-[clamp(30px,3.8vw,46px)] font-semibold mb-12'>
-              Four steps, every time.
+              Design, branding, and the build.
             </h2>
           </Reveal>
           <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6'>
-            {processSteps.map((step, index) => (
-              <Reveal key={step.title} delay={index * 0.08}>
+            {services.map((service, index) => (
+              <Reveal key={service.title} delay={index * 0.08}>
                 <div className='h-full bg-card border border-card-line rounded-2xl p-7 transition-all duration-300 hover:-translate-y-1.5 hover:border-coral'>
                   <div className='font-display text-sm font-semibold text-coral mb-6'>
-                    {step.num}
+                    {service.num}
                   </div>
-                  <h3 className='text-lg font-semibold mb-3'>{step.title}</h3>
+                  <h3 className='text-lg font-semibold mb-3'>{service.title}</h3>
                   <p className='text-[14.5px] text-muted leading-[1.65]'>
-                    {step.text}
+                    {service.text}
                   </p>
                 </div>
               </Reveal>
