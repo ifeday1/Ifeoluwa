@@ -90,13 +90,9 @@ const Works = () => {
         </span>
         <Reveal>
           <h1 className='font-display text-[clamp(38px,6vw,64px)] font-semibold mt-5 max-w-[640px]'>
-            Every project, at a glance.
+            Products designed with love.
           </h1>
         </Reveal>
-        <p className='mt-5 max-w-[460px] text-muted text-base leading-[1.7]'>
-          Hover any project to see what it&rsquo;s about. Click through for the
-          full case study.
-        </p>
 
         <div className='flex gap-2.5 flex-wrap mt-8'>
           {FILTERS.map((filter) => (

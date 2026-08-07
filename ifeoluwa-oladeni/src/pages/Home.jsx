@@ -21,10 +21,9 @@ import Marquee from '../compontents/Marquee';
 const email = 'oladeniifeoluwa123@gmail.com';
 
 const roles = [
-  { label: 'UI/UX Design', primary: true },
+  { label: 'UI/UX Design' },
   { label: 'Brand Identity' },
   { label: 'Frontend Development' },
-  { label: 'Web Development' },
 ];
 
 const stats = [
@@ -49,16 +48,12 @@ const services = [
     title: 'Frontend Development',
     text: 'I build what I design myself in React, so nothing gets lost between the file and the browser.',
   },
-  {
-    num: '04',
-    title: 'Web Development',
-    text: 'Full sites, shipped and maintained — not just static mockups handed off to someone else.',
-  },
 ];
 
 const featuredWork = [
   {
     title: 'Frontier Solar Tech',
+    year: 2022,
     img: Frontwork,
     path: '/works/frontier',
     tags: ['Branding', 'UI/UX', 'Web Dev'],
@@ -66,6 +61,7 @@ const featuredWork = [
   },
   {
     title: 'IgnitePro Community',
+    year: 2025,
     img: Bia,
     path: '/works/ignitepro',
     tags: ['UI/UX Design', 'Web Dev'],
@@ -73,6 +69,7 @@ const featuredWork = [
   },
   {
     title: 'Click Cart',
+    year: 2024,
     img: Clickwork,
     path: '/works/clickcart',
     tags: ['Brand Identity', 'UX Research'],
@@ -80,6 +77,7 @@ const featuredWork = [
   },
   {
     title: 'Incognito Tech Solutions',
+    year: 2024,
     img: Incogwork,
     path: '/works/incognito',
     tags: ['UI/UX Design'],
@@ -170,11 +168,7 @@ const Home = () => {
                 {roles.map((role) => (
                   <span
                     key={role.label}
-                    className={`font-mono text-[11px] tracking-wider uppercase px-4 py-2.5 rounded-full ${
-                      role.primary
-                        ? 'bg-linear-to-r from-coral to-amber text-[#1A0E06] font-semibold'
-                        : 'border border-white/16 text-muted'
-                    }`}
+                    className='font-mono text-[11px] tracking-wider uppercase px-4 py-2.5 rounded-full border border-white/16 text-muted'
                   >
                     {role.label}
                   </span>
@@ -187,7 +181,7 @@ const Home = () => {
                     to='/works'
                     className='inline-flex items-center gap-2 bg-linear-to-r from-coral to-amber text-[#1A0E06] font-sans text-sm font-semibold px-7 py-[15px] rounded-full transition-transform duration-200 hover:-translate-y-0.5'
                   >
-                    See the work →
+                    Explore my work →
                   </Link>
                 </Magnetic>
                 <Link
@@ -246,12 +240,13 @@ const Home = () => {
                 </span>
                 <p className='text-lg leading-[1.7] text-muted'>
                   <strong className='text-ivory font-semibold'>
-                    I design products that connect with users and move the
-                    metrics behind them
+                    I am a designer who also codes
                   </strong>{' '}
-                  — then build the front end myself, so nothing gets lost
-                  between the file and the browser. My background in branding
-                  still shows up in how I think about type and spacing.
+                  — I design products that connect with users and move the
+                  metrics behind them, then build the front end myself with
+                  frontend development, so nothing gets lost between the file
+                  and the browser. My background in branding still shows up in
+                  how I think about type and spacing.
                 </p>
                 <div className='flex gap-2.5 flex-wrap mt-6'>
                   {[
@@ -285,7 +280,7 @@ const Home = () => {
               Design, branding, and the build.
             </h2>
           </Reveal>
-          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6'>
+          <div className='grid grid-cols-1 sm:grid-cols-3 gap-6'>
             {services.map((service, index) => (
               <Reveal key={service.title} delay={index * 0.08}>
                 <div className='h-full bg-card border border-card-line rounded-2xl p-7 transition-all duration-300 hover:-translate-y-1.5 hover:border-coral'>
@@ -336,6 +331,9 @@ const Home = () => {
                       alt={project.title}
                       className='w-full h-full object-cover transition-transform duration-500 group-hover:scale-105'
                     />
+                    <span className='absolute top-4 right-4 bg-ink/70 backdrop-blur-md border border-white/16 rounded-full px-3.5 py-1.5 font-mono text-[11px]'>
+                      {project.year}
+                    </span>
                     <div className='absolute inset-0 bg-linear-to-t from-ink/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-5'>
                       <span className='text-[13px] text-ivory leading-relaxed'>
                         {project.peek}
@@ -409,7 +407,7 @@ const Home = () => {
                   Get in touch
                 </span>
                 <h2 className='font-display text-[clamp(34px,5.4vw,60px)] font-semibold max-w-[760px] mx-auto mb-10'>
-                  Got a product that needs a good interface?
+                  Want to take your project to the next level? Contact me
                 </h2>
                 <div className='max-w-[480px] mx-auto flex items-center justify-between border border-white/16 rounded-full pl-6 pr-2 py-2 bg-ink/50'>
                   <span className='font-mono text-[13px]'>{email}</span>

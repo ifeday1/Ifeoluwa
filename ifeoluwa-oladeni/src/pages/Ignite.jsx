@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import Acc from '../assets/acc.svg';
 import Acc1 from '../assets/Acc1.svg';

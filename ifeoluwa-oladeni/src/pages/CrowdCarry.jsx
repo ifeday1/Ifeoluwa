@@ -1,4 +1,3 @@
-import React from 'react';
 import Crowdcarry1 from '../assets/crowdcarry1.jpg';
 import Chome from '../assets/Chome.jpg';
 import Cabout from '../assets/Cabout.jpg';
@@ -47,9 +46,9 @@ const CrowdCarry = () => {
             >
               CrowdCarry provides self-charging rental power bank stations that
               make it easy for people to charge their phones on the go, whether
-              they're in a mall, airport, event, or café. It’s designed for
+              they&apos;re in a mall, airport, event, or café. It’s designed for
               convenience, so you can grab a power bank when you need it and
-              return it when you're done. But it’s more than just about staying
+              return it when you&apos;re done. But it’s more than just about staying
               charged. CrowdCarry is focused on using smart, accessible tech to
               make everyday life easier and more connected, not just in Nigeria,
               but in cities around the world.
@@ -185,7 +184,7 @@ const CrowdCarry = () => {
               <h2 className='text-4xl sm:text-5xl md:text-6xl font-bold text-orange-500 leading-tight'>
                 Relax.
                 <br />
-                We've got you
+                We&apos;ve got you
                 <br />
                 covered.
               </h2>
@@ -236,9 +235,9 @@ const CrowdCarry = () => {
             uncovered real frustrations:
           </p>
           <ul className='list-disc list-inside mb-4 space-y-1'>
-            <li>"I never carry a power bank — they’re bulky."</li>
-            <li>"I don’t know where to charge when I’m out."</li>
-            <li>"It needs to be quick, or I won’t bother."</li>
+            <li>&quot;I never carry a power bank — they’re bulky.&quot;</li>
+            <li>&quot;I don’t know where to charge when I’m out.&quot;</li>
+            <li>&quot;It needs to be quick, or I won’t bother.&quot;</li>
           </ul>
           <p className='mb-6'>
             This helped me shape two core personas:

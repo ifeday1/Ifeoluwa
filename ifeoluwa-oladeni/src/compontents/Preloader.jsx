@@ -6,6 +6,7 @@ const assetPaths = [
 
 ];
 
+// eslint-disable-next-line react/prop-types -- no prop-types package in this project; onComplete is a required callback
 const Preloader = ({ onComplete }) => {
   const [loadedCount, setLoadedCount] = useState(0);
   const [totalAssets, setTotalAssets] = useState(0);

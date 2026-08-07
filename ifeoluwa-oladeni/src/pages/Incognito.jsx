@@ -1,4 +1,3 @@
-import React from 'react';
 import Incog from '../assets/incog.jpg';
 import Mision from '../assets/mision.jpg';
 import IHome from '../assets/IHome.jpg';
@@ -171,7 +170,7 @@ const Incognito = () => {
                 services designed to enhance business performance and drive
                 growth. Our expertise includes cutting-edge software
                 development, intuitive UI/UX design, and data-driven marketing
-                strategies. By tailoring solutions to each client's unique
+                strategies. By tailoring solutions to each client&apos;s unique
                 needs, we empower businesses—from startups to enterprises—to
                 navigate the digital landscape effectively, transforming
                 challenges into opportunities and ensuring sustained success in
@@ -320,7 +319,7 @@ const Incognito = () => {
                 {/* Card 1 */}
                 <div className='bg-[#EAE2F8] p-5 rounded-md shadow-sm'>
                   <p className='font-medium text-[#3D348B] mb-2'>
-                    "Show me proof you’ve done this before."
+                    &quot;Show me proof you’ve done this before.&quot;
                   </p>
                   <p className='text-sm'>
                     This insight revealed a strong need for credibility and
@@ -334,7 +333,7 @@ const Incognito = () => {
                 {/* Card 2 */}
                 <div className='bg-[#FFF7D6] p-5 rounded-md shadow-sm'>
                   <p className='font-medium text-[#BC6C25] mb-2'>
-                    "Don’t make me work to figure out what you do."
+                    &quot;Don’t make me work to figure out what you do.&quot;
                   </p>
                   <p className='text-sm'>
                     Clarity was key. The homepage had to immediately communicate
@@ -347,7 +346,7 @@ const Incognito = () => {
                 {/* Card 3 */}
                 <div className='bg-[#D9F2EC] p-5 rounded-md shadow-sm'>
                   <p className='font-medium text-[#2A9D8F] mb-2'>
-                    "Let me get in touch without filling 12 fields."
+                    &quot;Let me get in touch without filling 12 fields.&quot;
                   </p>
                   <p className='text-sm'>
                     For busy professionals, time is everything. A long or

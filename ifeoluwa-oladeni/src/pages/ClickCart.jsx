@@ -1,4 +1,3 @@
-import React from 'react';
 import Clickcartlogo from '../assets/clickcartlogo.png';
 import Clickcartlogo1 from '../assets/clickcartlogo1.jpg';
 import Clickphone1 from '../assets/clickphone1.jpg';
@@ -194,10 +193,10 @@ const ClickCart = () => {
                 <p className='text-lg text-gray-600'>
                   Personalized Recommendations: Leverage data analytics and
                   machine learning algorithms to provide personalized product
-                  recommendations based on users' browsing history, purchase
+                  recommendations based on users&apos; browsing history, purchase
                   behavior, and preferences. Streamline the navigation structure
                   of the website to make it easier for users to find products
-                  and navigate between different categories and pages. 
+                  and navigate between different categories and pages.
                 </p>
               </motion.div>
             </motion.div>
@@ -477,7 +476,7 @@ const ClickCart = () => {
             in e-commerce is a clunky checkout, so I focused on making the
             process as smooth and user-friendly as possible. Users can quickly
             add items to their cart and make adjustments without breaking their
-            shopping flow. When it's time to check out, the interface stays
+            shopping flow. When it&apos;s time to check out, the interface stays
             clean and focused — no distractions, just clear steps. I also made
             sure to integrate flexible payment options, like cards, wallets, and
             even pay-on-delivery, to match different user preferences. With

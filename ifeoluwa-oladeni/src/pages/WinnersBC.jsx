@@ -1,7 +1,5 @@
-import React from 'react';
 import Wbc from '../assets/wbc.jpg';
 import Djc from '../assets/djc.jpg';
-import Cstart from '../assets/Cstart.jpg';
 import Win from '../assets/win.png';
 import Win1 from '../assets/win1.png';
 import Win2 from '../assets/win2.png';
@@ -11,26 +9,6 @@ import You from '../assets/you.png';
 import { motion } from 'framer-motion';
 
 const WinnersBC = () => {
-  const processSteps = [
-    {
-      title: 'Research & Planning',
-      details: [
-        "We began by defining the website's objectives, such as enhancing communication, providing information about services and events, and extending outreach efforts. This phase also involved analyzing technological requirements, user needs, and potential risks.",
-      ],
-    },
-    {
-      title: 'Wireframing ',
-      details: [
-        "We developed a sitemap to outline the website's structure and created wireframes to visualize page layouts. This step ensured a clear plan for navigation and content placement.",
-      ],
-    },
-    {
-      title: 'Design and Layout',
-      details: [
-        "We focused on the visual aspects, including selecting appropriate typography, imagery, and color schemes that align with the church's identity. The design aimed to create an engaging and user-friendly interface.",
-      ],
-    },
-  ];
   return (
     <>
       <div className=' bg-white'>
@@ -59,7 +37,7 @@ const WinnersBC = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2, ease: 'easeOut' }}
             >
-              Winners Baptist Church is more than a place of worship it's a
+              Winners Baptist Church is more than a place of worship it&apos;s a
               thriving spiritual home where lives are nurtured, faith is
               deepened, and communities are built. Week after week, its doors
               open not just for worship, but for meaningful connection. Through
@@ -69,7 +47,7 @@ const WinnersBC = () => {
               truths in practical ways to reaching out with love through
               community programs and outreach efforts, Winners Baptist Church is
               committed to shaping individuals who make a difference — both in
-              their walk with God and in the world around them. It's a place
+              their walk with God and in the world around them. It&apos;s a place
               where faith comes alive, friendships are formed, and purpose is
               discovered.
             </motion.p>
@@ -412,9 +390,9 @@ const WinnersBC = () => {
             services, events, and community programs. This increased
             accessibility has led to higher engagement, with more individuals
             participating in church activities and connecting through online
-            channels. The website's user-friendly design and regularly updated
+            channels. The website&apos;s user-friendly design and regularly updated
             content have also attracted a broader audience, extending the
-            church's reach beyond its immediate locality. Overall, the church's
+            church&apos;s reach beyond its immediate locality. Overall, the church&apos;s
             investment in its online presence has strengthened community bonds
             and facilitated spiritual growth among its congregation.
           </motion.p>

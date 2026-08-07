@@ -1,4 +1,3 @@
-import React from 'react';
 import Gamer1 from '../assets/gamer1.jpg';
 import Gamer2 from '../assets/gamer2.jpg';
 import Gamer3 from '../assets/gamer3.jpg';
@@ -157,7 +156,7 @@ const Gamer = () => {
                 To tackle the challenges of game discoverability and market
                 saturation, we employ a user-centered design approach to create
                 intuitive interfaces that facilitate seamless navigation. By
-                deeply understanding our users' needs and preferences, we design
+                deeply understanding our users&apos; needs and preferences, we design
                 platforms that guide players effortlessly through curated game
                 selections, personalized recommendations, and interactive
                 features, enhancing their overall experience and helping them
@@ -268,7 +267,7 @@ const Gamer = () => {
             audience reach. By implementing a user-centered design and offering
             curated content, we observed increased website traffic and prolonged
             user interaction, indicating a strong alignment with our target
-            audience's preferences. Additionally, our strategic use of social
+            audience&apos;s preferences. Additionally, our strategic use of social
             media and influencer partnerships further amplified our reach,
             attracting a broader demographic of gaming enthusiasts. These
             results underscore the effectiveness of our design and marketing

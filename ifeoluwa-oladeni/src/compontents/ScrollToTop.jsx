@@ -20,7 +20,7 @@ const ScrollToTop = () => {
 
   return (
     <motion.button
-      className='fixed bottom-6 right-6 md:bottom-10 md:right-10 bg-blue-600 text-white p-3 md:p-4 rounded-full shadow-lg hover:bg-blue-700 transition-all'
+      className='fixed bottom-6 right-6 md:bottom-10 md:right-10 bg-coral text-[#1A0E06] p-3 md:p-4 rounded-full shadow-lg hover:bg-coral-soft transition-all'
       onClick={scrollToTop}
       initial={{ opacity: 0, scale: 0 }}
       animate={{ opacity: isVisible ? 1 : 0, scale: isVisible ? 1 : 0 }}
