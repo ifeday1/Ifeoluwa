@@ -6,7 +6,7 @@ import {
   FaInstagram,
   FaMedium,
 } from 'react-icons/fa6';
-import Ifehero from '../assets/Ife (40).jpg';
+import Ifehero from '../assets/IfeHero2.jpg';
 import Aboutife from '../assets/IFE.png';
 import Frontwork from '../assets/frontwork.png';
 import Bia from '../assets/bia.png';
