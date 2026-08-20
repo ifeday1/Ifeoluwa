@@ -11,7 +11,8 @@ import Aboutife from '../assets/IFE.png';
 import Frontwork from '../assets/frontwork.png';
 import Bia from '../assets/bia.png';
 import Clickwork from '../assets/clickwork.png';
-import Incogwork from '../assets/incogwork.png';
+import Crowdwork from '../assets/crowdwork.png';
+import Prepbymework from '../assets/prepbymework.jpg';
 import Reveal from '../compontents/Reveal';
 import Magnetic from '../compontents/Magnetic';
 import CountUp from '../compontents/CountUp';
@@ -52,12 +53,12 @@ const services = [
 
 const featuredWork = [
   {
-    title: 'Frontier Solar Tech',
-    year: 2022,
-    img: Frontwork,
-    path: '/works/frontier',
-    tags: ['Branding', 'UI/UX', 'Web Dev'],
-    peek: 'Marketing site + quote flow for a solar installer, built end-to-end.',
+    title: 'Prep Byme',
+    year: 2026,
+    img: Prepbymework,
+    path: '/works/prepbyme',
+    tags: ['UI/UX Design', 'Web Dev', 'Mobile Design'],
+    peek: 'Multi-channel inventory and fulfillment dashboard for e-commerce sellers, across web and mobile.',
   },
   {
     title: 'IgnitePro Community',
@@ -76,12 +77,20 @@ const featuredWork = [
     peek: 'Mobile-first shopping app — from brand identity through to checkout flow.',
   },
   {
-    title: 'Incognito Tech Solutions',
+    title: 'Crowd Carry',
     year: 2024,
-    img: Incogwork,
-    path: '/works/incognito',
+    img: Crowdwork,
+    path: '/works/crowdcarry',
     tags: ['UI/UX Design'],
-    peek: 'B2B software studio site — positioning, structure, and a cleaner IA.',
+    peek: 'Power-bank sharing app concept — waitlist landing and product UI.',
+  },
+  {
+    title: 'Frontier Solar Tech',
+    year: 2022,
+    img: Frontwork,
+    path: '/works/frontier',
+    tags: ['Branding', 'UI/UX', 'Web Dev'],
+    peek: 'Marketing site + quote flow for a solar installer, built end-to-end.',
   },
 ];
 
@@ -95,14 +104,8 @@ const testimonials = [
   {
     quote:
       'Fast, communicative, and genuinely good taste. Our conversion on the quote flow improved almost immediately after launch.',
-    name: 'Tunde Bakare',
-    role: 'Product Lead, IgnitePro',
-  },
-  {
-    quote:
-      'He asks the right questions before touching a single pixel. That process saved us weeks of rework down the line.',
-    name: 'Chiamaka Eze',
-    role: 'Ops Director, Incognito Tech',
+    name: 'Sola Akinola',
+    role: 'Communication Lead, IgnitePro',
   },
 ];
 
@@ -158,10 +161,10 @@ const Home = () => {
                 </h1>
               </Reveal>
               <p className='mt-7 max-w-[480px] text-[17px] leading-[1.7] text-muted'>
-                I&rsquo;m Ifeoluwa. Product and UI/UX design is where I spend
-                most of my time but I also shape brand identity from scratch,
-                and I write the front-end code myself when a project needs to
-                ship, not just look finished.
+                I&rsquo;m Ifeoluwa, a designer who codes. Most of my time goes
+                into product and UI/UX, with brand identity built from
+                scratch on the side. I write my own front-end so what ships
+                looks exactly like what I designed.
               </p>
 
               <div className='flex gap-2.5 flex-wrap mt-6'>
@@ -318,8 +321,8 @@ const Home = () => {
             </Link>
           </Reveal>
 
-          <div className='grid grid-cols-1 md:grid-cols-2 gap-7'>
-            {featuredWork.map((project, index) => (
+          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7'>
+            {featuredWork.slice(0, 3).map((project, index) => (
               <Reveal key={project.title} delay={(index % 2) * 0.08}>
                 <Link
                   to={project.path}
@@ -376,7 +379,7 @@ const Home = () => {
               What clients say.
             </h2>
           </Reveal>
-          <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-6 max-w-[820px]'>
             {testimonials.map((t, index) => (
               <Reveal key={t.name} delay={index * 0.08}>
                 <div className='h-full flex flex-col gap-5 bg-card border border-card-line rounded-2xl p-8'>

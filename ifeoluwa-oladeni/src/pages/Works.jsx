@@ -3,22 +3,27 @@ import { Link } from 'react-router-dom';
 import Frontwork from '../assets/frontwork.png';
 import Bia from '../assets/bia.png';
 import Clickwork from '../assets/clickwork.png';
-import Incogwork from '../assets/incogwork.png';
-import Winnerswork from '../assets/winnerswork.png';
 import Crowdwork from '../assets/crowdwork.png';
-import Gamerwork from '../assets/gamerwork.png';
+import Prepbymework from '../assets/prepbymework.jpg';
 import Reveal from '../compontents/Reveal';
 
-const FILTERS = ['All', 'UI/UX Design', 'Branding', 'Web Development'];
+const FILTERS = [
+  'All',
+  'UI/UX Design',
+  'Branding',
+  'Web Development',
+  'Mobile Design',
+];
 
 const projects = [
   {
-    title: 'Frontier Solar Tech',
-    year: 2022,
-    img: Frontwork,
-    path: '/works/frontier',
-    tags: ['Branding', 'UI/UX Design', 'Web Development'],
-    peek: 'Marketing site + quote flow for a solar installer, designed and built end-to-end.',
+    title: 'Prep Byme',
+    year: 2026,
+    img: Prepbymework,
+    path: '/works/prepbyme',
+    tags: ['UI/UX Design', 'Web Development', 'Mobile Design'],
+    description:
+      'Multi-channel inventory and fulfillment dashboard for e-commerce sellers — inbound, returns, and shipping tracked across web and mobile.',
   },
   {
     title: 'IgnitePro Community',
@@ -26,7 +31,8 @@ const projects = [
     img: Bia,
     path: '/works/ignitepro',
     tags: ['UI/UX Design', 'Web Development'],
-    peek: 'A community platform for founders — events, pitch tracks, and a member hub.',
+    description:
+      'A community platform for founders and young leaders — event listings, pitch tracks, and a member hub, designed and built end-to-end.',
   },
   {
     title: 'Click Cart',
@@ -34,23 +40,8 @@ const projects = [
     img: Clickwork,
     path: '/works/clickcart',
     tags: ['Branding', 'UI/UX Design'],
-    peek: 'Mobile-first shopping app — from brand identity through to checkout flow.',
-  },
-  {
-    title: 'Incognito Tech Solutions',
-    year: 2024,
-    img: Incogwork,
-    path: '/works/incognito',
-    tags: ['UI/UX Design'],
-    peek: 'B2B software studio site — positioning, structure, and a cleaner IA.',
-  },
-  {
-    title: 'Winners Baptist Church',
-    year: 2024,
-    img: Winnerswork,
-    path: '/works/winnersbc',
-    tags: ['UI/UX Design', 'Web Development'],
-    peek: 'Church website — service times, sermons, and a simple giving flow.',
+    description:
+      'Mobile-first shopping experience for an e-commerce brand — brand identity, UX research, and a checkout flow built for speed and trust.',
   },
   {
     title: 'Crowd Carry',
@@ -58,15 +49,18 @@ const projects = [
     img: Crowdwork,
     path: '/works/crowdcarry',
     tags: ['UI/UX Design'],
-    peek: 'Power-bank sharing app concept — waitlist landing and product UI.',
+    description:
+      'Power-bank sharing app concept — waitlist landing page and core product UI for an on-the-go charging network.',
   },
   {
-    title: 'Gamer',
+    title: 'Frontier Solar Tech',
     year: 2022,
-    img: Gamerwork,
-    path: '/works/gamer',
-    tags: ['UI/UX Design', 'Web Development'],
-    peek: 'A gaming news & reviews platform — keeping enthusiasts on top of the industry.',
+    img: Frontwork,
+    path: '/works/frontier',
+    tags: ['Branding', 'UI/UX Design', 'Web Development'],
+    description:
+      'Brand identity, marketing site, and a guided quote flow for a solar installer, designed and built end-to-end.',
+    highlight: '+25% quote requests in month one',
   },
 ];
 
@@ -86,7 +80,7 @@ const Works = () => {
           <span>Available for new projects</span>
         </div>
         <span className='font-mono text-[11px] tracking-[0.16em] uppercase text-coral'>
-          Selected Work — 2022–2025
+          Selected Work — 2022–2026
         </span>
         <Reveal>
           <h1 className='font-display text-[clamp(38px,6vw,64px)] font-semibold mt-5 max-w-[640px]'>
@@ -112,49 +106,70 @@ const Works = () => {
       </section>
 
       <section className='max-w-[1200px] mx-auto px-6 md:px-10 pb-28'>
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-7'>
-          {filtered.map((project, index) => (
-            <Reveal key={project.title} delay={(index % 2) * 0.06}>
-              <Link
-                to={project.path}
-                className='group block rounded-2xl overflow-hidden bg-card border border-card-line transition-all duration-300 hover:-translate-y-1.5 hover:border-coral'
+        <div className='flex flex-col divide-y divide-white/8'>
+          {filtered.map((project, index) => {
+            const flip = index % 2 === 1;
+            return (
+              <Reveal
+                key={project.title}
+                className='py-14 first:pt-0 last:pb-0'
               >
-                <div className='aspect-video overflow-hidden relative'>
-                  <img
-                    src={project.img}
-                    alt={project.title}
-                    className='w-full h-full object-cover transition-transform duration-500 group-hover:scale-105'
-                  />
-                  <span className='absolute top-4 right-4 bg-ink/70 backdrop-blur-md border border-white/16 rounded-full px-3.5 py-1.5 font-mono text-[11px]'>
-                    {project.year}
-                  </span>
-                  <div className='absolute inset-0 bg-linear-to-t from-ink/95 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-5'>
-                    <span className='text-[13px] text-ivory leading-relaxed'>
-                      {project.peek}
+                <Link
+                  to={project.path}
+                  className='group grid grid-cols-1 lg:grid-cols-[1.15fr_1fr] gap-8 lg:gap-16 items-center'
+                >
+                  <div
+                    className={`rounded-2xl overflow-hidden border border-card-line aspect-4/3 relative ${
+                      flip ? 'lg:order-2' : ''
+                    }`}
+                  >
+                    <img
+                      src={project.img}
+                      alt={project.title}
+                      className='w-full h-full object-cover transition-transform duration-500 group-hover:scale-105'
+                    />
+                    <span className='absolute top-4 right-4 bg-ink/70 backdrop-blur-md border border-white/16 rounded-full px-3.5 py-1.5 font-mono text-[11px]'>
+                      {project.year}
                     </span>
                   </div>
-                </div>
-                <div className='p-6 flex justify-between items-start gap-4'>
+
                   <div>
-                    <div className='font-display text-lg font-semibold mb-2.5'>
+                    <span className='font-mono text-sm font-semibold text-coral'>
+                      {String(index + 1).padStart(2, '0')} /{' '}
+                      {String(filtered.length).padStart(2, '0')}
+                    </span>
+                    <h3 className='font-display text-[clamp(26px,3vw,36px)] font-semibold mt-3 group-hover:text-coral-soft transition-colors duration-200'>
                       {project.title}
-                    </div>
-                    <div className='flex flex-wrap gap-x-1.5 gap-y-1 font-mono text-[10px] uppercase tracking-wide text-muted-2'>
-                      {project.tags.map((tag, i) => (
-                        <span key={tag}>
+                    </h3>
+                    <p className='text-[15px] text-muted leading-[1.7] mt-4 max-w-[440px]'>
+                      {project.description}
+                    </p>
+
+                    {project.highlight && (
+                      <div className='inline-flex items-center gap-2 mt-5 border border-coral/30 bg-coral/10 rounded-full px-4 py-2 font-mono text-[11px] text-coral-soft'>
+                        {project.highlight}
+                      </div>
+                    )}
+
+                    <div className='flex flex-wrap gap-2 mt-6'>
+                      {project.tags.map((tag) => (
+                        <span
+                          key={tag}
+                          className='font-mono text-[11px] tracking-wider uppercase text-muted border border-white/16 rounded-full px-3.5 py-2'
+                        >
                           {tag}
-                          {i < project.tags.length - 1 && ' ·'}
                         </span>
                       ))}
                     </div>
+
+                    <div className='inline-flex items-center gap-2 mt-7 text-sm font-semibold text-ivory border-b border-white/16 pb-1 group-hover:border-coral group-hover:text-coral-soft transition-colors duration-200'>
+                      View case study →
+                    </div>
                   </div>
-                  <div className='w-9 h-9 rounded-full border border-white/16 flex items-center justify-center shrink-0 transition-all duration-200 group-hover:bg-coral group-hover:border-coral group-hover:rotate-45'>
-                    →
-                  </div>
-                </div>
-              </Link>
-            </Reveal>
-          ))}
+                </Link>
+              </Reveal>
+            );
+          })}
         </div>
       </section>
 

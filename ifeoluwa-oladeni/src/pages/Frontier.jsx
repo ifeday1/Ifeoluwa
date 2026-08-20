@@ -162,6 +162,14 @@ const Frontier = () => {
       </section>
 
       <section className='pb-20'>
+        <div className='max-w-[760px] mx-auto px-6 mb-10'>
+          <span className='font-mono text-[11px] tracking-[0.16em] uppercase text-coral block mb-5'>
+            The Solution
+          </span>
+          <h2 className='font-display text-[clamp(26px,3.4vw,38px)] font-semibold'>
+            A site that sells solar without the jargon.
+          </h2>
+        </div>
         <div className='max-w-[1000px] mx-auto px-6 space-y-6'>
           {features.map((feature, index) => (
             <Reveal key={feature.caption} delay={(index % 3) * 0.06}>
@@ -249,6 +257,20 @@ const Frontier = () => {
                 </div>
               </div>
             ))}
+          </div>
+
+          <div className='mt-9 bg-card border border-card-line border-l-4 border-l-coral rounded-2xl p-8'>
+            <p className='text-[16.5px] leading-[1.75] text-ivory m-0'>
+              &ldquo;Ifeoluwa didn&rsquo;t just hand us a Figma file — he
+              built it, and it looked exactly like what we agreed on. That
+              almost never happens.&rdquo;
+            </p>
+            <div className='mt-5'>
+              <div className='text-[13.5px] font-semibold'>Adaeze Nwosu</div>
+              <div className='font-mono text-[11px] text-muted-2 mt-0.5'>
+                Founder, Frontier Solar Tech
+              </div>
+            </div>
           </div>
         </div>
       </section>
