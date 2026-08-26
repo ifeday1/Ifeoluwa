@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import Prepbymework from '../assets/prepbymework.jpg';
 import PrepbymeWeb from '../assets/prepbyme-web.jpg';
-import PrepbymeMobile from '../assets/prepbyme-mobile.png';
+import PrepbymeMobile from '../assets/prepbyme-mobile.jpg';
 import Reveal from '../compontents/Reveal';
 
 const meta = [
@@ -87,6 +87,7 @@ const PrepByme = () => {
                 src={PrepbymeWeb}
                 alt='Prep Byme web dashboard — shipping, returns, and inventory overview'
                 className='w-full h-auto'
+                loading='lazy'
               />
               <figcaption className='px-5 py-3.5 font-mono text-[11px] tracking-wide uppercase text-muted-2 border-t border-card-line'>
                 Web dashboard — shipping, returns & inventory overview
@@ -99,6 +100,7 @@ const PrepByme = () => {
                 src={PrepbymeMobile}
                 alt='Prep Byme mobile app — inventory search'
                 className='w-full h-auto'
+                loading='lazy'
               />
               <figcaption className='px-5 py-3.5 font-mono text-[11px] tracking-wide uppercase text-muted-2 border-t border-card-line'>
                 Mobile app — inventory search on the go

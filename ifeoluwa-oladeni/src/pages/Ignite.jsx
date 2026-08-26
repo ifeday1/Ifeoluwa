@@ -1,369 +1,236 @@
-import { motion } from 'framer-motion';
-import Acc from '../assets/acc.svg';
-import Acc1 from '../assets/Acc1.svg';
-import Logoa from '../assets/logoa.svg';
-import Bia from '../assets/bia.svg';
+import { Link } from 'react-router-dom';
+import Bia from '../assets/bia.jpg';
 import S1 from '../assets/s1.png';
 import S2 from '../assets/s2.png';
-import S3 from '../assets/S3.png';
-import S4 from '../assets/s4.png';
-import S5 from '../assets/s5.png';
-// import Pitch from '../assets/pitch.png';
-import Test from '../assets/test.png';
+import S4 from '../assets/s4.jpg';
 import Pitch1 from '../assets/pitch1.png';
-// import Event from '../assets/event.png';
-import Event1 from '../assets/event1.png';
+import Test from '../assets/test.jpg';
+import Reveal from '../compontents/Reveal';
+
+const meta = [
+  { label: 'Client', value: 'IgnitePro Community' },
+  { label: 'Role', value: 'UI/UX Design, Web Development' },
+  { label: 'Year', value: '2025' },
+  { label: 'Industry', value: 'Human Capital Development' },
+];
+
+const features = [
+  { img: S1, caption: 'Vision, mission, and community culture' },
+  { img: S2, caption: 'Career coaching and mentorship programs' },
+  { img: S4, caption: 'Past events, kept current by the IgnitePro team' },
+  { img: Pitch1, caption: 'Pitch competition — prize structure and FAQ' },
+];
 
 const Ignite = () => {
   return (
     <>
-      <div className=' bg-white'>
-        <div className='w-full min-h-screen flex flex-col'>
-          {/* Content Section */}
-          <motion.div
-            className='px-10 sm:px-75 py-12'
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: 'easeOut' }}
-          >
-            {/* Heading */}
-            <motion.h1
-              className='text-4xl md:text-5xl font-bold text-gray-800 mb-6 text-left'
-              initial={{ opacity: 0, x: -50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 1, ease: 'easeOut' }}
-            >
+      <div className='max-w-[1200px] mx-auto px-6 md:px-10 pt-8'>
+        <Link
+          to='/works'
+          className='inline-flex items-center gap-2 text-[13px] text-muted hover:text-coral-soft transition-colors duration-200'
+        >
+          ← Back to all work
+        </Link>
+      </div>
+
+      <section className='pt-9'>
+        <div className='max-w-[1200px] mx-auto px-6 md:px-10'>
+          <span className='font-mono text-[11px] tracking-[0.16em] uppercase text-coral'>
+            UI/UX Design · Web Development — 2025
+          </span>
+          <Reveal>
+            <h1 className='font-display text-[clamp(38px,6vw,66px)] font-semibold mt-5 max-w-[820px]'>
               IgnitePro Community
-            </motion.h1>
+            </h1>
+          </Reveal>
 
-            <motion.p
-              className='text-lg text-gray-600 mb-8 text-left max-w-2xl'
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1.2, ease: 'easeOut' }}
+          <div className='grid grid-cols-2 md:grid-cols-4 gap-8 mt-13 py-8 border-t border-b border-white/8'>
+            {meta.map((item) => (
+              <div key={item.label}>
+                <div className='font-mono text-[10.5px] tracking-widest uppercase text-muted-2 mb-2'>
+                  {item.label}
+                </div>
+                <div className='text-[15px]'>{item.value}</div>
+              </div>
+            ))}
+          </div>
+
+          <div className='flex flex-wrap items-center gap-x-6 gap-y-2 mt-6 font-mono text-[12px] text-muted-2'>
+            <span>Oghosa Igbinomwanhia — Copywriter</span>
+            <span>Sola Akinola — Project Manager</span>
+            <a
+              href='https://igniteprocommunity.org/'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='text-coral hover:text-coral-soft transition-colors duration-200'
             >
-              IgnitePro Community is a youth-focused NGO dedicated to empowering
-              students, graduates, and young professionals to succeed in life
-              and career. It’s more than an organization — it’s a platform where
-              young people explore their passions, unlock potential, and build a
-              future they’re proud of. Through structured programs, hands-on
-              workshops, and mentorship, IgnitePro helps members develop
-              essential skills like leadership, communication, and career
-              readiness. The community fosters growth and connection, giving
-              young individuals the tools and confidence to thrive in a
-              fast-changing world. By focusing on both personal and professional
-              development, IgnitePro plays a key role in shaping the next
-              generation of leaders — equipping them to stand out and make
-              lasting impact.
-            </motion.p>
-
-            {/* My Roles & Visit Site Section */}
-            <motion.div
-              className='text-left'
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1.4, ease: 'easeOut' }}
-            >
-              <h2 className='text-2xl font-semibold text-gray-800 '>
-                My Roles:{' '}
-                <motion.span
-                  className='text-lg text-gray-600'
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ duration: 1.5, ease: 'easeOut' }}
-                >
-                  UI /UX design, Web Development
-                </motion.span>
-              </h2>
-
-              {/* Visit Site */}
-              <motion.a
-                href='https://igniteprocommunity.org/'
-                target='_blank'
-                rel='noopener noreferrer'
-                className='inline-block text-lg font-semibold text-blue-600 hover:text-blue-800 transition-all duration-300'
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                Visit Site →
-              </motion.a>
-            </motion.div>
-          </motion.div>
-
-          <div className='relative  w-screen h-auto mx-auto '>
-            <img
-              src={Acc}
-              alt='Hero Background'
-              className='w-full h-auto object-cover'
-            />
+              Visit Site →
+            </a>
           </div>
 
-          <div className='w-full  flex flex-col sm:flex-row px-6 sm:px-40 py-12 gap-7'>
-            {/* First Flex - Year & Industry */}
-            <motion.div
-              className='flex flex-col py-6 sm:py-0 w-full sm:w-1/3'
-              initial={{ opacity: 0, x: -50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-            >
-              <h3 className='text-lg text-gray-500 uppercase tracking-wide'>
-                Year
-              </h3>
-              <p className='text-2xl font-semibold text-gray-800 mb-6'>2025</p>
-
-              <h3 className='text-lg text-gray-500 uppercase tracking-wide'>
-                Industry
-              </h3>
-              <p className='text-2xl font-semibold text-gray-800 mb-6'>
-                Human Capital Development
-              </p>
-
-              <h3 className='text-lg text-gray-500 uppercase tracking-wide'>
-                Contributors
-              </h3>
-              <p className='text-base font-medium text-gray-800'>
-                Oghosa Igbinomwanhia—{' '}
-                <span className='text-gray-600'>Copywriter</span>
-              </p>
-              <p className='text-base font-medium text-gray-800'>
-                Sola Akinola —{' '}
-                <span className='text-gray-600'>Project Manager</span>
-              </p>
-            </motion.div>
-
-            <motion.div
-              className='flex flex-col gap-8 py-6 sm:py-0 w-full sm:w-2/3'
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1 }}
-            >
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1.2 }}
-              >
-                <h2 className='text-3xl font-semibold text-gray-800 mb-2'>
-                  The Challenge
-                </h2>
-                <p className='text-lg text-gray-600'>
-                  Creating the IgnitePro Community website meant building from
-                  the ground up — with the goal of helping more young people
-                  discover the platform, understand what it offers, and take
-                  action easily. The key challenges were: Boosting visibility
-                  for programs and events. Making event registration simple and
-                  fast. Ensuring mobile users had a smooth experience.
-                  Structuring content clearly so users could find what they need
-                  without confusion. And most importantly, building trust and
-                  credibility through design — especially for first-time
-                  visitors.
-                </p>
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1.4 }}
-              >
-                <h2 className='text-3xl font-semibold text-gray-800 '>
-                  The Solution
-                </h2>
-                <p className='text-lg text-gray-600'>
-                  To solve these challenges, I designed the IgnitePro Community
-                  website with a strong focus on clarity, accessibility, and
-                  user trust. I structured content around key user needs —
-                  making it easy to find programs, events, and community stories
-                  within a few clicks. The registration flow was simplified with
-                  short forms, clear CTAs, and instant confirmations to reduce
-                  drop-offs. Since most users are mobile-first, the site was
-                  fully optimized for smaller screens, ensuring a smooth,
-                  responsive experience. I introduced highlight sections for
-                  upcoming events, testimonials, and success stories to build
-                  credibility and inspire new users. A clear visual hierarchy
-                  and consistent branding helped make navigation intuitive, even
-                  for first-time visitors.
-                </p>
-              </motion.div>
-            </motion.div>
-          </div>
-        </div>
-
-        <div className=' w-full flex justify-center items-center bg-[#5D1AE5] py-20 md:py-48'>
-          <img
-            src={Logoa}
-            alt='Logo'
-            className='w-[180px] sm:w-[220px] md:w-[300px] lg:w-[350px] object-contain'
-          />
-        </div>
-
-        <section className='bg-white px-4 py-12 max-w-4xl mx-auto text-[#111]'>
-          {/* Heading */}
-          <h2 className='text-2xl md:text-3xl font-semibold mb-8'>
-            Bringing IgnitePro to Life
-          </h2>
-          {/* Intro Paragraph */}
-
-          <p className='text-base md:text-lg mb-6'>
-            Designing the IgnitePro Community website meant creating a digital
-            space that truly connects with students, graduates, and young
-            professionals. I followed a human-centered UX process to ensure
-            every design decision aligned with real user needs and goals. To
-            better understand the users, I conducted one-on-one conversations
-            with 10 people who fell within IgnitePro’s target audience. This
-            included: 5 students (both undergraduates and final-year students) 3
-            recent graduates (within 1–2 years of graduation) 2 early-career
-            professionals (employed or freelancing)
-          </p>
-        </section>
-
-        <div className='relative  w-screen h-auto mx-auto '>
-          <img
-            src={Acc1}
-            alt='Hero Background'
-            className='w-full h-auto object-cover'
-          />
-        </div>
-
-        <section className='bg-white px-4 py-12 max-w-4xl mx-auto text-[#111]'>
-          {/* Heading */}
-          <h2 className='text-2xl md:text-3xl font-semibold mb-8'>
-            Designing a Website That Builds Trust and Drives Action
-          </h2>
-          {/* Intro Paragraph */}
-
-          <p className='text-base md:text-lg mb-6'>
-            To make the IgnitePro Community platform stand out, the goal was to
-            build a website that felt real, trustworthy, and inspiring. Instead
-            of using stock images, I showcased authentic photos from past events
-            to reflect the energy of the community. Multiple contact options
-            were also added to make it easy for users to connect. Working with a
-            content strategist, we gave the site a clear and relatable voice —
-            one that feels reliable, welcoming, and empowering. After several
-            rounds of ideation and testing, we arrived at a clean, focused
-            design with strong messaging and CTAs that encourage users to
-            explore and register for programs. The site was built with React,
-            allowing the IgnitePro team to easily manage events and content.
-          </p>
-        </section>
-
-        <section className='relative bg-[#f0eaff] pt-5 md:pt-28'>
-          <div className='relative max-w-7xl w-full h-auto mx-auto px-4 sm:px-6 lg:px-8'>
-            <img
-              src={Bia}
-              alt='Hero Background'
-              className='w-full h-auto object-cover'
-            />
-
-            {/* Optional Overlay */}
-            {/* <div className='absolute inset-0 bg-black bg-opacity-50'></div> */}
-          </div>
-        </section>
-
-        <section className='w-full  bg-white'>
-          <div className='max-full mx-auto flex flex-col md:flex-row items-center gap-6'>
-            {/* Image One */}
-            <img
-              src={S1}
-              alt='First'
-              className='w-full md:w-1/2  shadow-md object-cover'
-            />
-
-            {/* Image Two */}
-            <img
-              src={S2}
-              alt='Second'
-              className='w-full md:w-1/2 shadow-md object-cover'
-            />
-          </div>
-        </section>
-
-        <section className='bg-[#EFE2FF] relative overflow-hidden'>
-          <div className='w-full'>
-            <img
-              src={S3}
-              alt='Second'
-              className='w-full h-auto object-cover scale-110'
-            />
-          </div>
-        </section>
-
-        <section className='w-full  bg-white'>
-          <div className='max-full w-full mx-auto flex flex-col md:flex-row items-center gap-4'>
-            {/* Image One */}
-            <img
-              src={S4}
-              alt='First'
-              className='w-full md:w-1/2  shadow-md object-cover'
-            />
-
-            {/* Image Two */}
-            <img
-              src={S5}
-              alt='Second'
-              className='w-full md:w-1/2 shadow-md object-cover'
-            />
-          </div>
-        </section>
-
-        <section className='w-full bg-white pt-12'>
-          <div className='w-full max-w-full mx-auto relative px-0 md:px-0'>
-            {/* Top two images */}
-            <div className='flex flex-col md:flex-row gap-4'>
-              {/* Left image with rotation on md+ */}
+          <Reveal>
+            <div className='mt-11 rounded-3xl overflow-hidden border border-card-line'>
               <img
-                src={Event1}
-                alt='Event'
-                className='w-full md:w-1/2 h-auto object-cover transform md:-rotate-4 rounded-md'
-              />
-
-              {/* Right image with opposite rotation on md+ */}
-              <img
-                src={Pitch1}
-                alt='Pitch'
-                className='w-full md:w-1/2 h-auto object-cover transform md:rotate-4 rounded-md'
+                src={Bia}
+                alt='IgnitePro Community homepage'
+                className='w-full h-auto object-cover'
               />
             </div>
+          </Reveal>
+        </div>
+      </section>
 
-            {/* Bottom full-width image */}
-            <div className='relative z-10 '>
+      <section className='py-20'>
+        <div className='max-w-[760px] mx-auto px-6'>
+          <span className='font-mono text-[11px] tracking-[0.16em] uppercase text-coral block mb-5'>
+            The Brief
+          </span>
+          <h2 className='font-display text-[clamp(26px,3.4vw,38px)] font-semibold mb-6.5'>
+            A digital home for young people building a career.
+          </h2>
+          <p className='text-[17px] leading-[1.8] text-muted'>
+            IgnitePro Community is a youth-focused NGO helping students,
+            graduates, and young professionals build the skills and
+            confidence to succeed — through structured programs, workshops,
+            and mentorship. My job was to give that work a website worth
+            trusting on first visit.
+          </p>
+
+          <Reveal>
+            <div className='mt-11 border border-card-line border-l-4 border-l-coral rounded-xl px-7 py-6.5 bg-card'>
+              <span className='font-mono text-[11px] tracking-[0.08em] uppercase text-coral block mb-2.5'>
+                The Challenge
+              </span>
+              <p className='text-muted text-[15px] leading-[1.7] m-0'>
+                The site was being built from the ground up, with no existing
+                traffic or reputation to lean on. It had to boost visibility
+                for programs and events, make registration simple and fast,
+                hold up on mobile, structure content so nothing got lost —
+                and above all, earn a first-time visitor&rsquo;s trust before
+                asking them to sign up for anything.
+              </p>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      <section className='pb-20'>
+        <div className='max-w-[760px] mx-auto px-6'>
+          <span className='font-mono text-[11px] tracking-[0.16em] uppercase text-coral block mb-5'>
+            The Research
+          </span>
+          <p className='text-[17px] leading-[1.8] text-muted mb-9'>
+            Before any screens, I ran one-on-one conversations with ten
+            people inside IgnitePro&rsquo;s actual target audience — five
+            students, three recent graduates, and two early-career
+            professionals — to find out what would actually make them trust
+            and use the site.
+          </p>
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-9'>
+            <Reveal>
+              <div className='h-full bg-card border border-card-line rounded-2xl p-8'>
+                <h3 className='font-display text-lg font-semibold mb-3.5'>
+                  The problem
+                </h3>
+                <p className='text-muted text-[15.5px] leading-[1.75] m-0'>
+                  Stock imagery and generic copy weren&rsquo;t going to
+                  convince a first-time visitor this community was real.
+                  Trust had to be designed for, not assumed.
+                </p>
+              </div>
+            </Reveal>
+            <Reveal delay={0.08}>
+              <div className='h-full bg-card border border-card-line rounded-2xl p-8'>
+                <h3 className='font-display text-lg font-semibold mb-3.5'>
+                  The approach
+                </h3>
+                <p className='text-muted text-[15.5px] leading-[1.75] m-0'>
+                  Authentic event photography instead of stock images, short
+                  registration forms with instant confirmation, and a voice
+                  developed with a content strategist so the copy felt
+                  reliable, not corporate.
+                </p>
+              </div>
+            </Reveal>
+          </div>
+        </div>
+      </section>
+
+      <section className='pb-20'>
+        <div className='max-w-[760px] mx-auto px-6 mb-10'>
+          <span className='font-mono text-[11px] tracking-[0.16em] uppercase text-coral block mb-5'>
+            The Solution
+          </span>
+          <h2 className='font-display text-[clamp(26px,3.4vw,38px)] font-semibold mb-6.5'>
+            Mobile-first, and easy for the team to keep current.
+          </h2>
+          <p className='text-[17px] leading-[1.8] text-muted'>
+            Since most visitors are on their phones, every screen was
+            designed mobile-first. The site was built in React so the
+            IgnitePro team can publish new events and update program
+            content themselves, without needing me for every change.
+          </p>
+        </div>
+        <div className='max-w-[1000px] mx-auto px-6 space-y-6'>
+          {features.map((feature, index) => (
+            <Reveal key={feature.caption} delay={(index % 3) * 0.06}>
+              <figure className='rounded-2xl overflow-hidden border border-card-line bg-card m-0'>
+                <img
+                  src={feature.img}
+                  alt={feature.caption}
+                  className='w-full h-auto'
+                  loading='lazy'
+                />
+                <figcaption className='px-5 py-3.5 font-mono text-[11px] tracking-wide uppercase text-muted-2 border-t border-card-line'>
+                  {feature.caption}
+                </figcaption>
+              </figure>
+            </Reveal>
+          ))}
+        </div>
+      </section>
+
+      <section className='py-20'>
+        <div className='max-w-[760px] mx-auto px-6'>
+          <span className='font-mono text-[11px] tracking-[0.16em] uppercase text-coral block mb-5'>
+            The Outcome
+          </span>
+          <h2 className='font-display text-[clamp(26px,3.4vw,38px)] font-semibold mb-6.5'>
+            What shipped.
+          </h2>
+          <p className='text-[17px] leading-[1.8] text-muted mb-9'>
+            The site became the central hub for IgnitePro&rsquo;s programs —
+            drawing 1,800 visits in its first few weeks, with visitors able
+            to find programs, register, and get answers without confusion.
+          </p>
+
+          <Reveal>
+            <figure className='rounded-2xl overflow-hidden border border-card-line bg-card m-0'>
               <img
                 src={Test}
-                alt='Test'
-                className='w-full h-auto object-cover shadow-lg rounded-lg'
+                alt='Member testimonials from the IgnitePro Community site'
+                className='w-full h-auto'
+                loading='lazy'
               />
-            </div>
-          </div>
-        </section>
-
-        <div className='w-full bg-gray-100 py-16 px-6 sm:px-75'>
-          {/* Section Header */}
-          <motion.h2
-            className='text-4xl font-bold text-gray-800 text-left mb-8'
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            The Outcome
-          </motion.h2>
-
-          {/* Outcome Content */}
-          <motion.p
-            className='text-lg text-gray-700 mb-6 max-w-3xl'
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-          >
-            The launch of the IgnitePro Community website resulted in over 2,000
-            visits within the first few weeks, as it became the central hub for
-            registering for the conference and viewing minister profiles and the
-            full program agenda. Users were able to find the information they
-            needed quickly, register without stress, and get answers to common
-            questions—all in one place. Clear content structure, mobile
-            responsiveness, and a smooth registration flow resolved previous
-            issues around visibility, accessibility, and trust, ultimately
-            improving overall engagement and participation.
-          </motion.p>
+              <figcaption className='px-5 py-3.5 font-mono text-[11px] tracking-wide uppercase text-muted-2 border-t border-card-line'>
+                Real member testimonials, live on the site
+              </figcaption>
+            </figure>
+          </Reveal>
         </div>
-      </div>
+      </section>
+
+      <section className='py-24 text-center border-t border-white/8'>
+        <span className='font-mono text-[11px] tracking-[0.16em] uppercase text-coral block mb-4'>
+          Next Project
+        </span>
+        <Link
+          to='/works/clickcart'
+          className='font-display text-[clamp(32px,5vw,50px)] font-semibold inline-block transition-colors duration-200 hover:text-coral-soft'
+        >
+          Click Cart →
+        </Link>
+      </section>
     </>
   );
 };

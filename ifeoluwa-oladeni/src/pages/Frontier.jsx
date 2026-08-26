@@ -1,14 +1,14 @@
 import { Link } from 'react-router-dom';
 import Solarp from '../assets/solarp.jpg';
 import Solarf from '../assets/solarf.jpg';
-import Fea from '../assets/fea.svg';
-import Fea1 from '../assets/fea1.svg';
-import Fea3 from '../assets/fea3.svg';
-import Fea4 from '../assets/fea4.svg';
-import Fea5 from '../assets/fea5.svg';
-import Sea from '../assets/sea.svg';
-import Sea1 from '../assets/sea1.svg';
-import Sea2 from '../assets/sea2.svg';
+import Fea from '../assets/fea.jpg';
+import Fea1 from '../assets/fea1.jpg';
+import Fea3 from '../assets/fea3.jpg';
+import Fea4 from '../assets/fea4.jpg';
+import Fea5 from '../assets/fea5.jpg';
+import Sea from '../assets/sea.jpg';
+import Sea1 from '../assets/sea1.jpg';
+import Sea2 from '../assets/sea2.jpg';
 import Reveal from '../compontents/Reveal';
 
 const meta = [
@@ -178,6 +178,7 @@ const Frontier = () => {
                   src={feature.img}
                   alt={feature.caption}
                   className='w-full h-auto'
+                  loading='lazy'
                 />
                 <figcaption className='px-5 py-3.5 font-mono text-[11px] tracking-wide uppercase text-muted-2 border-t border-card-line'>
                   {feature.caption}
@@ -208,14 +209,14 @@ const Frontier = () => {
           <Reveal>
             <div className='mt-9 grid grid-cols-1 lg:grid-cols-2 gap-5'>
               <div className='rounded-2xl overflow-hidden border border-card-line'>
-                <img src={Sea} alt='Mobile shop view' className='w-full h-full object-cover' />
+                <img src={Sea} alt='Mobile shop view' className='w-full h-full object-cover' loading='lazy' />
               </div>
               <div className='grid gap-5'>
                 <div className='rounded-2xl overflow-hidden border border-card-line'>
-                  <img src={Sea1} alt='Shop grid top view' className='w-full h-auto' />
+                  <img src={Sea1} alt='Shop grid top view' className='w-full h-auto' loading='lazy' />
                 </div>
                 <div className='rounded-2xl overflow-hidden border border-card-line'>
-                  <img src={Sea2} alt='Shop grid bottom view' className='w-full h-auto' />
+                  <img src={Sea2} alt='Shop grid bottom view' className='w-full h-auto' loading='lazy' />
                 </div>
               </div>
             </div>
@@ -225,7 +226,7 @@ const Frontier = () => {
 
       <Reveal>
         <div className='rounded-3xl overflow-hidden border border-card-line mx-6 md:mx-10 max-w-[1160px] lg:mx-auto'>
-          <img src={Solarf} alt='Frontier Solar Tech full site' className='w-full h-auto' />
+          <img src={Solarf} alt='Frontier Solar Tech full site' className='w-full h-auto' loading='lazy' />
         </div>
       </Reveal>
 

@@ -127,6 +127,7 @@ const Works = () => {
                       src={project.img}
                       alt={project.title}
                       className='w-full h-full object-cover transition-transform duration-500 group-hover:scale-105'
+                      loading={index === 0 ? 'eager' : 'lazy'}
                     />
                     <span className='absolute top-4 right-4 bg-ink/70 backdrop-blur-md border border-white/16 rounded-full px-3.5 py-1.5 font-mono text-[11px]'>
                       {project.year}

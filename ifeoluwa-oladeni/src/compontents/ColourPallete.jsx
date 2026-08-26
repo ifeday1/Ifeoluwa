@@ -34,7 +34,7 @@ const ColourPallete = () => {
       <div className='w-full  py-12 px-6 flex flex-col items-center'>
         {colors.map((section, index) => (
           <div key={index} className='w-full max-w-4xl mb-12'>
-            <h2 className='text-lg font-bold text-gray-800 border-b-2 border-gray-700 mb-4'>
+            <h2 className='text-lg font-bold text-ivory border-b-2 border-white/16 pb-2 mb-4'>
               {section.category}
             </h2>
             <div className='grid grid-cols-2 md:grid-cols-4 gap-6'>

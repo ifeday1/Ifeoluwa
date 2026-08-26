@@ -7,7 +7,7 @@ import {
   FaMedium,
 } from 'react-icons/fa6';
 import Ifehero from '../assets/IfeHero2.jpg';
-import Aboutife from '../assets/IFE.png';
+import Aboutife from '../assets/IFE.jpg';
 import Frontwork from '../assets/frontwork.png';
 import Bia from '../assets/bia.png';
 import Clickwork from '../assets/clickwork.png';
@@ -103,9 +103,9 @@ const testimonials = [
   },
   {
     quote:
-      'Fast, communicative, and genuinely good taste. Our conversion on the quote flow improved almost immediately after launch.',
+      "Ifeoluwa communicated clearly at every stage, so nothing about the build caught us off guard. What he shipped gave our community an easy, trustworthy way to find programs and actually register — that mattered more than any redesign.",
     name: 'Sola Akinola',
-    role: 'Communication Lead, IgnitePro',
+    role: 'Project Manager, IgnitePro',
   },
 ];
 
@@ -235,6 +235,7 @@ const Home = () => {
                   src={Aboutife}
                   alt='Ifeoluwa at work'
                   className='w-full h-full object-cover'
+                  loading='lazy'
                 />
               </div>
               <div>
@@ -333,6 +334,7 @@ const Home = () => {
                       src={project.img}
                       alt={project.title}
                       className='w-full h-full object-cover transition-transform duration-500 group-hover:scale-105'
+                      loading='lazy'
                     />
                     <span className='absolute top-4 right-4 bg-ink/70 backdrop-blur-md border border-white/16 rounded-full px-3.5 py-1.5 font-mono text-[11px]'>
                       {project.year}
