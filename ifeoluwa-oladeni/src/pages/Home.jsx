@@ -97,15 +97,21 @@ const featuredWork = [
 const testimonials = [
   {
     quote:
-      "Ifeoluwa didn't just hand us a Figma file — he built it, and it looked exactly like what we agreed on. That almost never happens.",
+      "What we got wasn't just a Figma file — it was a working build that looked exactly like what we agreed on. That almost never happens.",
     name: 'Adaeze Nwosu',
     role: 'Founder, Frontier Solar Tech',
   },
   {
     quote:
-      "Ifeoluwa communicated clearly at every stage, so nothing about the build caught us off guard. What he shipped gave our community an easy, trustworthy way to find programs and actually register — that mattered more than any redesign.",
+      "Communication was clear at every stage, so nothing about the build caught us off guard. What shipped gave our community an easy, trustworthy way to find programs and actually register — that mattered more than any redesign.",
     name: 'Sola Akinola',
     role: 'Project Manager, IgnitePro',
+  },
+  {
+    quote:
+      "Thank you so much for this flow, a clear, clean UI. It's deeply impacted the business.",
+    name: 'Andrei',
+    role: 'CEO, Prep Byme',
   },
 ];
 
@@ -381,15 +387,17 @@ const Home = () => {
               What clients say.
             </h2>
           </Reveal>
-          <div className='grid grid-cols-1 md:grid-cols-2 gap-6 max-w-[820px]'>
+          <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
             {testimonials.map((t, index) => (
-              <Reveal key={t.name} delay={index * 0.08}>
+              <Reveal key={t.role} delay={index * 0.08}>
                 <div className='h-full flex flex-col gap-5 bg-card border border-card-line rounded-2xl p-8'>
                   <p className='text-[15.5px] leading-[1.75] text-ivory'>
                     &ldquo;{t.quote}&rdquo;
                   </p>
                   <div className='mt-auto'>
-                    <div className='text-[13.5px] font-semibold'>{t.name}</div>
+                    {t.name && (
+                      <div className='text-[13.5px] font-semibold'>{t.name}</div>
+                    )}
                     <div className='font-mono text-[11px] text-muted-2 mt-0.5'>
                       {t.role}
                     </div>
