@@ -6,8 +6,8 @@ import Clickuser from '../assets/clickuser.png';
 import H1 from '../assets/h1.png';
 import C1 from '../assets/C1.png';
 import iPhone from '../assets/iPhone1.png';
-import Reveal from '../compontents/Reveal';
-import ColourPallete from '../compontents/ColourPallete';
+import Reveal from '../components/Reveal';
+import ColourPallete from '../components/ColourPallete';
 
 const meta = [
   { label: 'Client', value: 'Click Cart' },

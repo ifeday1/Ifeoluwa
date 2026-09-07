@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import Aboutife from '../assets/Aboutife.png';
 import Profile from '../assets/profile.png';
-import Reveal from '../compontents/Reveal';
+import Reveal from '../components/Reveal';
 
 const storyBlocks = [
   {

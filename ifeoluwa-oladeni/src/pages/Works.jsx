@@ -5,7 +5,7 @@ import Bia from '../assets/bia.png';
 import Clickwork from '../assets/clickwork.png';
 import Crowdwork from '../assets/crowdwork.png';
 import Prepbymework from '../assets/prepbymework.jpg';
-import Reveal from '../compontents/Reveal';
+import Reveal from '../components/Reveal';
 
 const FILTERS = [
   'All',

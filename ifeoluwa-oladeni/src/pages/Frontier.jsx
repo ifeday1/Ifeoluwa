@@ -9,7 +9,7 @@ import Fea5 from '../assets/fea5.jpg';
 import Sea from '../assets/sea.jpg';
 import Sea1 from '../assets/sea1.jpg';
 import Sea2 from '../assets/sea2.jpg';
-import Reveal from '../compontents/Reveal';
+import Reveal from '../components/Reveal';
 
 const meta = [
   { label: 'Client', value: 'Frontier Solar Tech' },

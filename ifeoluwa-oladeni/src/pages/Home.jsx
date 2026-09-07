@@ -13,11 +13,11 @@ import Bia from '../assets/bia.png';
 import Clickwork from '../assets/clickwork.png';
 import Crowdwork from '../assets/crowdwork.png';
 import Prepbymework from '../assets/prepbymework.jpg';
-import Reveal from '../compontents/Reveal';
-import Magnetic from '../compontents/Magnetic';
-import CountUp from '../compontents/CountUp';
-import CopyEmailButton from '../compontents/CopyEmailButton';
-import Marquee from '../compontents/Marquee';
+import Reveal from '../components/Reveal';
+import Magnetic from '../components/Magnetic';
+import CountUp from '../components/CountUp';
+import CopyEmailButton from '../components/CopyEmailButton';
+import Marquee from '../components/Marquee';
 
 const email = 'oladeniifeoluwa123@gmail.com';
 

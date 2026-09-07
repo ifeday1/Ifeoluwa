@@ -8,7 +8,7 @@ import PrepbymeReports from '../assets/prepbyme-reports.jpg';
 import PrepbymeWarehouse from '../assets/prepbyme-warehouse.jpg';
 import PrepbymePicking from '../assets/prepbyme-picking.jpg';
 import PrepbymeParking from '../assets/prepbyme-parking.jpg';
-import Reveal from '../compontents/Reveal';
+import Reveal from '../components/Reveal';
 
 const meta = [
   { label: 'Client', value: 'Prep Byme' },

@@ -5,7 +5,7 @@ import S2 from '../assets/s2.png';
 import S4 from '../assets/s4.jpg';
 import Pitch1 from '../assets/pitch1.png';
 import Test from '../assets/test.jpg';
-import Reveal from '../compontents/Reveal';
+import Reveal from '../components/Reveal';
 
 const meta = [
   { label: 'Client', value: 'IgnitePro Community' },

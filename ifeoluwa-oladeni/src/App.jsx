@@ -1,20 +1,20 @@
   
 import Home from './pages/Home';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './compontents/Navbar';
+import Navbar from './components/Navbar';
 import Works from './pages/Works';
 import About from './pages/About';
 import Contact from './pages/Contact';
-import ScrollToTop from './compontents/ScrollToTop';
-import Footer from './compontents/Footer';
+import ScrollToTop from './components/ScrollToTop';
+import Footer from './components/Footer';
 import Frontier from './pages/Frontier';
 import CrowdCarry from './pages/CrowdCarry';
 import ClickCart from './pages/ClickCart';
 import PrepByme from './pages/PrepByme';
-import Scroll from './compontents/Scroll';
+import Scroll from './components/Scroll';
 import Ignite from './pages/Ignite';
-import Cursor from './compontents/Cursor';
-import Grain from './compontents/Grain';
+import Cursor from './components/Cursor';
+import Grain from './components/Grain';
 
 const App = () => {
   return (

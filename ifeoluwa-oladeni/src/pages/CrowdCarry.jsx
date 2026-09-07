@@ -3,7 +3,7 @@ import Crowdcarry1 from '../assets/crowdcarry1.jpg';
 import Chome from '../assets/Chome.jpg';
 import Demo from '../assets/demo.png';
 import Cstart from '../assets/Cstart.jpg';
-import Reveal from '../compontents/Reveal';
+import Reveal from '../components/Reveal';
 
 const meta = [
   { label: 'Client', value: 'Crowd Carry' },

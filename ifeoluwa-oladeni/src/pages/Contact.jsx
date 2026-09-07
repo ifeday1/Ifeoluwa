@@ -5,8 +5,8 @@ import {
   FaInstagram,
   FaMedium,
 } from 'react-icons/fa6';
-import Reveal from '../compontents/Reveal';
-import CopyEmailButton from '../compontents/CopyEmailButton';
+import Reveal from '../components/Reveal';
+import CopyEmailButton from '../components/CopyEmailButton';
 
 const email = 'oladeniifeoluwa123@gmail.com';
 
