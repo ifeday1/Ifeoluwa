@@ -1,18 +1,29 @@
 import { Link } from 'react-router-dom';
 import Prepbymework from '../assets/prepbymework.jpg';
 import PrepbymeWeb from '../assets/prepbyme-web.jpg';
-import PrepbymeMobile from '../assets/prepbyme-mobile.jpg';
 import PrepbymeInventory from '../assets/prepbyme-inventory.jpg';
 import PrepbymeTicket from '../assets/prepbyme-ticket.jpg';
 import PrepbymeReports from '../assets/prepbyme-reports.jpg';
 import PrepbymeWarehouse from '../assets/prepbyme-warehouse.jpg';
 import PrepbymePicking from '../assets/prepbyme-picking.jpg';
 import PrepbymeParking from '../assets/prepbyme-parking.jpg';
+import MobileEmpty from '../assets/prepbyme-m-empty.jpg';
+import MobileDashboard from '../assets/prepbyme-m-dashboard.jpg';
+import MobileProduct from '../assets/prepbyme-m-product.jpg';
+import MobileAddEntry from '../assets/prepbyme-m-add-entry.jpg';
+import MobileAddStep1 from '../assets/prepbyme-m-add-step1.jpg';
+import MobileAddReview from '../assets/prepbyme-m-add-review.jpg';
+import MobileInbound from '../assets/prepbyme-m-inbound.jpg';
+import MobileTracking from '../assets/prepbyme-m-tracking.jpg';
+import MobileReceipt from '../assets/prepbyme-m-receipt.jpg';
+import MobileShipping from '../assets/prepbyme-m-shipping.jpg';
+import MobileLabel from '../assets/prepbyme-m-label.jpg';
+import MobileShare from '../assets/prepbyme-m-share.jpg';
 import Reveal from '../components/Reveal';
 
 const meta = [
   { label: 'Client', value: 'Prep Byme' },
-  { label: 'Role', value: 'Product Design, User Research, UX/UI Design' },
+  { label: 'Role', value: 'Product Design, User Research, Web & Mobile UI' },
   { label: 'Year', value: '2026' },
   { label: 'Industry', value: 'Logistics / E-commerce Fulfilment' },
 ];
@@ -37,6 +48,49 @@ const outcomes = [
   { num: '−90%', desc: 'Fulfilment time cut: a process that used to take hours now takes minutes.' },
 ];
 
+const mobileFlows = [
+  {
+    num: '01',
+    title: 'Stock at a glance',
+    text: 'The dashboard opens on the same five numbers as the web app: total, inbound, received, returns, and shipped. Main and box inventory sit behind one toggle, and FBA / FBM is a filter right under search, so the split that fixed reconciliation on web carries straight over to mobile. A new account never lands on a blank table; the empty state points straight to adding the first product.',
+    screens: [
+      { img: MobileEmpty, alt: 'Empty dashboard prompting the client to add their first product', caption: 'Empty state' },
+      { img: MobileDashboard, alt: 'Dashboard listing products with All, FBA, and FBM filters', caption: 'Inventory, filtered by FBA / FBM' },
+      { img: MobileProduct, alt: 'Product details with stock counts, prep services, and activity', caption: 'Product details' },
+    ],
+  },
+  {
+    num: '02',
+    title: 'Adding a product in three steps',
+    text: 'Clients can look a product up by ASIN, scan its barcode with the camera, or enter it manually. The form is split into short steps with a progress bar, and prep services like FNSKU labelling, polybag, bubblewrap, and hazmat are single taps. A review card at the end shows everything before it goes into inventory.',
+    screens: [
+      { img: MobileAddEntry, alt: 'Add product screen with ASIN lookup and manual entry', caption: 'ASIN lookup or manual entry' },
+      { img: MobileAddStep1, alt: 'Add product step one with camera capture, product name, URL, and SKU', caption: 'Step 1: photo and basic info' },
+      { img: MobileAddReview, alt: 'Add product final step with labelling, packing options, and review', caption: 'Step 3: prep services and review' },
+    ],
+  },
+  {
+    num: '03',
+    title: 'Inbound, tracked to the warehouse door',
+    text: 'Each inbound order shows exactly how many units were sent, how many are left, and how many have been received. Tracking goes one step past the carrier: the timeline ends at “Received by Warehouse”, and the carrier’s proof of delivery sits one tap away, linked back to its order.',
+    screens: [
+      { img: MobileInbound, alt: 'Inbound order with original, left, and received counts per item', caption: 'Inbound order' },
+      { img: MobileTracking, alt: 'Tracking timeline from label created to received by warehouse', caption: 'Delivery history' },
+      { img: MobileReceipt, alt: 'Carrier proof of delivery with signature, linked to its order', caption: 'Carrier receipt' },
+    ],
+  },
+  {
+    num: '04',
+    title: 'Shipping labels, without the desktop',
+    text: 'While Prep Byme generates a shipping label, the order says so plainly instead of sitting in an unexplained “processing” state. Once the label is ready, clients can print it, download the PDF, or share it through the native share sheet.',
+    screens: [
+      { img: MobileShipping, alt: 'Shipping order awaiting a label from Prep Byme', caption: 'Awaiting shipping label' },
+      { img: MobileLabel, alt: 'Shipping label preview with print, download, and share actions', caption: 'Shipping label' },
+      { img: MobileShare, alt: 'Share sheet for the shipping label PDF', caption: 'Share or print' },
+    ],
+  },
+];
+
 const PrepByme = () => {
   return (
     <>
@@ -52,7 +106,7 @@ const PrepByme = () => {
       <section className='pt-9'>
         <div className='max-w-[1200px] mx-auto px-6 md:px-10'>
           <span className='font-mono text-[11px] tracking-[0.16em] uppercase text-coral'>
-            Product Design · UX/UI Design · 2026
+            Product Design · Web & Mobile UI · 2026
           </span>
           <Reveal>
             <h1 className='font-display text-[clamp(38px,6vw,66px)] font-semibold mt-5 max-w-[820px]'>
@@ -150,7 +204,8 @@ const PrepByme = () => {
             platform separates FBA and FBM stock into distinct views,
             automates reconciliation, and includes a built-in ticketing
             system so issues are tracked, owned, and resolved without ever
-            leaving the platform.
+            leaving the platform. A companion mobile app carries the same
+            model into clients&rsquo; pockets.
           </p>
         </div>
         <div className='max-w-[1000px] mx-auto px-6'>
@@ -325,21 +380,6 @@ const PrepByme = () => {
             </figure>
           </Reveal>
         </div>
-        <div className='max-w-[420px] mx-auto px-6 mt-6'>
-          <Reveal>
-            <figure className='rounded-2xl overflow-hidden border border-card-line bg-card m-0'>
-              <img
-                src={PrepbymeMobile}
-                alt='Prep Byme mobile app, filtered by FBA and FBM inventory'
-                className='w-full h-auto'
-                loading='lazy'
-              />
-              <figcaption className='px-5 py-3.5 font-mono text-[11px] tracking-wide uppercase text-muted-2 border-t border-card-line'>
-                FBA / FBM split as its own filter, not an afterthought
-              </figcaption>
-            </figure>
-          </Reveal>
-        </div>
       </section>
 
       <section className='pb-20'>
@@ -425,6 +465,65 @@ const PrepByme = () => {
               </p>
             </div>
           </Reveal>
+        </div>
+      </section>
+
+      <section className='py-20 border-t border-white/8'>
+        <div className='max-w-[760px] mx-auto px-6'>
+          <span className='font-mono text-[11px] tracking-[0.16em] uppercase text-coral block mb-5'>
+            Mobile App
+          </span>
+          <h2 className='font-display text-[clamp(26px,3.4vw,38px)] font-semibold mb-6.5'>
+            The whole operation, in a client&rsquo;s pocket.
+          </h2>
+          <p className='text-[17px] leading-[1.8] text-muted'>
+            Sellers don&rsquo;t only check stock from a desk. The mobile app
+            covers the jobs clients do most (checking inventory, adding
+            products, following inbound deliveries, and handling shipping
+            labels) using the same stock model, numbers, and FBA / FBM
+            split as the web dashboard, so nothing needs relearning between
+            the two.
+          </p>
+        </div>
+
+        <div className='max-w-[1000px] mx-auto px-6'>
+          {mobileFlows.map((flow) => (
+            <div key={flow.num} className='mt-18'>
+              <div className='max-w-[760px] mx-auto'>
+                <span className='font-mono text-[11px] tracking-[0.16em] uppercase text-muted-2 block mb-3'>
+                  {flow.num}
+                </span>
+                <h3 className='font-display text-[clamp(21px,2.4vw,26px)] font-semibold mb-4'>
+                  {flow.title}
+                </h3>
+                <p className='text-[16px] leading-[1.8] text-muted'>
+                  {flow.text}
+                </p>
+              </div>
+
+              <div className='mt-9 grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-6 max-w-[280px] sm:max-w-none mx-auto'>
+                {flow.screens.map((screen, index) => (
+                  <Reveal key={screen.caption} delay={index * 0.06}>
+                    <figure className='m-0'>
+                      <div className='rounded-[28px] overflow-hidden border border-card-line bg-card p-1.5'>
+                        <img
+                          src={screen.img}
+                          alt={screen.alt}
+                          width={780}
+                          height={1748}
+                          className='w-full h-auto rounded-[22px]'
+                          loading='lazy'
+                        />
+                      </div>
+                      <figcaption className='mt-3.5 text-center font-mono text-[11px] tracking-wide uppercase text-muted-2'>
+                        {screen.caption}
+                      </figcaption>
+                    </figure>
+                  </Reveal>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 
