@@ -5,6 +5,7 @@ import Bia from '../assets/bia.png';
 import Clickwork from '../assets/clickwork.png';
 import Crowdwork from '../assets/crowdwork.png';
 import Prepbymework from '../assets/prepbymework.jpg';
+import Alphalliwork from '../assets/alphalli-hero.jpg';
 import Reveal from '../components/Reveal';
 
 const FILTERS = [
@@ -24,6 +25,15 @@ const projects = [
     tags: ['UI/UX Design', 'Web Development', 'Mobile Design'],
     description:
       'Multi-channel inventory and fulfillment dashboard for e-commerce sellers — inbound, returns, and shipping tracked across web and mobile.',
+  },
+  {
+    title: 'Alphalli',
+    year: 2025,
+    img: Alphalliwork,
+    path: '/works/alphalli',
+    tags: ['UI/UX Design', 'Mobile Design'],
+    description:
+      'A marketplace for African native wear, made to order — buyers submit measurements inside checkout instead of picking a size that was never cut for them.',
   },
   {
     title: 'IgnitePro Community',

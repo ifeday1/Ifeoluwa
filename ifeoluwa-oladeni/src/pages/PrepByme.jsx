@@ -585,10 +585,10 @@ const PrepByme = () => {
           Next Project
         </span>
         <Link
-          to='/works/ignitepro'
+          to='/works/alphalli'
           className='font-display text-[clamp(32px,5vw,50px)] font-semibold inline-block transition-colors duration-200 hover:text-coral-soft'
         >
-          IgnitePro Community →
+          Alphalli →
         </Link>
       </section>
     </>

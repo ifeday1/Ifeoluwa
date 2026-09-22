@@ -11,6 +11,7 @@ import Frontier from './pages/Frontier';
 import CrowdCarry from './pages/CrowdCarry';
 import ClickCart from './pages/ClickCart';
 import PrepByme from './pages/PrepByme';
+import Alphalli from './pages/Alphalli';
 import Scroll from './components/Scroll';
 import Ignite from './pages/Ignite';
 import Cursor from './components/Cursor';
@@ -32,6 +33,7 @@ const App = () => {
           <Route path='/works/crowdcarry' element={<CrowdCarry />} />
           <Route path='/works/clickcart' element={<ClickCart />} />
           <Route path='/works/prepbyme' element={<PrepByme />} />
+          <Route path='/works/alphalli' element={<Alphalli />} />
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
         </Routes>

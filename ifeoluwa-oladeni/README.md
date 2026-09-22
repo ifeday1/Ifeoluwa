@@ -7,6 +7,7 @@ Personal portfolio of Ifeoluwa Oladeni, a Lagos-based product designer who codes
 | Project | Year | Focus |
 | --- | --- | --- |
 | [Prep Byme](src/pages/PrepByme.jsx) | 2026 | Multi-channel inventory and fulfillment dashboard for e-commerce sellers (web + mobile) |
+| [Alphalli](src/pages/Alphalli.jsx) | 2025 | Made-to-order marketplace for African native wear — measurement inside checkout (mobile) |
 | [IgnitePro Community](src/pages/Ignite.jsx) | 2025 | Community platform for founders — events, pitch tracks, member hub |
 | [Click Cart](src/pages/ClickCart.jsx) | 2024 | Mobile-first shopping app, from brand identity to checkout |
 | [Crowd Carry](src/pages/CrowdCarry.jsx) | 2024 | Power-bank sharing app concept — waitlist landing and product UI |
@@ -38,6 +39,7 @@ src/
 | `/` | Home |
 | `/works` | Work index |
 | `/works/prepbyme` | Prep Byme case study |
+| `/works/alphalli` | Alphalli case study |
 | `/works/ignitepro` | IgnitePro case study |
 | `/works/clickcart` | Click Cart case study |
 | `/works/crowdcarry` | Crowd Carry case study |

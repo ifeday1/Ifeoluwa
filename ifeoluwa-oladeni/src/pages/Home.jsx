@@ -13,6 +13,7 @@ import Bia from '../assets/bia.png';
 import Clickwork from '../assets/clickwork.png';
 import Crowdwork from '../assets/crowdwork.png';
 import Prepbymework from '../assets/prepbymework.jpg';
+import Alphalliwork from '../assets/alphalli-hero.jpg';
 import Reveal from '../components/Reveal';
 import Magnetic from '../components/Magnetic';
 import CountUp from '../components/CountUp';
@@ -59,6 +60,14 @@ const featuredWork = [
     path: '/works/prepbyme',
     tags: ['UI/UX Design', 'Web Dev', 'Mobile Design'],
     peek: 'Multi-channel inventory and fulfillment dashboard for e-commerce sellers, across web and mobile.',
+  },
+  {
+    title: 'Alphalli',
+    year: 2025,
+    img: Alphalliwork,
+    path: '/works/alphalli',
+    tags: ['Product Design', 'Mobile UI/UX'],
+    peek: 'Made-to-order African native wear — measurement built into the purchase, not chased afterwards.',
   },
   {
     title: 'IgnitePro Community',
