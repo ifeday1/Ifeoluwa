@@ -14,14 +14,12 @@ import PrepByme from './pages/PrepByme';
 import Alphalli from './pages/Alphalli';
 import Scroll from './components/Scroll';
 import Ignite from './pages/Ignite';
-import Cursor from './components/Cursor';
 import Grain from './components/Grain';
 
 const App = () => {
   return (
     <>
       <Router>
-        <Cursor />
         <Grain />
         <Scroll />
         <Navbar />

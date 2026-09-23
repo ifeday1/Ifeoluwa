@@ -69,17 +69,6 @@ const About = () => {
               />
             </div>
           </div>
-
-          <div className='flex gap-2 flex-wrap mt-13'>
-            {['UI / UX Design', 'Front-end Dev', 'Brand Identity'].map((tag) => (
-              <span
-                key={tag}
-                className='font-mono text-[10.5px] tracking-wide uppercase text-muted border border-white/16 rounded-full px-3.5 py-2'
-              >
-                {tag}
-              </span>
-            ))}
-          </div>
         </div>
 
         {/* Story column */}

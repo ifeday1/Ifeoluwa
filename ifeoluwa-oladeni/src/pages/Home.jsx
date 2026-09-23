@@ -1,4 +1,6 @@
+import { useRef } from 'react';
 import { Link } from 'react-router-dom';
+import { useScroll } from 'framer-motion';
 import {
   FaBehance,
   FaDribbble,
@@ -19,6 +21,7 @@ import Magnetic from '../components/Magnetic';
 import CountUp from '../components/CountUp';
 import CopyEmailButton from '../components/CopyEmailButton';
 import Marquee from '../components/Marquee';
+import StackCard from '../components/StackCard';
 
 const email = 'oladeniifeoluwa123@gmail.com';
 
@@ -153,6 +156,13 @@ const socials = [
 ];
 
 const Home = () => {
+  const workRef = useRef(null);
+  const { scrollYProgress: workProgress } = useScroll({
+    target: workRef,
+    offset: ['start start', 'end end'],
+  });
+  const workItems = featuredWork.slice(0, 3);
+
   return (
     <>
       {/* Hero */}
@@ -165,10 +175,7 @@ const Home = () => {
 
           <div className='grid grid-cols-1 md:grid-cols-[1.35fr_1fr] gap-12 md:gap-14 items-center'>
             <div>
-              <span className='font-mono text-[11px] tracking-[0.16em] uppercase text-coral'>
-                Lagos, Nigeria
-              </span>
-              <Reveal className='mt-4'>
+              <Reveal>
                 <h1 className='font-display text-[38px] sm:text-5xl lg:text-[72px] font-semibold leading-[1.02] tracking-tight'>
                   Great products are <span className='text-coral'>rare.</span> I
                   build the ones people{' '}
@@ -181,17 +188,6 @@ const Home = () => {
                 scratch on the side. I write my own front-end so what ships
                 looks exactly like what I designed.
               </p>
-
-              <div className='flex gap-2.5 flex-wrap mt-6'>
-                {roles.map((role) => (
-                  <span
-                    key={role.label}
-                    className='font-mono text-[11px] tracking-wider uppercase px-4 py-2.5 rounded-full border border-white/16 text-muted'
-                  >
-                    {role.label}
-                  </span>
-                ))}
-              </div>
 
               <div className='flex gap-3.5 flex-wrap mt-10'>
                 <Magnetic>
@@ -267,21 +263,6 @@ const Home = () => {
                   and the browser. My background in branding still shows up in
                   how I think about type and spacing.
                 </p>
-                <div className='flex gap-2.5 flex-wrap mt-6'>
-                  {[
-                    'UI / UX Design',
-                    'Front-end Dev',
-                    'Brand Identity',
-                    'UX Research',
-                  ].map((tag) => (
-                    <span
-                      key={tag}
-                      className='font-mono text-[11px] tracking-wider uppercase text-muted border border-white/16 rounded-full px-4 py-2'
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
               </div>
             </div>
           </Reveal>
@@ -337,35 +318,32 @@ const Home = () => {
             </Link>
           </Reveal>
 
-          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7'>
-            {featuredWork.slice(0, 3).map((project, index) => (
-              <Reveal key={project.title} delay={(index % 2) * 0.08}>
+          <div ref={workRef} className='relative'>
+            {workItems.map((project, index) => (
+              <StackCard
+                key={project.title}
+                index={index}
+                total={workItems.length}
+                progress={workProgress}
+              >
                 <Link
                   to={project.path}
-                  className='group block rounded-2xl overflow-hidden bg-card border border-card-line transition-all duration-300 hover:-translate-y-1.5 hover:border-coral'
+                  className='group grid grid-cols-1 md:grid-cols-[1.55fr_1fr] rounded-[28px] overflow-hidden bg-card border border-card-line shadow-[0_-20px_50px_-20px_rgba(0,0,0,0.7)] transition-colors duration-300 hover:border-coral'
                 >
-                  <div className='aspect-video overflow-hidden relative'>
+                  <div className='relative flex items-center bg-ink'>
                     <img
                       src={project.img}
                       alt={project.title}
-                      className='w-full h-full object-cover transition-transform duration-500 group-hover:scale-105'
+                      className='block w-full h-auto'
                       loading='lazy'
                     />
-                    <span className='absolute top-4 right-4 bg-ink/70 backdrop-blur-md border border-white/16 rounded-full px-3.5 py-1.5 font-mono text-[11px]'>
+                    <span className='absolute top-5 left-5 bg-ink/70 backdrop-blur-md border border-white/16 rounded-full px-3.5 py-1.5 font-mono text-[11px]'>
                       {project.year}
                     </span>
-                    <div className='absolute inset-0 bg-linear-to-t from-ink/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-5'>
-                      <span className='text-[13px] text-ivory leading-relaxed'>
-                        {project.peek}
-                      </span>
-                    </div>
                   </div>
-                  <div className='p-6 flex justify-between items-start gap-4'>
+                  <div className='p-6 md:p-9 flex flex-col justify-between gap-6'>
                     <div>
-                      <div className='font-display text-lg font-semibold mb-2.5'>
-                        {project.title}
-                      </div>
-                      <div className='flex flex-wrap gap-x-1.5 gap-y-1 font-mono text-[10px] uppercase tracking-wide text-muted-2'>
+                      <div className='flex flex-wrap gap-x-1.5 gap-y-1 font-mono text-[11px] uppercase tracking-wide text-muted-2 mb-3'>
                         {project.tags.map((tag, i) => (
                           <span key={tag}>
                             {tag}
@@ -373,13 +351,19 @@ const Home = () => {
                           </span>
                         ))}
                       </div>
+                      <div className='font-display text-[clamp(24px,3vw,38px)] font-semibold leading-tight mb-3'>
+                        {project.title}
+                      </div>
+                      <p className='text-[15px] md:text-base text-muted leading-[1.6]'>
+                        {project.peek}
+                      </p>
                     </div>
-                    <div className='w-9 h-9 rounded-full border border-white/16 flex items-center justify-center shrink-0 transition-all duration-200 group-hover:bg-coral group-hover:border-coral group-hover:rotate-45'>
+                    <div className='w-12 h-12 md:w-14 md:h-14 rounded-full border border-white/16 flex items-center justify-center shrink-0 text-lg transition-all duration-200 group-hover:bg-coral group-hover:border-coral group-hover:rotate-45'>
                       →
                     </div>
                   </div>
                 </Link>
-              </Reveal>
+              </StackCard>
             ))}
           </div>
         </div>
