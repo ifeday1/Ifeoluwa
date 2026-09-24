@@ -3,8 +3,11 @@ import { Link } from 'react-router-dom';
 import AlphalliHero from '../assets/alphalli-hero.jpg';
 import MobileHome from '../assets/alphalli-m-home.jpg';
 import MobileOnboarding from '../assets/alphalli-m-onboarding.jpg';
+import MobileOnboarding2 from '../assets/alphalli-m-onboarding-2.jpg';
+import MobileOnboarding3 from '../assets/alphalli-m-onboarding-3.jpg';
 import MobileLogin from '../assets/alphalli-m-login.jpg';
 import MobileSignup from '../assets/alphalli-m-signup.jpg';
+import MobileForgotPassword from '../assets/alphalli-m-forgot-password.jpg';
 import MobileWishlist from '../assets/alphalli-m-wishlist.jpg';
 import MobileProduct from '../assets/alphalli-m-product.jpg';
 import MobileMeasureUpload from '../assets/alphalli-m-measure-upload.jpg';
@@ -134,12 +137,12 @@ const flows = [
         caption: 'Heritage first',
       },
       {
-        img: null,
+        img: MobileOnboarding2,
         alt: 'Onboarding screen two: Every piece tells a story',
         caption: 'Then the maker',
       },
       {
-        img: null,
+        img: MobileOnboarding3,
         alt: 'Onboarding screen three: From cart to culture in just a click',
         caption: 'Then the promise',
       },
@@ -161,7 +164,7 @@ const flows = [
         caption: 'Sign up, with terms',
       },
       {
-        img: null,
+        img: MobileForgotPassword,
         alt: 'Forgot password recovery screen',
         caption: 'Password recovery',
       },
